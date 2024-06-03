@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./team.scss"
 //import images
 import member1 from "../../assets/images/team/member1.png"
@@ -6,7 +6,14 @@ import member2 from "../../assets/images/team/member2.png"
 import member3 from "../../assets/images/team/member3.png"
 import { Link } from 'react-router-dom'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 function Team() {
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
 
   const teamData=[
     {
@@ -37,11 +44,11 @@ function Team() {
   return (
     <section id="team">
       <div className='container'>
-        <h2 className="section-title">Əməkdaşlarımız</h2>
+        <h2 data-aos="fade-down" className="section-title">Əməkdaşlarımız</h2>
         <div className='team-box'>
           {
-            teamData.map((item)=>(
-              <Link to={`team/${item.id}`}>
+            teamData.map((item,index)=>(
+              <Link data-aos="fade-up"  data-aos-delay={index*100}  to={`team/${item.id}`}>
               <div key={item.id} className="team-item">
               <div className='team-item-img'>
                   <img src={item.image} alt="team-img" />

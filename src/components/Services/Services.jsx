@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./services.scss";
 //Import icons
@@ -9,8 +9,14 @@ import service4 from "../../assets/icons/services/service-4.svg";
 import service5 from "../../assets/icons/services/service-5.svg";
 import arrow from "../../assets/icons/common/arrow.svg"
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Services() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   const servicesData = [
     {
       id: 1,
@@ -56,14 +62,14 @@ function Services() {
   return (
     <section id="services">
       <div className="container">
-        <h2 className="section-title">Xidmətlərimiz</h2>
-        <p className="services-section-desc">
+        <h2 data-aos="fade-down" className="section-title">Xidmətlərimiz</h2>
+        <p data-aos="fade-down" className="services-section-desc">
           Legit S.A komandası olaraq, müştərilərə aşağıdakı hüquqi xidmətlərin
           göstərilməsini təklif edə bilərik:
         </p>
         <div className="services-box">
-          {servicesData.map((item) => (
-            <Link to={`/service/${item.id}`} key={item.id}>
+          {servicesData.map((item,index) => (
+            <Link data-aos="zoom-in-up"  data-aos-delay={index*100} to={`/service/${item.id}`} key={item.id}>
             <div className="service-item">
               <div className="service-item-overlay">
                   <div className="service-item-overlay-icon"><img src={arrow} alt="arrow" /></div>
