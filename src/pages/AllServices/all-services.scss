@@ -1,0 +1,53 @@
+#all-services {
+    background: #f4f4f4;
+  
+    .container {
+      width: 1102px;
+      background: #fff;
+      padding: 49px;
+      padding-bottom: 64px;
+    }
+  
+    .page-title {
+      color: #1f2732;
+      font-family: "Cormorant";
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 55.01px;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+  
+    .all-services-content {
+        .all-services-item{
+            &:not(:last-child)
+            {
+                border-bottom: 1px solid #E7C175;
+            }
+            
+            margin-bottom: 50px;
+            h2{
+                color:#1F2732;
+                font-family: "Cormorant";
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 55.01px;
+                text-align: left;
+                margin-bottom: 20px;
+                
+            }
+
+            p{
+                color:#909090;
+                font-family: "Poppins";
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 28px;
+                text-align: left;
+                margin-bottom: 50px;
+                
+            }
+        }
+    }
+  }
+  

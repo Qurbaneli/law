@@ -1,0 +1,83 @@
+header {
+  // height: 103px;
+position: fixed;
+width: 100%;
+  display: flex;
+  justify-content: center;
+
+  transition: 0.3s;
+  z-index: 99;
+  &.sticky {
+    backdrop-filter: blur(10px);
+    background: #00000038;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+  }
+
+  .container {
+    width: 1716px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-img {
+    cursor: pointer;
+  }
+
+  nav {
+    ul {
+      display: flex;
+      gap: 40px;
+      li {
+        margin-top: 12px;
+        border-bottom: 2px solid transparent;
+        padding-bottom: 12px;
+        transition: 0.3s;
+        a {
+          color: #e4e4e4;
+          font-family: "Cormorant";
+          text-transform: uppercase;
+          font-size: 17.19px;
+          font-weight: 400;
+          line-height: 27.3px;
+          text-align: center;
+        }
+        &:hover {
+          border-bottom: 2px solid #e7c175;
+        }
+      }
+    }
+  }
+
+  .lang-box {
+    select {
+      width: 65px;
+      height: 38px;
+      border: 1px solid #fff;
+      font-family: "Cormorant";
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 21.8px;
+      letter-spacing: 0.02em;
+      padding-left: 12px;
+      color: #fff;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background: transparent;
+      background-image: url("../../assets/icons/common/arrow-down.svg");
+      background-repeat: no-repeat;
+      background-position-x: 42px;
+      background-position-y: 13px;
+      outline: none;
+
+      option {
+        color: #000;
+        font-size: 18px;
+        font-weight: 700;
+      }
+    }
+  }
+}

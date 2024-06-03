@@ -1,0 +1,53 @@
+#team {
+  background-color: #252b42;
+  padding-top: 166px;
+  padding-bottom: 194px;
+  h2 {
+    color: #fff;
+  }
+
+  .team-box {
+    margin-top: 36px;
+    display: flex;
+    gap: 30px;
+    .team-item {
+      overflow: hidden;
+      .team-item-img {
+        overflow: hidden;
+        width: 301px;
+        height: 420px;
+        transition: 0.3s;
+      }
+
+      .team-item-img img {
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      &:hover .team-item-img img {
+        transform: scale(1.1);
+      }
+
+      .team-item-desc {
+        text-align: center;
+        margin-top: 28px;
+        h4 {
+          color: #fff;
+          font-family: "Cormorant";
+          font-size: 32px;
+          font-weight: 700;
+          line-height: 36.67px;
+          margin-bottom: 14px;
+        }
+
+        p {
+          color: #b6b6b6;
+          font-family: "Cormorant";
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 27.5px;
+        }
+      }
+    }
+  }
+}
