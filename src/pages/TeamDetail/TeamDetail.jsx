@@ -42,8 +42,8 @@ function TeamDetail() {
   const blog = teamData.find((item) => item.id == id);
   return (
     <>
+      <Header />
       <div className="page-header">
-        <Header />
         <h2 className="page-title">Əməkdaşlar</h2>
       </div>
 

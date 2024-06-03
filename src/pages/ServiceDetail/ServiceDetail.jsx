@@ -43,8 +43,9 @@ function ServiceDetail() {
   const service=servicesData.find(item=>item.id==id)
   return (
     <>
+     <Header />
       <div className="page-header">
-        <Header />
+       
         <h2 className="page-title">Xidmətlər</h2>
       </div>
 

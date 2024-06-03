@@ -6,8 +6,8 @@ import Footer from "../../components/Footer/Footer";
 function AllServices() {
   return (
     <>
+      <Header />
       <div className="page-header">
-        <Header />
         <h2 className="page-title">Hüquq sahələri</h2>
       </div>
 
