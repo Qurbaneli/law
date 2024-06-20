@@ -17,11 +17,14 @@ width: 100%;
   }
 
   .container {
+    padding-left: 20px;
+    padding-right: 20px;
     width: 1716px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
 
   .logo-img {
     cursor: pointer;
@@ -80,4 +83,25 @@ width: 100%;
       }
     }
   }
+
+  .hamburger-menu{
+    display: none;
+  }
+
+  @media screen and (max-width: 992px) {  
+    nav{
+      display: none;
+    }
+
+    .lang-box{
+      display: none;
+    }
+  
+    .hamburger-menu{
+      cursor: pointer;
+      display: block;
+    }
+  }
 }
+
+

@@ -1,14 +1,15 @@
 #about {
   scroll-margin-top: 104px;
-  background: #FAFAFA;
+  background: #fafafa;
   padding-top: 88px;
   padding-bottom: 140px;
-  background-image: url("../../assets/images/about-pattern1.png"),url("../../assets/images/about-pattern2.png");
-  background-repeat:no-repeat,no-repeat;
-  background-position:left bottom,right bottom;
+  background-image: url("../../assets/images/about-pattern1.png"),
+    url("../../assets/images/about-pattern2.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left bottom, right bottom;
   .about-desc {
     color: #252b42;
-    width: 858px;
+    max-width: 858px;
     margin: 0 auto;
     margin-top: 18px;
     font-family: "Cormorant";
@@ -16,5 +17,17 @@
     font-weight: 700;
     line-height: 27.5px;
     text-align: center;
+  }
+
+  @media screen and (max-width: 1550px) {
+    background-image: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-top: 122px 23px;
+    background-image: none;
+    .about-desc {
+      width: 100%;
+    }
   }
 }

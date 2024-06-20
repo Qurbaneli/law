@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./header.scss";
 import logo from "../../assets/images/logo.svg";
-import { Link } from "react-router-dom";
+import hamburgerMenuIcon from "../../assets/icons/common/hambuger-menu.svg"
+
 
 function Header() {
   
@@ -69,6 +71,10 @@ function Header() {
             <option value="">EN</option>
             <option value="">RU</option>
           </select>
+        </div>
+
+        <div className="hamburger-menu">
+              <img src={hamburgerMenuIcon} alt="mobile-menu" />
         </div>
       </div>
     </header>

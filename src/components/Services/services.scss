@@ -5,7 +5,7 @@
   background: #161616;
   display: flex;
   justify-content: center;
-  overflow:hidden;
+  overflow: hidden;
 
   .container {
     width: 1294px;
@@ -16,7 +16,7 @@
   }
 
   .services-section-desc {
-    width: 617px;
+    max-width: 617px;
     margin: 0 auto;
     margin-top: 18px;
     color: #909090;
@@ -30,6 +30,7 @@
 
   .services-box {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     column-gap: 30px;
     row-gap: 38px;
@@ -44,11 +45,10 @@
       border-bottom: 10px solid #e7c175;
       position: relative;
       overflow: hidden;
-      
+
       &:hover {
         .service-item-overlay {
-          
-          top:0px;
+          top: 0px;
         }
       }
       .service-item-overlay {
@@ -70,7 +70,6 @@
           display: flex;
           justify-content: center;
           align-items: center;
-         
         }
       }
 
@@ -86,6 +85,43 @@
           font-weight: 700;
           line-height: 32.09px;
           text-align: center;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    padding-top: 94px;
+    padding-bottom: 216px;
+    .container {
+      padding-right: 24px;
+      padding-left: 24px;
+    }
+
+    .services-section-desc {
+      margin-bottom: 86px;
+    }
+
+    .services-box {
+      column-gap: 24px;
+      row-gap: 17px;
+      .service-item {
+        width: 155px;
+        height: 155px;
+
+        .services-item-detail {
+          .services-item-icon {
+            margin-bottom: 10px;
+            img {
+              width: 38px;
+            }
+          }
+
+          .services-item-desc {
+            // width: 87px;
+            font-size: 20px;
+            line-height: 22.92px;
+          }
         }
       }
     }

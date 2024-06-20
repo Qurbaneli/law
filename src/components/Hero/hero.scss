@@ -9,6 +9,7 @@
       rgba(0, 0, 0, 0.83) 100%
     ),
     url("../../assets/images/hero.png");
+    
   .hero-detail {
     width: 836px;
     margin: 0 auto;
@@ -17,7 +18,7 @@
     h1 {
       color: #ffffff;
       font-family: "Cormorant";
-      font-size: 80px;
+      font-size:5rem;
       font-weight: 700;
       line-height: 96.88px;
       letter-spacing: -0.6800000071525574px;
@@ -45,13 +46,34 @@
       border: 1px solid #000000;
       height: 54px;
       cursor: pointer;
-      
+
       color: #000000;
       font-family: "Inter";
       font-size: 15.2px;
       font-weight: 700;
       line-height: 20px;
       text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 812px;
+    background-position: center;
+    .hero-detail {
+      width: 303px;
+      height: 232px;
+
+      padding-top: 197px;
+
+      h1 {
+        font-size: 40px;
+        line-height: 48.44px;
+        margin-bottom: 94px;
+      }
+
+      p {
+        display: none;
+      }
     }
   }
 }
