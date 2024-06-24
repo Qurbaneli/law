@@ -4,7 +4,7 @@
   padding-top: 95px;
   padding-bottom: 108px;
   .contact-form {
-    width: 1085px;
+    max-width: 1085px;
     margin: 0 auto;
     .form-row {
       display: flex;
@@ -73,5 +73,28 @@
         text-align: center;
       }
     }
+  }
+
+  @media screen and (max-width: 576px) {
+    .container{
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    .form-row{
+      flex-direction: column;
+      margin-bottom: 0px !important;
+      gap:0px !important;
+      .form-item{
+        margin-bottom:30px;
+
+        input, textarea{
+          &::placeholder{
+            font-size: 18px !important;
+          }
+        }
+      }
+    }
+
   }
 }

@@ -69,7 +69,6 @@ function Header() {
           <select name="" id="">
             <option value="">AZ</option>
             <option value="">EN</option>
-            <option value="">RU</option>
           </select>
         </div>
 

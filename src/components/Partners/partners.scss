@@ -3,8 +3,12 @@
   padding: 100px 0px;
   .partners-box {
     margin-top: 16px;
-    display: flex;
-    gap: 16px;
+
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
     .partner-item img {
       transition: 0.3s;

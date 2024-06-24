@@ -6,9 +6,15 @@
     color: #fff;
   }
 
+  .container {
+    max-width: 1294px !important;
+  }
+
   .team-box {
     margin-top: 36px;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
     .team-item {
       overflow: hidden;
@@ -46,6 +52,45 @@
           font-size: 24px;
           font-weight: 400;
           line-height: 27.5px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 576px) {
+    padding-top: 94px;
+    padding-bottom: 139px;
+
+    .container {
+      padding-right: 24px;
+      padding-left: 24px;
+    }
+
+    .team-box {
+      // column-gap: 16px;
+      row-gap: 53px;
+      .team-item {
+        .team-item-img {
+          width: 155px;
+          height: 155px;
+          img {
+            width: 100%;
+          }
+        }
+
+        .team-item-desc {
+          margin-top: 26px;
+          h4 {
+            font-size: 21px;
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 6px;
+          }
+
+          p {
+            font-size: 24px;
+            font-size: 21px;
+            line-height: 27.5px;
+          }
         }
       }
     }
