@@ -6,6 +6,9 @@ import footerLogo from "../../assets/images/footer-logo.svg";
 import facebook from "../../assets/icons/social/facebook.svg";
 import twitter from "../../assets/icons/social/twitter.svg";
 import linkedin from "../../assets/icons/social/linkedin.svg";
+import facebookMob from "../../assets/icons/social/facebook-m.svg";
+import twitterMob from "../../assets/icons/social/twitter-m.svg";
+import linkedinMob from "../../assets/icons/social/linkedin-m.svg";
 
 function Footer() {
   return (
@@ -100,12 +103,31 @@ function Footer() {
               <h3>Contact US</h3>
               <ul>
                 <li>
-                  <a href="mailto:qoterra@business.com" target="_blank"> Qoterra@business.com</a>
+                  <a href="mailto:qoterra@business.com" target="_blank">
+                    {" "}
+                    Qoterra@business.com
+                  </a>
                 </li>
                 <li>
-                  <a  className="footer-address" href="tel:123-456-7890">+91-80-65652545</a>
+                  <a className="footer-address" href="tel:123-456-7890">
+                    +91-80-65652545
+                  </a>
                 </li>
               </ul>
+            </div>
+          </div>
+
+          <div className="footer-social-mobile">
+            <div className="footer-social-mobile-item">
+              <img src={twitterMob} alt="twitter" />
+            </div>
+
+            <div className="footer-social-mobile-item">
+              <img src={facebookMob} alt="facebook" />
+            </div>
+
+            <div className="footer-social-mobile-item">
+              <img src={linkedinMob} alt="linkedin" />
             </div>
           </div>
         </div>

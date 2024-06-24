@@ -2,7 +2,7 @@ footer {
   background: black;
   padding-top: 119px;
   .container {
-    width: 1800px;
+    max-width: 1800px;
   }
 
   .footer-main {
@@ -13,6 +13,10 @@ footer {
     padding-right: 140px;
 
     .footer-left {
+      .footer-logo {
+        text-align: center;
+      }
+
       .footer-desc {
         margin-top: 22px;
         width: 332px;
@@ -72,6 +76,10 @@ footer {
         }
       }
     }
+
+    .footer-social-mobile{
+      display: none;
+    }
   }
 
   .footer-copyright {
@@ -109,6 +117,94 @@ footer {
             text-align: left;
           }
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  footer {
+    padding-top: 50px;
+
+    .footer-main {
+      flex-direction: column;
+      padding-bottom: 80px !important;
+      justify-content: center !important;
+      align-items: center !important;
+      padding-left: 24px !important;
+      padding-right: 24px !important;
+      .footer-desc {
+        width: 100%;
+        margin-top: 33px !important;
+        margin-bottom: 73px !important;
+        color: #909090 !important;
+        font-size: 20px !important;
+        text-align: center !important;
+      }
+
+      .footer-social {
+        display: none !important;
+      }
+
+      .footer-menu:not(:last-child) {
+        display: none;
+      }
+
+      .footer-menu:last-child {
+        
+        h3 {
+          text-align: center;
+          color: #909090;
+          font-family: "Poppins";
+          font-size: 26px;
+          font-weight: 800;
+          line-height: 26.9px;
+          margin-bottom: 17px;
+        }
+
+        li {
+          a {
+            color: #909090 !important;
+            font-family: "Poppins" !important;
+            font-size: 20px !important;
+            font-weight: 400 !important;
+            line-height: 44.84px !important;
+            letter-spacing: -0.015em !important;
+            text-align: center !important;
+          }
+
+          .footer-address {
+            font-size: 24px !important;
+            font-weight: 600 !important;
+          }
+        }
+      }
+
+      .footer-social-mobile{
+        margin-top: 95px;
+        display: flex;
+        gap:46px;
+      }
+    }
+
+    .footer-copyright {
+      border-top:none;
+      padding: 29px 38px !important;
+      flex-direction: column;
+      .copyright {
+        color: #909090;
+      }
+
+      .footer-bottom-menu {
+        ul{
+          gap: 10px !important;
+          li {
+            a {
+              color: #909090 !important;
+            }
+          }
+        }
+
       }
     }
   }
