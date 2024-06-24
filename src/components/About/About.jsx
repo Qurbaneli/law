@@ -10,6 +10,7 @@ function About() {
 
   return (
     <section id="about">
+      <div className="container">
       <h2 data-aos="fade-down" className="section-title">
         Haqqımızda
       </h2>
@@ -26,6 +27,8 @@ function About() {
         tutaraq, hüquqi ehtiyaclarınızda ən etibarlı tərəfdaşınız olmağa
         hazırıq.
       </p>
+      </div>
+
     </section>
   );
 }
