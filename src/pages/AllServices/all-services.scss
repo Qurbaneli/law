@@ -2,7 +2,7 @@
     background: #f4f4f4;
   
     .container {
-      width: 1102px;
+      max-width: 1102px;
       background: #fff;
       padding: 49px;
       padding-bottom: 64px;
@@ -47,6 +47,13 @@
                 margin-bottom: 50px;
                 
             }
+        }
+    }
+    @media screen and (max-width: 576px) {
+
+        .container{
+        padding: 24px;
+        padding-bottom: 55px;
         }
     }
   }

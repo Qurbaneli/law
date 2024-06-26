@@ -92,35 +92,30 @@
 
   @media screen and (max-width: 576px) {
     padding-top: 94px;
-    padding-bottom: 216px;
+    padding-bottom: 194px;
     .container {
       padding-right: 24px;
       padding-left: 24px;
     }
 
     .services-section-desc {
-      margin-bottom: 86px;
+      margin-bottom: 84px;
     }
 
     .services-box {
-      column-gap: 17px;
-      row-gap: 24px;
+      row-gap: 31px;
+
       .service-item {
-        width: 155px;
-        height: 155px;
+        //  width: 100% !important;
 
         .services-item-detail {
           .services-item-icon {
-            margin-bottom: 10px;
-            img {
-              width: 38px;
-            }
+            margin-bottom: 20px;
           }
 
           .services-item-desc {
-            // width: 87px;
-            font-size: 20px;
-            line-height: 22.92px;
+            font-size: 30.42px;
+            line-height: 34.86px;
           }
         }
       }
