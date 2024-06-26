@@ -17,7 +17,7 @@ function Services() {
     AOS.init();
   }, []);
 
-  const [moreServices, setMoreServices] = useState(false);
+  const [moreServices, setMoreServices] = useState(true);
   
   const servicesData = [
     {

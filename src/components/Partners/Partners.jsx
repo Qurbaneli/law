@@ -55,9 +55,9 @@ function Partners() {
           <Swiper
             spaceBetween={16}
             slidesPerView={5}
-            // autoplay={{
-            //   delay: 2500,
-            // }}
+            autoplay={{
+              delay: 1500,
+            }}
 
             breakpoints={{
               0: {
