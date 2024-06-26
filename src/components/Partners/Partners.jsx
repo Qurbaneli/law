@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import "./partners.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -15,7 +16,11 @@ import mlk from "../../assets/images/partners/mlk.svg";
 import oneclick1 from "../../assets/images/partners/oneclick1.svg";
 import oneclick2 from "../../assets/images/partners/oneclick2.svg";
 
+
 function Partners() {
+
+  const { t} = useTranslation();
+
   useEffect(() => {
     AOS.init();
   }, []);
@@ -50,7 +55,7 @@ function Partners() {
   return (
     <section id="partners">
       <div className="container">
-        <h2 className="section-title">Tərəfdaşlar</h2>
+        <h2 className="section-title">{t('partners')}</h2>
         <div className="partners-box">
           <Swiper
             spaceBetween={16}

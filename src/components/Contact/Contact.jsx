@@ -1,7 +1,9 @@
 import React from "react";
 import "./contact.scss"
+import { useTranslation } from "react-i18next";
 
 function Contact() {
+  const { t} = useTranslation();
   return (
     <section id="contact">
       <div className="container">
@@ -34,7 +36,7 @@ function Contact() {
             </div>
 
             <div className="form-footer">
-              <div className="btn submit-btn">Göndər</div>
+              <div className="btn submit-btn">{t("send")}</div>
             </div>
           </form>
         </div>

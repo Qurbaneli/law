@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import "./header.scss";
 import logo from "../../assets/images/logo.svg";
 import mobileLogo from "../../assets/images/mobile-logo.svg";
 import hamburgerMenuIcon from "../../assets/icons/common/hambuger-menu.svg";
+
 
 //Social Icons
 import close from "../../assets/icons/common/close.svg";
@@ -12,8 +14,17 @@ import twitter from "../../assets/icons/social/twitter.svg";
 import linkedin from "../../assets/icons/social/linkedin.svg";
 
 function Header() {
+  const { t, i18n: {changeLanguage, language} } = useTranslation();
+  const [currentLanguage, setCurrentLanguage] = useState(language)
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
+
+  const handleChangeLanguage = (lang) => {
+    console.log(lang)
+    setCurrentLanguage(lang);
+    changeLanguage(lang);
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -35,7 +46,7 @@ function Header() {
       <div className={`mobile-menu ${mobileMenu ? "active" : ""}`}>
         <div className="mobile-menu-logo">
           <img src={mobileLogo} alt="logo" />
-          <div onClick={()=>setMobileMenu(false)} className="close">
+          <div onClick={() => setMobileMenu(false)} className="close">
             <img src={close} alt="close" />
           </div>
         </div>
@@ -43,27 +54,27 @@ function Header() {
         <nav className="mobile-menu-nav">
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">{t("home")}</Link>
             </li>
 
             <li>
-              <a href="/#about">About us</a>
+              <a href="/#about">{t("about")}</a>
             </li>
 
             <li>
-              <Link to="/services">Services</Link>
+              <Link to="/services">{t("services")}</Link>
             </li>
 
             <li>
-              <a href="/#partners">Partners</a>
+              <a href="/#partners">{t("partners")}</a>
             </li>
 
             <li>
-              <a href="#">News</a>
+              <a href="#">{t("news")}</a>
             </li>
 
             <li>
-              <a href="/#contact">Contact us</a>
+              <a href="/#contact">{t("contact")}</a>
             </li>
           </ul>
         </nav>
@@ -93,35 +104,35 @@ function Header() {
         <nav className="desktop-nav">
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">{t("home")}</Link>
             </li>
 
             <li>
-              <a href="/#about">About us</a>
+              <a href="/#about">{t("about")}</a>
             </li>
 
             <li>
-              <Link to="/services">Services</Link>
+              <Link to="/services">{t("services")}</Link>
             </li>
 
             <li>
-              <a href="/#partners">Partners</a>
+              <a href="/#partners">{t("partners")}</a>
             </li>
 
             <li>
-              <a href="#">News</a>
+              <a href="#">{t("news")}</a>
             </li>
 
             <li>
-              <a href="/#contact">Contact us</a>
+              <a href="/#contact">{t("contact")}</a>
             </li>
           </ul>
         </nav>
 
         <div className="lang-box">
-          <select name="" id="">
-            <option value="">AZ</option>
-            <option value="">EN</option>
+          <select onChange={(e)=>handleChangeLanguage(e.target.value)} name="" id="">
+            <option value="az">AZ</option>
+            <option value="en">EN</option>
           </select>
         </div>
 

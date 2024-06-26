@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import "./about.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 function About() {
+  const { t} = useTranslation();
   useEffect(() => {
     AOS.init();
   }, []);
@@ -12,7 +14,7 @@ function About() {
     <section id="about">
       <div className="container">
       <h2 data-aos="fade-down" className="section-title">
-        Haqqımızda
+        {t("about")}
       </h2>
       <p data-aos="fade-down" className="about-desc">
         Azərbaycan Respublikasının qanunvericiliyinə əsasən təsis edilmiş “Legit

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import "./services.scss";
 //Import icons
@@ -12,7 +13,9 @@ import arrow from "../../assets/icons/common/arrow.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+
 function Services() {
+  const { t} = useTranslation();
   useEffect(() => {
     AOS.init();
   }, []);
@@ -66,7 +69,7 @@ function Services() {
     <section id="services">
       <div className="container">
         <h2 data-aos="fade-down" className="section-title">
-          Xidmətlərimiz
+          {t("services")}
         </h2>
         <p data-aos="fade-down" className="services-section-desc">
           Legit S.A komandası olaraq, müştərilərə aşağıdakı hüquqi xidmətlərin

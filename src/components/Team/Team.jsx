@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import "./team.scss";
 //import images
 import member1 from "../../assets/images/team/member1.png";
@@ -10,6 +11,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 function Team() {
+  const { t} = useTranslation();
+  
   useEffect(() => {
     AOS.init();
   }, []);
@@ -45,7 +48,7 @@ function Team() {
     <section id="team">
       <div className="container">
         <h2 data-aos="fade-down" className="section-title">
-          Əməkdaşlarımız
+          {t("team")}
         </h2>
         <div className="team-box">
           {teamData.map((item, index) => (
