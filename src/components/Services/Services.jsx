@@ -8,6 +8,8 @@ import service2 from "../../assets/icons/services/service-2.svg";
 import service3 from "../../assets/icons/services/service-3.svg";
 import service4 from "../../assets/icons/services/service-4.svg";
 import service5 from "../../assets/icons/services/service-5.svg";
+import service6 from "../../assets/icons/services/service-6.svg";
+import service7 from "../../assets/icons/services/service-7.svg";
 import arrow from "../../assets/icons/common/arrow.svg";
 
 import AOS from "aos";
@@ -55,12 +57,12 @@ function Services() {
     },
     {
       id: 7,
-      icon: service1,
+      icon: service6,
       desc: "Ailə Hüququ",
     },
     {
       id: 8,
-      icon: service1,
+      icon: service7,
       desc: "Miqrasiya hüququ",
     },
   ];
