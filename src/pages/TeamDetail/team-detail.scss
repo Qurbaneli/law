@@ -17,6 +17,7 @@
         width: 366px;
         height: 461px;
         object-fit: cover;
+        object-position: 100% 0%;
         position: relative;
         bottom: 86px;
       }
@@ -24,32 +25,32 @@
       .team-detail-desc-box {
         .team-detail-title {
           color: #3a3a38;
-          font-family: "Cormorant";
-          font-size: 64px;
-          font-weight: 600;
-          line-height: 77.5px;
+          font-family: "Roboto";
+          font-size: 58px;
+          font-weight: 700;
+          line-height: 67.97px;
+          text-align: left;
           margin-bottom: 2px;
         }
         .team-detail-subtitle {
           color: #848484;
-          font-family: "Cormorant";
+          font-family: "Roboto";
           font-size: 32px;
-          font-weight: 600;
-          line-height: 38.75px;
+          font-weight: 500;
+          line-height: 37.5px;
+          text-align: left;
           margin-bottom: 26px;
         }
 
         .team-detail-desc {
           color: #3a3a38;
-          font-size: 20px;
-          font-family: "DM Sans";
+          font-size: 18px;
+          font-family: "Roboto";
           font-weight: 400;
           line-height: 30.64px;
           margin-bottom: 30px;
           span {
-            font-family: "Inter";
             font-weight: 700;
-            
             line-height: 28.48px;
           }
         }
@@ -86,20 +87,6 @@
           .team-detail-title {
             font-size: 48px;
             line-height: 58.13px;
-          }
-
-          .team-detail-desc {
-            color: #3a3a38;
-            font-size: 20px;
-            font-family: "DM Sans";
-            font-weight: 400;
-            line-height: 30.64px;
-            margin-bottom: 30px;
-            span {
-              font-family: "Inter";
-              font-weight: 700;
-              line-height: 28.48px;
-            }
           }
 
           .team-social {

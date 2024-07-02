@@ -1,5 +1,11 @@
 import React from "react";
 import "./footer.scss";
+
+//Import logos
+import { FaLocationDot } from "react-icons/fa6";
+import { FaPhone } from "react-icons/fa6";
+import { IoMail } from "react-icons/io5";
+
 //import images
 
 import footerLogo from "../../assets/images/footer-logo.svg";
@@ -103,18 +109,27 @@ xəbərdar ola bilərsiniz”
 
             <div className="footer-menu">
               <h3>Contact US</h3>
-              <ul>
-                <li>
+              <ul className="footer-contact">
+              <li>
                   <a href="mailto:qoterra@business.com" target="_blank">
                     {" "}
-                    Qoterra@business.com
+                   <span className="footer-icon"><FaLocationDot /> </span>  Luxen Plaza, 8th floor, office Legit S.A.., Baku, Azerbaijan
+                  </a>
+                </li>
+                
+                <li>
+                  <a href="mailto:İnfo@legitsa.az" target="_blank">
+                    <span className="icon"><IoMail /></span>
+                    İnfo@legitsa.az
                   </a>
                 </li>
                 <li>
                   <a className="footer-address" href="tel:123-456-7890">
-                    +91-80-65652545
+                    <span className="icon"><FaPhone /> </span>+99450-000-00-00   
                   </a>
                 </li>
+
+
               </ul>
             </div>
           </div>

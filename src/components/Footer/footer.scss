@@ -49,6 +49,18 @@ footer {
           margin-bottom: 16px;
         }
 
+        .footer-contact{
+          max-width:220px;
+          li{
+            a{
+              display: flex;
+              gap: 10px;
+
+            }
+      
+          }
+        }
+
         ul {
           li {
             &:hover {

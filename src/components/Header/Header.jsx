@@ -124,7 +124,17 @@ function Header() {
             </li>
 
             <li>
+              <a href="#">{t("blog")}</a>
+            </li>
+
+
+
+            <li>
               <a href="/#contact">{t("contact")}</a>
+            </li>
+
+            <li>
+              <a href="#">{t("sign")}</a>
             </li>
           </ul>
         </nav>
