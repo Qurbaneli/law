@@ -2,24 +2,21 @@ header {
   // height: 103px;
   position: fixed;
   width: 100%;
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
 
   transition: 0.3s;
   z-index: 99;
   &.sticky {
     backdrop-filter: blur(10px);
     background: #00000038;
-    // position: fixed;
-    // top: 0px;
-    // left: 0px;
-    // right: 0px;
+
   }
 
   .container {
     padding-left: 20px;
     padding-right: 20px;
-    width: 1716px;
+    max-width: 1700px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -103,7 +100,7 @@ header {
     position: absolute;
     transition: 0.5s;
     top: 0px;
-    left: -1000px;
+    left: -1500px;
     right: 0px;
     bottom: 0px;
     height: 100vh;
@@ -164,7 +161,8 @@ header {
     }
   }
 
-  @media screen and (max-width: 992px) {
+
+  @media screen and (max-width: 1300px) {
 
     .mobile-menu{
       display: block;

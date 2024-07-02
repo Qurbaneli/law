@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import 'swiper/css';
+import "swiper/css";
 
 //import logos
 import eduaz from "../../assets/images/partners/eduaz.svg";
@@ -16,10 +16,8 @@ import mlk from "../../assets/images/partners/mlk.svg";
 import oneclick1 from "../../assets/images/partners/oneclick1.svg";
 import oneclick2 from "../../assets/images/partners/oneclick2.svg";
 
-
 function Partners() {
-
-  const { t} = useTranslation();
+  const { t } = useTranslation();
 
   useEffect(() => {
     AOS.init();
@@ -50,12 +48,11 @@ function Partners() {
       id: 6,
       logo: oneclick2,
     },
-
   ];
   return (
     <section id="partners">
       <div className="container">
-        <h2 className="section-title">{t('partners')}</h2>
+        <h2 className="section-title">{t("partners")}</h2>
         <div className="partners-box">
           <Swiper
             spaceBetween={16}
@@ -63,7 +60,6 @@ function Partners() {
             autoplay={{
               delay: 1500,
             }}
-
             breakpoints={{
               0: {
                 slidesPerView: 1,
@@ -75,11 +71,9 @@ function Partners() {
                 slidesPerView: 3,
               },
               1024: {
-
                 slidesPerView: 4,
               },
               1200: {
-
                 slidesPerView: 5,
               },
             }}
@@ -87,11 +81,10 @@ function Partners() {
             loop={true}
           >
             {partnersData.map((item, index) => (
-              <SwiperSlide>
+              <SwiperSlide key={item.id}>
                 <div
                   data-aos="fade-up-right"
                   data-aos-delay={index * 100}
-                  key={item.id}
                   className="partner-item"
                 >
                   <img src={item.logo} alt="logo" />

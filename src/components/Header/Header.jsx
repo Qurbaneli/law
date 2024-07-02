@@ -53,27 +53,28 @@ function Header() {
 
         <nav className="mobile-menu-nav">
           <ul>
-            <li>
+            <li onClick={()=>setMobileMenu(false)}>
               <Link to="/">{t("home")}</Link>
             </li>
 
-            <li>
+            <li onClick={()=>setMobileMenu(false)}>
               <a href="/#about">{t("about")}</a>
             </li>
 
-            <li>
+            <li onClick={()=>setMobileMenu(false)}>
               <Link to="/services">{t("services")}</Link>
             </li>
 
-            <li>
+            <li onClick={()=>setMobileMenu(false)}>
               <a href="/#partners">{t("partners")}</a>
             </li>
 
-            <li>
+            <li onClick={()=>setMobileMenu(false)}>
               <a href="#">{t("news")}</a>
             </li>
 
-            <li>
+            <li onClick={()=>setMobileMenu(false)}
+              >
               <a href="/#contact">{t("contact")}</a>
             </li>
           </ul>

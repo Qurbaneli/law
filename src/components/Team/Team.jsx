@@ -53,11 +53,12 @@ function Team() {
         <div className="team-box">
           {teamData.map((item, index) => (
             <Link
+            key={item.id}
               data-aos="fade-up"
               data-aos-delay={index * 100}
               to={`team/${item.id}`}
             >
-              <div key={item.id} className="team-item">
+              <div  className="team-item">
                 <div className="team-item-img">
                   <img src={item.image} alt="team-img" />
                 </div>
