@@ -16,18 +16,7 @@ function About() {
       <h2 data-aos="fade-down" className="section-title">
         {t("about")}
       </h2>
-      <p data-aos="fade-down" className="about-desc">
-        Azərbaycan Respublikasının qanunvericiliyinə əsasən təsis edilmiş “Legit
-        Solve Advisors” Məhdud Məsuliyyətli Cəmiyyəti müştərilər üçün müxtəlif
-        istiqamətlər üzrə peşəkar hüquqşünaslardan ibarət komandası ilə yüksək
-        keyfiyyətli hüquqi xidmətlər göstərən hüquq şirkətidir. Şirkətimiz
-        korporativ, kommersiya, mülki, əmək, cinayət, miqrasiya hüququ və
-        hüququn digər sahələrində ixtisaslaşmışdır. Məqsədimiz, müştərilərimizin
-        hüquqi problemlərini sürətli və effektiv şəkildə həll etməkdir.
-        <br />
-        Peşəkarlıq, dürüstlük və müştəri məmnuniyyəti prinsiplərimizi rəhbər
-        tutaraq, hüquqi ehtiyaclarınızda ən etibarlı tərəfdaşınız olmağa
-        hazırıq.
+      <p dangerouslySetInnerHTML={{ __html: t("aboutText")}} data-aos="fade-down" className="about-desc">
       </p>
       </div>
 
