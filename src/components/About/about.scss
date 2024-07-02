@@ -1,22 +1,27 @@
 #about {
   scroll-margin-top: 104px;
   background: #fafafa;
-  padding-top: 88px;
-  padding-bottom: 140px;
+  padding-top: 90px;
+  padding-bottom: 111px;
   background-image: url("../../assets/images/about-pattern1.png"),
     url("../../assets/images/about-pattern2.png");
   background-repeat: no-repeat, no-repeat;
   background-position: left bottom, right bottom;
   .about-desc {
     color: #252b42;
-    max-width: 858px;
+    max-width: 1132px;
     margin: 0 auto;
     margin-top: 18px;
-    font-family: "Cormorant";
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 27.5px;
+ 
     text-align: center;
+
+    font-family: "Roboto";
+font-size: 20px;
+font-weight: 300;
+line-height: 31.4px;
+letter-spacing: 0.01em;
+
+
   }
 
   @media screen and (max-width: 1550px) {

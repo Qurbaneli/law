@@ -11,24 +11,26 @@
     url("../../assets/images/hero.png");
     
   .hero-detail {
-    width: 836px;
+    max-width: 1108px;
     margin: 0 auto;
-    padding-top: 345px;
+    padding-top: 345px; 
 
     h1 {
       color: #ffffff;
-      font-family: "Cormorant";
+      font-family: "Roboto";
       font-size:5rem;
       font-weight: 700;
       line-height: 96.88px;
       letter-spacing: -0.6800000071525574px;
       text-align: center;
-      margin-bottom: 21px;
+      margin-bottom: 31px;
     }
 
     p {
+      max-width:589px;
+      margin: 0 auto;
       color: #fff;
-      font-family: Helvetica;
+      font-family: "Roboto";
       font-size: 20.67px;
       font-weight: 400;
       line-height: 27.3px;
@@ -48,7 +50,7 @@
       cursor: pointer;
 
       color: #000000;
-      font-family: "Inter";
+      font-family: "Roboto";
       font-size: 15.2px;
       font-weight: 700;
       line-height: 20px;

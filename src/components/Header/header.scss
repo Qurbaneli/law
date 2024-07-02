@@ -49,12 +49,13 @@ header {
         transition: 0.3s;
         a {
           color: #e4e4e4;
-          font-family: "Cormorant";
+          font-family: "Roboto";
           text-transform: uppercase;
           font-size: 17.19px;
           font-weight: 400;
           line-height: 27.3px;
           text-align: center;
+
         }
         &:hover {
           border-bottom: 2px solid #e7c175;
@@ -68,7 +69,7 @@ header {
       width: 65px;
       height: 38px;
       border: 1px solid #fff;
-      font-family: "Cormorant";
+      font-family: "Roboto";
       font-size: 18px;
       font-weight: 700;
       line-height: 21.8px;
@@ -145,7 +146,7 @@ header {
           a {
             text-transform: uppercase;
             color: #e4e4e4;
-            font-family: "Cormorant";
+            font-family: "Roboto";
             font-size: 24px;
             font-weight: 400;
             line-height: 34px;

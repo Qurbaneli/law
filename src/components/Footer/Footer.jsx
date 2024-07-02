@@ -22,8 +22,10 @@ function Footer() {
 
             <div className="footer-desc">
               <p>
-                Efforlessly manage and organize chats, tasks, and files in one
-                centeral location with Qoterra chat management solutions
+              “Bu, “Legit Solve Adviors” MMC-nin rəsmi saytıdır.
+Veb-saytımızda siz xidmətlərimiz və komandamızla tanış ola,
+qaunvericiliklə bağlı ən son xəbər və məlumatlardan
+xəbərdar ola bilərsiniz”
               </p>
             </div>
 

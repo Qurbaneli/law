@@ -20,7 +20,7 @@
     margin: 0 auto;
     margin-top: 18px;
     color: #909090;
-    font-family: "Poppins";
+    font-family: "Roboto";
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
@@ -80,10 +80,10 @@
 
         .services-item-desc {
           color: #252b42;
-          font-family: "Cormorant";
-          font-size: 28px;
-          font-weight: 700;
-          line-height: 32.09px;
+          font-family: "Roboto";
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 27.5px;
           text-align: center;
         }
       }
@@ -105,8 +105,11 @@
     .services-box {
       row-gap: 31px;
 
+      a {
+        width: 100%;
+      }
       .service-item {
-        //  width: 100% !important;
+        width: 100%;
 
         .services-item-detail {
           .services-item-icon {

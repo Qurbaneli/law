@@ -13,15 +13,15 @@ footer {
     padding-right: 140px;
 
     .footer-left {
-      .footer-logo {
-        text-align: center;
-      }
+      // .footer-logo {
+      //   text-align: center;
+      // }
 
       .footer-desc {
         margin-top: 22px;
-        width: 332px;
+        max-width: 486px;
         color: #fff;
-        font-family: "Poppins";
+        font-family: "Roboto";
         font-size: 16px;
         font-weight: 400;
         line-height: 28px;
@@ -29,7 +29,7 @@ footer {
       }
 
       .footer-social {
-        margin-top: 33px;
+        margin-top: 35px;
         display: flex;
         gap: 30px;
       }
@@ -41,7 +41,7 @@ footer {
       .footer-menu {
         h3 {
           color: #fff;
-          font-family: "Lato";
+          font-family: "Roboto";
           font-size: 16px;
           font-weight: 800;
           line-height: 24px;
@@ -65,7 +65,7 @@ footer {
             a {
               transition: 0.3s;
               color: #ffffff;
-              font-family: "Poppins";
+              font-family: "Roboto";
               font-size: 16px;
               font-weight: 400;
               line-height: 60px;
@@ -89,7 +89,7 @@ footer {
     padding: 45px 140px;
     .copyright {
       color: #ffffff;
-      font-family: "Poppins";
+      font-family: "Roboto";
       font-size: 15px;
       font-weight: 400;
       line-height: 24px;
@@ -110,7 +110,7 @@ footer {
 
           a {
             color: #ffffff;
-            font-family: "Poppins";
+            font-family: "Roboto";
             font-size: 14px;
             font-weight: 400;
             line-height: 30px;
