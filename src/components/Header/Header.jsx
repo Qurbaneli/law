@@ -8,6 +8,7 @@ import hamburgerMenuIcon from "../../assets/icons/common/hambuger-menu.svg";
 
 
 //Social Icons
+
 import close from "../../assets/icons/common/close.svg";
 import facebook from "../../assets/icons/social/facebook.svg";
 import twitter from "../../assets/icons/social/twitter.svg";
@@ -43,6 +44,8 @@ function Header() {
 
   return (
     <header className={scrolled ? "sticky" : ""}>
+
+
       <div className={`mobile-menu ${mobileMenu ? "active" : ""}`}>
         <div className="mobile-menu-logo">
           <img src={mobileLogo} alt="logo" />

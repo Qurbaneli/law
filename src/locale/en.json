@@ -15,6 +15,55 @@
     "send":"Send",
     "read-more":"Read more",
     "read-less":"Read less",
-    "aboutText":"\"Legit Solve Advisors\" Limited Liability Company, established under the legislation of the Republic of Azerbaijan, is a law firm that provides high-quality legal services for clients with a team of professional lawyers in various fields. Our firm specializes in corporate, commercial, civil, labor, criminal, immigration and other areas of law. Our goal is to solve the legal problems of our clients quickly and effectively.<br/> Guided by our principles of professionalism, integrity and customer satisfaction, we are ready to be your most trusted partner in your legal needs."
+    "aboutText":"\"Legit Solve Advisors\" Limited Liability Company, established under the legislation of the Republic of Azerbaijan, is a law firm that provides high-quality legal services for clients with a team of professional lawyers in various fields. Our firm specializes in corporate, commercial, civil, labor, criminal, immigration and other areas of law. Our goal is to solve the legal problems of our clients quickly and effectively.<br/> Guided by our principles of professionalism, integrity and customer satisfaction, we are ready to be your most trusted partner in your legal needs.",
+    "teamData": [
+      {
+        "id": 1,
+        "image": "member2",
+        "name_surname": "Suleyman Salahov",
+        "profession": "Director",
+        "desc": "He is the Managing Partner of \"Legit Solve Advisors\" Limited Liability Company. Suleyman Salahov received his legal education at Baku State University (2011, bachelor's degree; 2015, master's degree), his academic research topics covered the fields of comparative law. He worked in a number of large private companies and government institutions in legal and managerial positions. One of the co-authors of the State Program on road safety.",
+        "desc2": "Suleyman Salahov is a member of the Azerbaijan Bar Association. He is the author of several articles in the field of corporate law and business law. Areas of specialization: corporate law, labor law, cultural law, financial and banking law."
+      },
+      {
+        "id": 2,
+        "image": "member2",
+        "name_surname": "Elvin Murshudlu",
+        "profession": "Lawyer",
+        "education": "Nakhchivan State University, Jurisprudence",
+        "specialization": "Commercial law, Contract law, Criminal law, Civil law",
+        "mail": "elvin.m@legitsa.az"
+      },
+      {
+        "id": 3,
+        "image": "member3",
+        "name_surname": "Shahriyar Pashaly",
+        "profession": "Lawyer",
+        "education": "Baku State University, Jurisprudence",
+        "master": "Baku State University, Labor Law: Social Security Law",
+        "specialization": "Commercial law, Labor law, Contract law, Civil law",
+        "mail": "shahriyar.p@legitsa.az"
+      },
+      {
+        "id": 4,
+        "image": "member1",
+        "name_surname": "Punhana Abdullayeva",
+        "profession": "Junior Lawyer",
+        "education": "Nakhchivan State University, Jurisprudence",
+        "master": "Baku State University, Human rights",
+        "specialization": "Civil law, Commercial law, Human rights, International law.",
+        "mail": "punhane.a@legitsa.az"
+      }
+    ],
+    "about-text":"About",
+    "education":"Higher legal education",
+    "master":"Master",
+    "specialization":"Area of specialization",
+    "services-text":"As a team of Legit S.A., we can offer clients the following legal services",
+    "name-surname":"Name and surname *",
+    "email":"Email address*",
+    "phone":"Mobile phone *",
+    "subject":"Subject *",
+    "text":"Text *"
   }
   }

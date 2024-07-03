@@ -1,13 +1,12 @@
 import React from "react";
 import "./footer.scss";
-
+import { LuChevronsUp } from "react-icons/lu";
 //Import logos
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 
 //import images
-
 import footerLogo from "../../assets/images/footer-logo.svg";
 import facebook from "../../assets/icons/social/facebook.svg";
 import twitter from "../../assets/icons/social/twitter.svg";
@@ -17,8 +16,17 @@ import twitterMob from "../../assets/icons/social/twitter-m.svg";
 import linkedinMob from "../../assets/icons/social/linkedin-m.svg";
 
 function Footer() {
+
+  const scrollTop=()=>{
+      window.scrollTo({top:0,behavior:"smooth"})
+  }
+
   return (
     <footer>
+      <div onClick={scrollTop}className="scroll-top">
+        <span> <LuChevronsUp /></span>
+       
+      </div>
       <div className="container">
         <div className="footer-main">
           <div className="footer-left">
@@ -28,10 +36,10 @@ function Footer() {
 
             <div className="footer-desc">
               <p>
-              “Bu, “Legit Solve Adviors” MMC-nin rəsmi saytıdır.
-Veb-saytımızda siz xidmətlərimiz və komandamızla tanış ola,
-qaunvericiliklə bağlı ən son xəbər və məlumatlardan
-xəbərdar ola bilərsiniz”
+                “Bu, “Legit Solve Adviors” MMC-nin rəsmi saytıdır.
+                Veb-saytımızda siz xidmətlərimiz və komandamızla tanış ola,
+                qaunvericiliklə bağlı ən son xəbər və məlumatlardan xəbərdar ola
+                bilərsiniz”
               </p>
             </div>
 
@@ -110,26 +118,32 @@ xəbərdar ola bilərsiniz”
             <div className="footer-menu">
               <h3>Contact US</h3>
               <ul className="footer-contact">
-              <li>
+                <li>
                   <a href="mailto:qoterra@business.com" target="_blank">
                     {" "}
-                   <span className="footer-icon"><FaLocationDot /> </span>  Luxen Plaza, 8th floor, office Legit S.A.., Baku, Azerbaijan
+                    <span className="footer-icon">
+                      <FaLocationDot />{" "}
+                    </span>{" "}
+                    Luxen Plaza, 8th floor, office Legit S.A.., Baku, Azerbaijan
                   </a>
                 </li>
-                
+
                 <li>
                   <a href="mailto:İnfo@legitsa.az" target="_blank">
-                    <span className="icon"><IoMail /></span>
+                    <span className="icon">
+                      <IoMail />
+                    </span>
                     İnfo@legitsa.az
                   </a>
                 </li>
                 <li>
                   <a className="footer-address" href="tel:123-456-7890">
-                    <span className="icon"><FaPhone /> </span>+99450-000-00-00   
+                    <span className="icon">
+                      <FaPhone />{" "}
+                    </span>
+                    +99450-000-00-00
                   </a>
                 </li>
-
-
               </ul>
             </div>
           </div>

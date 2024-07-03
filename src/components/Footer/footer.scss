@@ -13,9 +13,7 @@ footer {
     padding-right: 140px;
     gap:30px;
     .footer-left {
-      // .footer-logo {
-      //   text-align: center;
-      // }
+
       .footer-desc {
         margin-top: 22px;
         max-width: 486px;
@@ -144,6 +142,9 @@ footer {
       align-items: center !important;
       padding-left: 24px !important;
       padding-right: 24px !important;
+      .footer-logo {
+        text-align: center;
+      }
       .footer-desc {
         width: 100%;
         margin-top: 33px !important;

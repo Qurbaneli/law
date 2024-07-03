@@ -1,48 +1,45 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "./team.scss";
-//import images
+
+//Import AOS
+import AOS from "aos";
+import "aos/dist/aos.css";
+//Import images
 import member1 from "../../assets/images/team/member1.png";
 import member2 from "../../assets/images/team/member2.png";
 import member3 from "../../assets/images/team/member3.png";
-import { Link } from "react-router-dom";
-
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 function Team() {
-  const { t} = useTranslation();
-  
+  const { t, ready } = useTranslation();
+
   useEffect(() => {
     AOS.init();
   }, []);
 
-  const teamData = [
+  const teamDataImage = [
     {
       id: 1,
       image: member2,
-      name_surname: "Süleyman Salahov",
-      profession: "Direktor",
     },
     {
       id: 2,
       image: member2,
-      name_surname: "Elvin Mürşüdlü",
-      profession: "Hüquqşünas",
     },
     {
       id: 3,
       image: member3,
-      name_surname: "Şəhriyar Paşalı",
-      profession: "Hüquqşünas",
     },
     {
       id: 4,
-      image: member1,
-      name_surname: "Pünhanə Abdullayeva",
-      profession: "Kiçik Hüquqşünas",
+      image: member1
     },
   ];
+
+  if (!ready) return "loading translations...";
+
+  const teamData = t("teamData", { returnObjects: true });
 
   return (
     <section id="team">
@@ -53,14 +50,14 @@ function Team() {
         <div className="team-box">
           {teamData.map((item, index) => (
             <Link
-            key={item.id}
+              key={item.id}
               data-aos="fade-up"
               data-aos-delay={index * 100}
               to={`team/${item.id}`}
             >
-              <div  className="team-item">
+              <div className="team-item">
                 <div className="team-item-img">
-                  <img src={item.image} alt="team-img" />
+                  <img src={teamDataImage[index].image} alt="team-img" />
                 </div>
                 <div className="team-item-desc">
                   <h4>{item.name_surname}</h4>

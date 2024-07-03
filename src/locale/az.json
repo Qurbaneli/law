@@ -15,7 +15,55 @@
       "send":"Göndər",
       "read-more":"Daha çox",
       "read-less":"Daha az",
-      "aboutText":"Azərbaycan Respublikasının qanunvericiliyinə əsasən təsis edilmiş “Legit Solve Advisors” Məhdud Məsuliyyətli Cəmiyyəti müştərilər üçün müxtəlif istiqamətlər üzrə peşəkar hüquqşünaslardan ibarət komandası ilə yüksək keyfiyyətli hüquqi xidmətlər göstərən hüquq şirkətidir. Şirkətimiz korporativ, kommersiya, mülki, əmək, cinayət, miqrasiya hüququ və hüququn digər sahələrində ixtisaslaşmışdır. Məqsədimiz, müştərilərimizin hüquqi problemlərini sürətli və effektiv şəkildə həll etməkdir. <br/> Peşəkarlıq, dürüstlük və müştəri məmnuniyyəti prinsiplərimizi rəhbər tutaraq, hüquqi ehtiyaclarınızda ən etibarlı tərəfdaşınız olmağa hazırıq."
-    
+      "aboutText":"Azərbaycan Respublikasının qanunvericiliyinə əsasən təsis edilmiş “Legit Solve Advisors” Məhdud Məsuliyyətli Cəmiyyəti müştərilər üçün müxtəlif istiqamətlər üzrə peşəkar hüquqşünaslardan ibarət komandası ilə yüksək keyfiyyətli hüquqi xidmətlər göstərən hüquq şirkətidir. Şirkətimiz korporativ, kommersiya, mülki, əmək, cinayət, miqrasiya hüququ və hüququn digər sahələrində ixtisaslaşmışdır. Məqsədimiz, müştərilərimizin hüquqi problemlərini sürətli və effektiv şəkildə həll etməkdir. <br/> Peşəkarlıq, dürüstlük və müştəri məmnuniyyəti prinsiplərimizi rəhbər tutaraq, hüquqi ehtiyaclarınızda ən etibarlı tərəfdaşınız olmağa hazırıq.",
+      "teamData": [
+        {
+          "id": 1,
+          "image": "member2",
+          "name_surname": "Süleyman Salahov",
+          "profession": "Direktor",
+          "desc": "“Legit Solve Advisors” Məhdud Məsuliyyətli Cəmiyyətində İdarəedici Partnyordur. Süleyman Salahov hüquq təhsilini Bakı Dövlət Universitetində (2011, bakalavr; 2015, magistr) almış, akademik araşdırma mövzuları müqayisəli hüquq sahələrini əhatə etmişdir. Bir sıra iri özəl şirkətlərdə və dövlət qurumlarında hüquq üzrə məsul və rəhbər vəzifələrdə çalışmışdır. Yol hərəkət təhlükəsizliyi üzrə Dövlət Proqramının həmmüəlliflərindən biridir.",
+          "desc2": "Süleyman Salahov Azərbaycan Vəkillər Kollegiyasının üzvüdür. Korporativ hüquq və biznes hüququ sahəsində bir sıra məqalələrin müəllifidir. İxtisaslaşdığı sahələr: korporativ hüquq, əmək hüququ, mədəniyyət hüququ, maliyyə və bank hüququ sahələridir."
+        },
+        {
+          "id": 2,
+          "image": "member2",
+          "name_surname": "Elvin Mürşüdlü",
+          "profession": "Hüquqşünas",
+          "education": "Naxçıvan Dövlət Universiteti, Hüquqşünaslıq.",
+          "specialization": "Kommersiya hüququ, Müqavilə hüququ, Cinayət hüququ, Mülki hüquq.",
+          "mail": "elvin.m@legitsa.az"
+        },
+        {
+          "id": 3,
+          "image": "member3",
+          "name_surname": "Şəhriyar Paşalı",
+          "profession": "Hüquqşünas",
+          "education": "Bakı Dövlət Universiteti, Hüquqşünaslıq",
+          "master": "Bakı Dövlət Universiteti, Əmək hüququ: Sosial təminat hüququ",
+          "specialization": "Kommersiya hüququ, Əmək hüququ, Müqavilə hüququ, Mülki hüquq",
+          "mail": "shahriyar.p@legitsa.az"
+        },
+        {
+          "id": 4,
+          "image": "member1",
+          "name_surname": "Pünhanə Abdullayeva",
+          "profession": "Kiçik Hüquqşünas",
+          "education": "Naxçıvan Dövlət Universiteti, Hüquqşünaslıq",
+          "master": "Bakı Dövlət Universiteti, İnsan hüquqları",
+          "specialization": "Mülki hüquq, Kommersiya hüququ, İnsan hüquqları, Beynəlxalq hüquq.",
+          "mail": "punhane.a@legitsa.az"
+        }
+      ],
+      "about-text":"Haqqında",
+      "education":"Ali hüquq təhsili",
+      "master":"Magistr",
+      "specialization":"İxtisaslaşdığı hüquq sahəsi",
+      "services-text":"Legit S.A komandası olaraq, müştərilərə aşağıdakı hüquqi xidmətlərin göstərilməsini təklif edə bilərik",
+      "name-surname":"Ad və soyad *",
+      "email":"Email ünvan *",
+      "phone":"Mobil telefon *",
+      "subject":"Mövzu *",
+      "text":"Mətn *"
     }
   }

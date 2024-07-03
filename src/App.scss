@@ -13,11 +13,38 @@ a {
 }
 
 //import Fonst
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 body {
   position: relative;
 }
+
+.scroll-top{
+  background-color: #e7c175;
+  color:#252b42;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom:30px;
+  right: 30px;
+  font-size: 35px;
+  cursor: pointer;
+  transition: 0.3s;
+  span{
+    animation: scrollAnimation 0.7s ease-in-out infinite alternate;
+  }
+  &:hover{
+    background-color: #ecce93;
+  }
+}
+
+@keyframes scrollAnimation {
+  from{transform: translateY(7px);}
+  to{transform:translateY(-5px)}
+} 
 
 ::-webkit-scrollbar {
   width: 7px;

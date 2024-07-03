@@ -11,27 +11,27 @@ function Contact() {
           <form action="">
             <div className="form-row">
               <div className="form-item">
-                <input type="text" placeholder="Ad və soyad *"/>
+                <input type="text" placeholder={t('name-surname')}/>
               </div>
 
               <div className="form-item">
-                <input type="text" placeholder="Email ünvan *"/>
-              </div>
-            </div>
-
-            <div className="form-row">
-              <div className="form-item">
-                <input type="text" placeholder="Mobil telefon *"/>
-              </div>
-
-              <div className="form-item">
-                <input type="text" placeholder="Mövzu *"/>
+                <input type="text" placeholder={t('email')}/>
               </div>
             </div>
 
             <div className="form-row">
               <div className="form-item">
-                <textarea type="text" placeholder="Mətn *"/>
+                <input type="text" placeholder={t('phone')}/>
+              </div>
+
+              <div className="form-item">
+                <input type="text" placeholder={t('subject')}/>
+              </div>
+            </div>
+
+            <div className="form-row">
+              <div className="form-item">
+                <textarea type="text" placeholder={t("text")}/>
               </div>
             </div>
 

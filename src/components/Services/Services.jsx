@@ -74,8 +74,7 @@ function Services() {
           {t("services")}
         </h2>
         <p data-aos="fade-down" className="services-section-desc">
-          Legit S.A komandası olaraq, müştərilərə aşağıdakı hüquqi xidmətlərin
-          göstərilməsini təklif edə bilərik:
+          {t("services-text")}
         </p>
         <div className="services-box">
 
