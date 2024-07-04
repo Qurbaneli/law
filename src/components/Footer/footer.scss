@@ -11,9 +11,8 @@ footer {
     padding-bottom: 120px;
     padding-left: 140px;
     padding-right: 140px;
-    gap:30px;
+    gap: 30px;
     .footer-left {
-
       .footer-desc {
         margin-top: 22px;
         max-width: 486px;
@@ -46,15 +45,13 @@ footer {
           margin-bottom: 16px;
         }
 
-        .footer-contact{
-          max-width:220px;
-          li{
-            a{
+        .footer-contact {
+          max-width: 220px;
+          li {
+            a {
               display: flex;
               gap: 10px;
-
             }
-      
           }
         }
 
@@ -86,7 +83,7 @@ footer {
       }
     }
 
-    .footer-social-mobile{
+    .footer-social-mobile {
       display: none;
     }
   }
@@ -131,19 +128,46 @@ footer {
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1300px) {
+  //Edit
   footer {
     padding-top: 50px;
-
     .footer-main {
       flex-direction: column;
-      padding-bottom: 80px !important;
       justify-content: center !important;
       align-items: center !important;
+      text-align: center;
       padding-left: 24px !important;
       padding-right: 24px !important;
+      .footer-desc {
+        text-align: center !important;
+      }
+
       .footer-logo {
         text-align: center;
+      }
+
+      .footer-social {
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  footer {
+    // padding-top: 50px;
+
+    .footer-main {
+      // flex-direction: column;
+      padding-bottom: 80px !important;
+      // justify-content: center !important;
+      // align-items: center !important;
+      // padding-left: 24px !important;
+      // padding-right: 24px !important;
+      .footer-logo {
+        // text-align: center;
       }
       .footer-desc {
         width: 100%;
@@ -163,7 +187,6 @@ footer {
       }
 
       .footer-menu:last-child {
-        
         h3 {
           text-align: center;
           color: #909090;
@@ -192,15 +215,15 @@ footer {
         }
       }
 
-      .footer-social-mobile{
+      .footer-social-mobile {
         margin-top: 95px;
         display: flex;
-        gap:46px;
+        gap: 46px;
       }
     }
 
     .footer-copyright {
-      border-top:none;
+      border-top: none;
       padding: 29px 38px !important;
       flex-direction: column;
       .copyright {
@@ -208,7 +231,7 @@ footer {
       }
 
       .footer-bottom-menu {
-        ul{
+        ul {
           gap: 10px !important;
           li {
             a {
@@ -216,7 +239,6 @@ footer {
             }
           }
         }
-
       }
     }
   }
