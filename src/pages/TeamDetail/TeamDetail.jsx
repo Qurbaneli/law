@@ -15,6 +15,7 @@ import whatsapp from "../../assets/icons/social-team/whatsapp.svg";
 //import images
 import team1 from "../../assets/images/team/big/member2.png";
 import member1 from "../../assets/images/team/member1.jpeg";
+import member2 from "../../assets/images/team/member2.jpeg";
 import member4 from "../../assets/images/team/member2.png";
 import member3 from "../../assets/images/team/member3.jpeg";
 
@@ -27,7 +28,7 @@ function TeamDetail() {
     },
     {
       id: 2,
-      image: member4,
+      image: member2,
     },
     {
       id: 3,
