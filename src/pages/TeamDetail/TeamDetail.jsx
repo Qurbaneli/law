@@ -14,20 +14,20 @@ import whatsapp from "../../assets/icons/social-team/whatsapp.svg";
 
 //import images
 import team1 from "../../assets/images/team/big/member2.png";
-import member1 from "../../assets/images/team/member1.png";
-import member2 from "../../assets/images/team/member2.png";
-import member3 from "../../assets/images/team/member3.png";
+import member1 from "../../assets/images/team/member1.jpeg";
+import member4 from "../../assets/images/team/member2.png";
+import member3 from "../../assets/images/team/member3.jpeg";
 
 function TeamDetail() {
   const { t, ready } = useTranslation();
   const imageData = [
     {
       id: 1,
-      image: member2,
+      image: member4,
     },
     {
       id: 2,
-      image: member2,
+      image: member4,
     },
     {
       id: 3,

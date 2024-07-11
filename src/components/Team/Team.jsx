@@ -7,9 +7,10 @@ import "./team.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
 //Import images
-import member1 from "../../assets/images/team/member1.png";
-import member2 from "../../assets/images/team/member2.png";
-import member3 from "../../assets/images/team/member3.png";
+import member1 from "../../assets/images/team/member1.jpeg";
+import member4 from "../../assets/images/team/member2.png";
+import member2 from "../../assets/images/team/member2.jpeg";
+import member3 from "../../assets/images/team/member3.jpeg";
 
 function Team() {
   const { t, ready } = useTranslation();
@@ -21,7 +22,7 @@ function Team() {
   const teamDataImage = [
     {
       id: 1,
-      image: member2,
+      image: member4,
     },
     {
       id: 2,
