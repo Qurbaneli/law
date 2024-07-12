@@ -18,7 +18,7 @@ function ServiceDetail() {
     <>
       <Header />
       <div className="page-header">
-        <h2 className="page-title">Xidmətlər</h2>
+        <h2 className="page-title">{t('services')}</h2>
       </div>
 
       <section id="service-detail">
@@ -30,8 +30,7 @@ function ServiceDetail() {
                 <p>{service.desc}</p>
 
                 <h3>
-                  Legit S.A korporativ hüquq üzrə aşağıdakı xidmətləri təklif
-                  edir:
+                {t('servicesDesc')}
                 </h3>
 
                 <ul>
