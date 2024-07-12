@@ -17,14 +17,14 @@ import "aos/dist/aos.css";
 
 
 function Services() {
-  const { t} = useTranslation();
+  const { t,ready} = useTranslation();
   useEffect(() => {
     AOS.init();
   }, []);
 
   const [moreServices, setMoreServices] = useState(true);
   
-  const servicesData = [
+  const serviceIcons = [
     {
       id: 1,
       icon: service1,
@@ -66,6 +66,12 @@ function Services() {
       desc: "Miqrasiya hüququ",
     },
   ];
+
+  if (!ready) return "loading translations...";
+
+  const servicesData = t("servicesData", { returnObjects: true });
+
+
   const maxServices= !moreServices ? 4 : servicesData.length;
   return (
     <section id="services">
@@ -95,10 +101,10 @@ function Services() {
                 </div>
                 <div className="services-item-detail">
                   <div className="services-item-icon">
-                    <img src={item.icon} alt="service-icon" />
+                    <img src={serviceIcons[index].icon} alt="service-icon" />
                   </div>
 
-                  <p className="services-item-desc">{item.desc}</p>
+                  <p className="services-item-desc">{item.title}</p>
                 </div>
               </div>
             </Link>
