@@ -59,102 +59,102 @@
       {
         "id": 1,
         "title": "Corporate law",
-        "desc": "Korporativ hüquq korporasiyaların və digər hüquqi şəxslərin yaradılması, idarə edilməsi və fəaliyyətini tənzimləyən hüquq sahəsidir. Bu hüquq sahəsi korporasiyaların (şirkətlərin) hüquq və vəzifələrini, menecerlərin və direktorların məsuliyyətini, səhmdarların hüquqlarını və digər müvafiq məsələləri əhatə edir. Korporativ hüquqda həmçinin, şirkətlərin korporativ idarəetmə standartlarını və ən yaxşı təcrübələri təmin etmək üçün normativ sənədlər və kodekslərdən də istifadə edilir. ",
+        "desc": "Corporate law is the area of law that regulates the creation, management and operation of corporations and other legal entities. This area of law covers the rights and duties of corporations (companies), the liability of managers and directors, the rights of shareholders and other relevant issues. Corporate law also uses regulatory documents and codes to ensure companies' corporate governance standards and best practices.",
         "services": [
-          "Yerli və xarici hüquqi şəxslərin təsis olunması, sənədlərin hazırlanması və qeydiyyatı;",
-          "Hüquqi şəxslərin təsis sənədlərində dəyişikliklərin, əlavələrin, dövlət qeydiyyatına alınması;",
-          "Hüquqi şəxslərin birləşmə, qoşulma, bölünmə, ayrılma şəklində yenidən təşkili;",
-          "Filial, şöbə, nümayəndəliklərin təsis edilməsi;",
-          "Hüquqi şəxslərin qeydiyyatının ləğv edilməsi və ya dayandırılması;",
-          "Hüquqi şəxslərin fəaliyyətinin hüquqi ekspertizası (due diligence);",
-          "Müxtəlif istiqamətlər üzrə müqavilələrin hazırlanması;",
-          "Hüquqi şəxslərin nizamnaməsinin, daxili qaydalarının, əsasnamələrinin, starteji sənədlərinin hazırlanması;",
-          "Korporativ mübahisələrin həlli."
+          "Establishment of local and foreign legal entities, preparation and registration of documents;",
+          "State registration of changes, additions to the constituent documents of legal entities;",
+          "Reorganization of legal entities in the form of merger, merger, division, separation;",
+          "Establishment of branches, departments, representative offices;",
+          "Cancellation or suspension of registration of legal entities;",
+          "Legal examination of the activities of legal entities (due diligence);",
+          "Preparation of contracts in various directions;",
+          "Preparation of the charter, internal rules, regulations, strategy documents of legal entities;",
+          "Corporate dispute resolution."
         ]
       },
       {
         "id": 2,
         "title": "Labor law",
-        "desc": "Əmək hüququ, işçi və işəgötürən arasında olan hüquq və vəzifələri tənzimləyən hüquq sahəsidir. Bu sahə işçilərin işə qəbul olunması, iş şərtləri, əmək haqqı, iş vaxtı, məzuniyyət, iş təhlükəsizliyi və sağlamlığı, işə xitam verilməsi və kollektiv müqavilələr kimi mövzuları da əhatə edir. Əmək hüququ işçilərin hüquqlarını qorumaq, işəgötürənlə işçi arasındaki münasibətlərdə balans yaratmaq və əmək münasibətlərini ədalətli və şəffaf qaydalarla tənzimləmək məqsədi daşıyır. Əmək hüququ işçilər və işəgötürənlər arasında ədalətli iş şəraitini təmin etmək məqsədilə milli qanunvericiliklə yanaşı, beynəlxalq müqavilələr və təşkilatlar tərəfindən də tənzimlənir. Bu hüquq sahəsi, işçilərin sosial və iqtisadi hüquqlarının müdafiə edilməsinə, əmək münasibətlərinin daha şəffaf və ədalətli qaydada tənzimlənməsinə xidmət edir.",
+        "desc": "Labor law is a field of law that regulates the rights and obligations between the employee and the employer. This area also covers topics such as recruitment, working conditions, wages, working hours, leave, occupational safety and health, termination of employment and collective agreements. Labor law aims to protect the rights of employees, create balance in the relationship between employer and employee, and regulate labor relations with fair and transparent rules. Labor law is regulated by international agreements and organizations in addition to national legislation to ensure fair working conditions between employees and employers. This field of law serves to protect the social and economic rights of employees, to regulate labor relations in a more transparent and fair manner.",
         "services": [
-          "İşçilərin işə qəbul və işdən azad edilməsi ilə bağlı hüquqi rəyin verilməsi;",
-          "Əmək, məxfilik, maddi məsuliyyət və digər müqavilələrin hazırlanması və ya ekspertizası;",
-          "Məzuniyyət, ezamiyyət prosesinin həyata keçirilməsilə bağlı hüquqi rəylərin verilməsi və prosedurlar aparılması;",
-          "Mövcud əmək münasibətlərinin əmək qanunvericiliyinə uyğunluğunu yoxlamaq və ona nəzarət etmək;",
-          "Əmək münasibətləri ilə əlaqədar tərtib olunmuş müəssisədaxili sənədlərin qanunauyğunluğunun yoxlanılması;",
-          "İşçilərin və işəgötürənlərin mənafelərinin qorunması üçün məhkəməyədək və məhkəmə proseslərində hüquqi dəstək göstərilməsi."
+          "Issuing a legal opinion on employment and dismissal of employees;",
+          "Drafting or examination of employment, confidentiality, material liability and other contracts;",
+          "Issuing legal opinions and conducting procedures related to the implementation of the graduation and secondment process;",
+          "Check and control compliance of existing labor relations with labor legislation;",
+          "Verification of the legality of internal documents drawn up in relation to labor relations;",
+          "Providing legal support in pre-trial and court proceedings to protect the interests of employees and employers."
         ]
       },
       {
         "id": 3,
         "title": "Contract law",
-        "desc": "Müqavilə hüququ, şəxslər və ya təşkilatlar arasında bağlanan müqavilələrin yaranmasını, icrasını və pozulmasını tənzimləyən hüquq sahəsidir. Bu sahə, müqavilələrin hüquqi tənzimlənməsi üçün lazım olan şərtləri, tərəflərin hüquq və vəzifələri, həmçinin məsuliyyətləri ilə bağlı nəticələri müəyyən edir. Müqavilə hüququ həm şifahi, həm də yazılı müqavilələri əhatə edir, lakin bəzi hallarda, o cümlədən, xüsusilə əhəmiyyətli və mürəkkəb müqavilələrdə, yazılı formada olması tələb olunur. Bu hüquq sahəsi, həmçinin, müqavilələrin etibarlılığı, şərtlərinin izahı və dəyişdirilməsi, və müqavilə bağlamaq qabiliyyətinə malik olan şəxslərin hüquqi vəziyyəti kimi məsələləri də əhatə edir.",
+        "desc": "Contract law is the area of law that governs the formation, performance and termination of contracts between individuals or organizations. This area determines the conditions necessary for the legal regulation of contracts, the rights and obligations of the parties, as well as the consequences related to their responsibilities. Contract law covers both oral and written contracts, but in some cases, including particularly important and complex contracts, they are required to be in writing. This area of law also covers issues such as the validity of contracts, the interpretation and modification of their terms, and the legal status of persons capable of contracting",
         "services": [
-          "Alqı-satqı, podrat, tapşırıq, bağışlama, kirayə, icarə, distribütorluq, əməkdaşlıq və digər növ müqavilələrin hazırlanması",
-          "Xarici elementli müqavilələrin, həmçinin ticarət müqavilələrinin tərtib olunması və ekspertizası;",
-          "Təqdim olunmuş bütün növ müqavilələrin hüquqi ekspertizasını aparmaq;",
-          "Daşınmaz əmlakın dövlət qeydiyyatına alınması prosedurlarının icrası;",
-          "İpoteka müqavilələrinin tərtibi, onların hüquqi təhlili;",
-          "Müqavilərə əlavə və dəyişikliklərin edilməsi, xitamını həyata keçirmək;",
-          "Müqavilələr üzrə yaranmış mübahisələrin həlli üçün məhkəməyədək (arbitraj) və məhkəmə proseslərində hüquqi dəstək göstərilməsi."
+          "Preparation of purchase, sale, contract, assignment, donation, rent, lease, distribution, cooperation and other types of contracts",
+          "Drafting and examination of contracts with foreign elements, as well as trade contracts;",
+          "To conduct legal expertise of all types of submitted contracts;",
+          "Execution of procedures for state registration of immovable property;",
+          "Drafting of mortgage contracts, their legal analysis;",
+          "Making additions and changes to contracts, terminating them;",
+          "Providing legal support in pre-trial (arbitration) and court proceedings to resolve disputes arising under contracts."
         ]
       },
       {
         "id": 4,
         "title": "Insurance law",
-        "desc": "Sığorta hüququ, sığorta müqavilələrinin bağlanması, icrası və tənzimlənməsi ilə əlaqəli hüquqi qaydaları və prinsipləri əhatə edən hüquq sahəsidir. Bu sahə, sığorta şirkətləri və sığortalılar (sığorta alanlar) arasında olan hüquq və vəzifələri, sığorta hadisələri zamanı ödəniş prosedurlarını və sığorta sahəsində yaranan mübahisələrin həllini tənzimləyir. Sığorta hüququ, sığorta sektorunun təhlükəsiz və ədalətli fəaliyyətini təmin etmək, sığortaçılar və sığortalılar arasında balans yaratmaq və sığorta ödənişlərinin düzgün və vaxtında həyata keçirilməsini təmin etmək üçün mühüm rol oynayır. Bu hüquq sahəsi, həm milli qanunvericilik, həm də beynəlxalq müqavilələr və standartlar vasitəsilə tənzimlənir.",
+        "desc": "Insurance law is a field of law that covers the legal rules and principles related to the conclusion, performance and regulation of insurance contracts. This field regulates the rights and obligations between insurance companies and insured (policyholders), payment procedures during insurance events and settlement of disputes arising in the field of insurance. Insurance law plays an important role in ensuring the safe and fair operation of the insurance sector, creating a balance between insurers and policyholders, and ensuring that insurance payments are made correctly and on time. This area of law is regulated by both national legislation and international treaties and standards.",
         "services": [
-          "Sığorta fəaliyyətilə bağlı lisenziyaların alınmasına hüquqi dəstək",
-          "Həyat, daşınmaz əmlak, nəqliyyat, səyahət, tibbi sığorta müqavilələrinin hazırlanması, ləğvi və onun hüquqi ekspertizası;",
-          "Sığorta müqavilələrindən yaranan mübahisələrin təhlili və onların hüquqi həlli;",
-          "Həyat, əmlak, mülki məsuliyyət və digər sığorta mübahisələrinə dair konsultasiya."
+          "Legal support for obtaining licenses related to insurance activities;",
+          "Preparation and cancellation of life, real estate, transportation, travel, medical insurance contracts and its legal expertise;",
+          "Analysis of disputes arising from insurance contracts and their legal resolution;",
+          "Consulting on life, property, civil liability and other insurance disputes."
         ]
       },
       {
         "id": 5,
         "title": "Administrative law",
-        "desc": "İnzibati hüquq, dövlət idarəçiliyi və dövlət orqanlarının fəaliyyətini tənzimləyən hüquq sahəsidir. Bu sahə dövlət orqanlarının və idarələrinin səlahiyyətlərini, vəzifələrini, fəaliyyət qaydalarını və vətəndaşlarla münasibətlərini tənzimləyir. İnzibati hüququn məqsədi, dövlət idarəçiliyinin hüquqi əsaslarını müəyyən etmək, idarəetmənin qanunauyğunluğunu və şəffaflığını təmin etmək və vətəndaşların dövlət orqanları ilə qarşılıqlı əlaqələrində hüquqlarını qorumaqdır. İnzibati hüquq, dövlət idarəetməsinin qanun çərçivəsində həyata keçirilməsini təmin etmək və vətəndaşların hüquqlarını qorumaq məqsədi daşıyır. Bu sahə, hüquqi dövlət prinsipinin və demokratik idarəetmənin əsasını təşkil edir.",
+        "desc": "Administrative law is a field of law that regulates the activities of state administration and state bodies. This field regulates the powers, duties, rules of operation and relations with citizens of state bodies and offices. The purpose of administrative law is to determine the legal basis of public administration, to ensure the legality and transparency of administration, and to protect the rights of citizens in their interactions with state bodies. Administrative law aims to ensure the implementation of public administration within the framework of the law and to protect the rights of citizens. This field is the basis of the rule of law principle and democratic governance.",
         "services": [
-          "Şəxslər üçün hüquqi rəylərin, arayışların, inzibati orqanlara ünvanlanacaq istənilən növ hüquqi sənədlərin hazırlanması;",
-          "İnzibati orqanların qərarlarından şikayətlərin verilməsi."
+          "Preparation of legal opinions, references, any type of legal documents to be addressed to administrative bodies for individuals;",
+          "Filing complaints against the decisions of administrative bodies."
         ]
       },
       {
         "id": 6,
         "title": "Intellectual property right",
-        "desc": "Əqli mülkiyyət hüququ (ƏMH) şəxslərin intellektual yaradıcılıq fəaliyyəti nəticəsində ortaya çıxan əsərlərə və ixtiralara dair hüquqlarının mühafizə altına alınmasını təmin edən hüquq sahəsidir. Bu sahə, müəllif hüquqları, patentlər, əmtəə nişanları, coğrafi göstəricilər və sənaye dizaynları kimi müxtəlif əqli mülkiyyət növlərini əhatə edir. ƏMH, yaradıcılıq fəaliyyətini təşviq etmək və həmin fəaliyyət nəticəsində yaranan məhsulların qanunsuz istifadəsinə qarşı mühafizəsini təmin etmək məqsədi daşıyır. Əqli mülkiyyət hüququnun tənzimlənməsi milli qanunvericiliklə yanaşı, beynəlxalq müqavilələr və təşkilatlar tərəfindən də həyata keçirilir. Əqli mülkiyyət hüququnun məqsədi yaradıcılıq və innovasiyanı təşviq etmək, yaradıcı şəxslərə və şirkətlərə öz işlərindən iqtisadi fayda götürmək imkanı vermək, və bu hüquqların pozulmasına qarşı müdafiəni təmin etməkdir. Bu sahə, həm də iqtisadi inkişafa, mədəniyyətin və elmin inkişafına töhfə verir.",
+        "desc": "Intellectual property right (IPR) is a field of law that ensures the protection of the rights of individuals to works and inventions resulting from intellectual creative activity. This area covers different types of intellectual property such as copyrights, patents, trademarks, geographical indications and industrial designs. IPR aims to promote creative activity and to ensure protection against illegal use of products resulting from that activity. Regulation of intellectual property rights is carried out by international agreements and organizations in addition to national legislation. The purpose of intellectual property rights is to encourage creativity and innovation, to enable creative individuals and companies to benefit economically from their work, and to provide protection against infringement of these rights. This field also contributes to economic development, culture and science.",
         "services": [
-          "Əqli mülkiyyət obyektlərinin (ixtira, faydalı model, sənaye nümunəsi, əmtəə nişanları və coğrafi göstəricilərin) qeydiyyata alınması üçün iddia sənədlərinin tərtib edilməsi, bununla bağlı müvafiq patent müvəkkili ilə danışıqlar və əməkdaşlıq aparılması, sənədlərin müvafiq orqanlara təqdim edlməsi;",
-          "Müvafiq orqanların ixtira, faydalı model və sənayə nümunələrinə patent verilməsindən və əmtəə nişanı və coğrafi göstəricilərin qeydə alınmasından imtina barədə qərarlarından etirazların hazırlanıb təqdim olunması;",
-          "Əqli mülkiyyətlə bağlı digər xidmətlərin göstərilməsi."
+          "Drawing up claim documents for registration of intellectual property objects (invention, utility model, industrial model, trademarks and geographical indications), conducting negotiations and cooperation with the relevant patent attorney, submitting documents to relevant authorities;",
+          "Preparation and submission of objections to the decisions of the relevant authorities on the refusal to grant patents to inventions, utility models and industrial samples and to register trademarks and geographical indications;",
+          "Provision of other services related to intellectual property."
         ],
-        "note": "* Patent və əmtəə nişanlarının qeydiyyatı tərəfimizdən əməkdaşlıq etdiyimiz  patent müvəkkilləri vasitəsilə həyata keçirilir. "
+        "note": "* Patent and trademark registration is carried out by our partner patent attorneys. "
       },
       {
         "id": 7,
         "title": "Family law",
-        "desc": "Ailə hüququ, ailə münasibətlərini və ailə üzvlərinin hüquq və vəzifələrini tənzimləyən hüquq sahəsidir. Bu hüquq sahəsi nikah, boşanma, valideyn-övlad münasibətləri, aliment, ər-arvadın əmlakının qanuni rejmi və ailə üzvlərinin hüquqi statusu ilə bağlı məsələləri əhatə edir. Ailə hüququ, ailə üzvlərinin hüquqlarını qorumaq və ailə münasibətlərini hüquqi çərçivədə tənzimləmək məqsədi daşıyır. Ailə hüququ, ailə üzvləri arasında münasibətlərin ədalətliliyini təmin etmək üçün mühüm rol oynayır. Bu sahə, ailə üzvlərinin hüquqlarını qorumaq və ailə daxilində yaranan mübahisələrin qanun çərçivəsində həllini təmin etmək məqsədi daşıyır. Ailə hüququ milli qanunvericiliklə yanaşı, bir sıra beynəlxalq müqavilə və konvensiyalarla da tənzimlənir.",
+        "desc": "Family law is a field of law that regulates family relations and the rights and duties of family members. This area of law covers matters related to marriage, divorce, parent-child relations, alimony, the legal regime of marital property and the legal status of family members. Family law aims to protect the rights of family members and regulate family relations within a legal framework. Family law plays an important role in ensuring the fairness of relationships between family members. This area aims to protect the rights of family members and ensure the resolution of disputes within the family within the framework of the law. In addition to national legislation, family law is regulated by a number of international treaties and conventions.",
         "services": [
-          "Nikah müqavilələrin hazırlanması;",
-          "Nikaha daxil olma, boşanma;",
-          "Əmlak bölgüsü;",
-          "Aliment;",
-          "Övladlığa götürmə;",
-          "Uşaqla münasibət;",
-          "Ailə münasibətləri ilə əlaqədar hüquqi konsultasiya."
+          "Preparation of marriage contracts;",
+          "Marriage, divorce;",
+          "Property division;",
+          "Alimony;",
+          "Adoption;",
+          "Relationship with the child;",
+          "Legal consultation related to family relations."
         ]
       },
       {
         "id": 8,
         "title": "The right to migrate",
-        "desc": "Miqrasiya hüququ, şəxslərin bir ölkədən başqa bir ölkəyə köçmələri və həmin ölkədə yaşamaları ilə bağlı hüquqları və prosedurları tənzimləyən hüquq sahəsidir. Miqrasiya hüququ, mühacirlərin hüquqlarını qorumaq, ölkələrarası miqrasiya proseslərini tənzimləmək və miqrasiya ilə bağlı yaranan problemlərin həllini təmin etmək məqsədi daşıyır. Miqrasiya hüququ, insanların sərbəst hərəkət etmək hüquqlarını qorumaq və bu prosesin qanuni və ədalətli qaydalar çərçivəsində həyata keçirilməsini təmin etmək üçün mühüm rol oynayır. Bu hüquq sahəsi, miqrantların hüquqlarını müdafiə etməklə yanaşı, ölkələrin miqrasiya siyasətlərini də tənzimləyir və miqrasiya ilə bağlı yaranan sosial, iqtisadi və mədəni problemlərin həllinə töhfə verir.",
+        "desc": "Migration law is the area of law that regulates the rights and procedures of individuals moving from one country to another and living in that country. The purpose of migration law is to protect the rights of immigrants, to regulate inter-country migration processes, and to provide solutions to migration-related problems. Migration law plays an important role in protecting people's right to free movement and ensuring that this process is carried out within a legal and fair framework. This field of law, in addition to protecting the rights of migrants, also regulates the migration policies of countries and contributes to solving social, economic and cultural problems related to migration",
         "services": [
-          "Olduğu yer üzrə qeydiyyata alınma və müvəqqəti və daimi yaşamaq üçün icazələrin alınması;",
-          "Əcnəbi şəxslərin işçi kimi cəlb edilməsi və istifadəsi üçün icazə sənədlərin alınması;",
-          "Şirkətin miqrasiya hüququ sahəsində fəaliyyətinə hüquqi dəstək;",
-          "Azərbaycan ərazisində xarici vətəndaşların qeydiyyatı prosedurunun həyata keçirilməsi;",
-          "Əcnəbilərin işə götürülmə prosesində qanunla nəzərdə tutulmuş bütün lazımi sənədlərin çatdırılmasını təmin etmək;",
-          "Miqrasiya orqanlarına təkrar müraciətlərin (müvəqqəti yaşamaq icazəsinin, visa müddətlərinin uzadılması və s.) edilməsi."
+          "Registration at the place of residence and obtaining permits for temporary and permanent residence;",
+          "Obtaining permission documents for attracting and using foreigners as employees;",
+          "Legal support for the company's activities in the field of migration law;",
+          "Implementation of the procedure of registration of foreign citizens in the territory of Azerbaijan;",
+          "To ensure delivery of all necessary documents stipulated by law in the process of hiring foreigners;",
+          "Making repeated applications to migration authorities (temporary residence permit, extension of visa periods, etc.)."
         ]
       }
     ],

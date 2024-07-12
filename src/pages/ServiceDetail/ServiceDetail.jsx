@@ -1,13 +1,17 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+import { useParams } from "react-router-dom";
 import "./service-detail.scss";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import { useParams } from "react-router-dom";
+
 import { MdKeyboardArrowRight } from "react-icons/md";
-//import Datas
-import { servicesData } from "./data";
+
 
 function ServiceDetail() {
+  const { t,ready} = useTranslation();
+  if (!ready) return "loading translations...";
+  const servicesData = t("servicesData", { returnObjects: true });
   const { id } = useParams();
   const service = servicesData.find((item) => item.id == id);
   return (
