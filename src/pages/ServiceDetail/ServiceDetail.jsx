@@ -9,7 +9,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 
 
 function ServiceDetail() {
-  const { t,ready} = useTranslation();
+  const { t, ready, i18n: { changeLanguage, language } } = useTranslation();
   if (!ready) return "loading translations...";
   const servicesData = t("servicesData", { returnObjects: true });
   const { id } = useParams();
@@ -29,9 +29,7 @@ function ServiceDetail() {
               <div className="service-detail-content">
                 <p>{service.desc}</p>
 
-                <h3>
-                {t('servicesDesc')}
-                </h3>
+                <h3>{service.servicesDesc}</h3>
 
                 <ul>
                   {service.services.map((item) => (

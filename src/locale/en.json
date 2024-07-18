@@ -70,7 +70,8 @@
           "Preparation of contracts in various directions;",
           "Preparation of the charter, internal rules, regulations, strategy documents of legal entities;",
           "Corporate dispute resolution."
-        ]
+        ],
+         "servicesDesc":"Legit S.A. offers the following services in corporate law:"
       },
       {
         "id": 2,
@@ -83,7 +84,8 @@
           "Check and control compliance of existing labor relations with labor legislation;",
           "Verification of the legality of internal documents drawn up in relation to labor relations;",
           "Providing legal support in pre-trial and court proceedings to protect the interests of employees and employers."
-        ]
+        ],
+        "servicesDesc":"Legit S.A. offers the following services on labor law:"
       },
       {
         "id": 3,
@@ -97,7 +99,8 @@
           "Drafting of mortgage contracts, their legal analysis;",
           "Making additions and changes to contracts, terminating them;",
           "Providing legal support in pre-trial (arbitration) and court proceedings to resolve disputes arising under contracts."
-        ]
+        ],
+        "servicesDesc":"Legit S.A. offers the following services under contract law:"
       },
       {
         "id": 4,
@@ -108,7 +111,8 @@
           "Preparation and cancellation of life, real estate, transportation, travel, medical insurance contracts and its legal expertise;",
           "Analysis of disputes arising from insurance contracts and their legal resolution;",
           "Consulting on life, property, civil liability and other insurance disputes."
-        ]
+        ],
+        "servicesDesc":"Legit S.A. offers the following services in insurance law:"
       },
       {
         "id": 5,
@@ -117,7 +121,8 @@
         "services": [
           "Preparation of legal opinions, references, any type of legal documents to be addressed to administrative bodies for individuals;",
           "Filing complaints against the decisions of administrative bodies."
-        ]
+        ],
+        "servicesDesc":"Legit S.A. offers the following services in administrative law:"
       },
       {
         "id": 6,
@@ -128,6 +133,7 @@
           "Preparation and submission of objections to the decisions of the relevant authorities on the refusal to grant patents to inventions, utility models and industrial samples and to register trademarks and geographical indications;",
           "Provision of other services related to intellectual property."
         ],
+        "servicesDesc":"Legit S.A. offers the following services on intellectual property rights:",
         "note": "* Patent and trademark registration is carried out by our partner patent attorneys. "
       },
       {
@@ -142,7 +148,8 @@
           "Adoption;",
           "Relationship with the child;",
           "Legal consultation related to family relations."
-        ]
+        ],
+        "servicesDesc":"Legit S.A. offers the following family law services:"
       },
       {
         "id": 8,
@@ -155,10 +162,11 @@
           "Implementation of the procedure of registration of foreign citizens in the territory of Azerbaijan;",
           "To ensure delivery of all necessary documents stipulated by law in the process of hiring foreigners;",
           "Making repeated applications to migration authorities (temporary residence permit, extension of visa periods, etc.)."
-        ]
+        ],
+        "servicesDesc":"Legit S.A. offers the following services on migration law:"
       }
     ],
-    "servicesDesc":"Legit S.A. offers the following services in corporate law:",
+    "servicesDesc":"offers the following services in",
     "about-text":"About",
     "education":"Higher legal education",
     "master":"Master",

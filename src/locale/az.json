@@ -70,11 +70,12 @@
             "Müxtəlif istiqamətlər üzrə müqavilələrin hazırlanması;",
             "Hüquqi şəxslərin nizamnaməsinin, daxili qaydalarının, əsasnamələrinin, starteji sənədlərinin hazırlanması;",
             "Korporativ mübahisələrin həlli."
-          ]
+          ],
+          "servicesDesc":"Legit S.A korporativ hüquq üzrə aşağıdakı xidmətləri təklif edir:"
         },
         {
           "id": 2,
-          "title": "Əmək münasibətləri",
+          "title": "Əmək hüququ",
           "desc": "Əmək hüququ, işçi və işəgötürən arasında olan hüquq və vəzifələri tənzimləyən hüquq sahəsidir. Bu sahə işçilərin işə qəbul olunması, iş şərtləri, əmək haqqı, iş vaxtı, məzuniyyət, iş təhlükəsizliyi və sağlamlığı, işə xitam verilməsi və kollektiv müqavilələr kimi mövzuları da əhatə edir. Əmək hüququ işçilərin hüquqlarını qorumaq, işəgötürənlə işçi arasındaki münasibətlərdə balans yaratmaq və əmək münasibətlərini ədalətli və şəffaf qaydalarla tənzimləmək məqsədi daşıyır. Əmək hüququ işçilər və işəgötürənlər arasında ədalətli iş şəraitini təmin etmək məqsədilə milli qanunvericiliklə yanaşı, beynəlxalq müqavilələr və təşkilatlar tərəfindən də tənzimlənir. Bu hüquq sahəsi, işçilərin sosial və iqtisadi hüquqlarının müdafiə edilməsinə, əmək münasibətlərinin daha şəffaf və ədalətli qaydada tənzimlənməsinə xidmət edir.",
           "services": [
             "İşçilərin işə qəbul və işdən azad edilməsi ilə bağlı hüquqi rəyin verilməsi;",
@@ -83,7 +84,8 @@
             "Mövcud əmək münasibətlərinin əmək qanunvericiliyinə uyğunluğunu yoxlamaq və ona nəzarət etmək;",
             "Əmək münasibətləri ilə əlaqədar tərtib olunmuş müəssisədaxili sənədlərin qanunauyğunluğunun yoxlanılması;",
             "İşçilərin və işəgötürənlərin mənafelərinin qorunması üçün məhkəməyədək və məhkəmə proseslərində hüquqi dəstək göstərilməsi."
-          ]
+          ],
+          "servicesDesc":"Legit S.A əmək hüququ üzrə aşağıdakı xidmətləri təklif edir:"
         },
         {
           "id": 3,
@@ -97,7 +99,8 @@
             "İpoteka müqavilələrinin tərtibi, onların hüquqi təhlili;",
             "Müqavilərə əlavə və dəyişikliklərin edilməsi, xitamını həyata keçirmək;",
             "Müqavilələr üzrə yaranmış mübahisələrin həlli üçün məhkəməyədək (arbitraj) və məhkəmə proseslərində hüquqi dəstək göstərilməsi."
-          ]
+          ],
+          "servicesDesc":"Legit S.A müqavilə hüququ üzrə aşağıdakı xidmətləri təklif edir:"
         },
         {
           "id": 4,
@@ -108,7 +111,8 @@
             "Həyat, daşınmaz əmlak, nəqliyyat, səyahət, tibbi sığorta müqavilələrinin hazırlanması, ləğvi və onun hüquqi ekspertizası;",
             "Sığorta müqavilələrindən yaranan mübahisələrin təhlili və onların hüquqi həlli;",
             "Həyat, əmlak, mülki məsuliyyət və digər sığorta mübahisələrinə dair konsultasiya."
-          ]
+          ],
+          "servicesDesc":"Legit S.A sığorta hüququ üzrə aşağıdakı xidmətləri təklif edir:"
         },
         {
           "id": 5,
@@ -117,7 +121,8 @@
           "services": [
             "Şəxslər üçün hüquqi rəylərin, arayışların, inzibati orqanlara ünvanlanacaq istənilən növ hüquqi sənədlərin hazırlanması;",
             "İnzibati orqanların qərarlarından şikayətlərin verilməsi."
-          ]
+          ],
+          "servicesDesc":"Legit S.A inzibati hüquq üzrə aşağıdakı xidmətləri təklif edir:"
         },
         {
           "id": 6,
@@ -128,6 +133,7 @@
             "Müvafiq orqanların ixtira, faydalı model və sənayə nümunələrinə patent verilməsindən və əmtəə nişanı və coğrafi göstəricilərin qeydə alınmasından imtina barədə qərarlarından etirazların hazırlanıb təqdim olunması;",
             "Əqli mülkiyyətlə bağlı digər xidmətlərin göstərilməsi."
           ],
+          "servicesDesc":"Legit S.A əqli mülkiyyət hüququ üzrə aşağıdakı xidmətləri təklif edir:",
           "note": "* Patent və əmtəə nişanlarının qeydiyyatı tərəfimizdən əməkdaşlıq etdiyimiz  patent müvəkkilləri vasitəsilə həyata keçirilir. "
         },
         {
@@ -142,7 +148,8 @@
             "Övladlığa götürmə;",
             "Uşaqla münasibət;",
             "Ailə münasibətləri ilə əlaqədar hüquqi konsultasiya."
-          ]
+          ],
+          "servicesDesc":"Legit S.A ailə hüququ üzrə aşağıdakı xidmətləri təklif edir:"
         },
         {
           "id": 8,
@@ -155,10 +162,11 @@
             "Azərbaycan ərazisində xarici vətəndaşların qeydiyyatı prosedurunun həyata keçirilməsi;",
             "Əcnəbilərin işə götürülmə prosesində qanunla nəzərdə tutulmuş bütün lazımi sənədlərin çatdırılmasını təmin etmək;",
             "Miqrasiya orqanlarına təkrar müraciətlərin (müvəqqəti yaşamaq icazəsinin, visa müddətlərinin uzadılması və s.) edilməsi."
-          ]
+          ],
+           "servicesDesc":"Legit S.A miqrasiya hüququ üzrə aşağıdakı xidmətləri təklif edir:"
         }
       ],
-      "servicesDesc":"Legit S.A korporativ hüquq üzrə aşağıdakı xidmətləri təklif edir:",
+      
       "about-text":"Haqqında",
       "education":"Ali hüquq təhsili",
       "master":"Magistr",
