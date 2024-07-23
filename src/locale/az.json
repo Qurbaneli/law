@@ -177,6 +177,7 @@
       "email":"Email ünvan *",
       "phone":"Mobil telefon *",
       "subject":"Mövzu *",
-      "text":"Mətn *"
+      "text":"Mətn *",
+      "navigate":"Naviqasiya"
     }
   }

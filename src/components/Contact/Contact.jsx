@@ -7,6 +7,7 @@ function Contact() {
   return (
     <section id="contact">
       <div className="container">
+      <h2 className="section-title">{t("contact")}</h2>
         <div className="contact-form">
           <form action="">
             <div className="form-row">

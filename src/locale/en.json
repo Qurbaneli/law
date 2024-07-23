@@ -15,7 +15,7 @@
     "send":"Send",
     "read-more":"Read more",
     "read-less":"Read less",
-    "slogan":"",
+    "slogan":"Peşəkarlıq, dürüstlük və müştəri məmnuniyyəti prinsiplərimizi rəhbər tutaraq, hüquqi ehtiyaclarınızda ən etibarlı tərəfdaşınız olmağa hazırıq.",
     "aboutText":"“Legit S.A” is a professional legal organization established in accordance with the legislation of the Republic of Azerbaijan. Legal services provided by this new organization meeting modern standards are performed by lawyers who have worked in the field of law for a long time and achieved great success. Providing quality and prompt legal assistance in many legal fields is our main mission. Our team provides impeccable advice backed by first-rate local market knowledge.",
     "teamData": [
       {
@@ -177,6 +177,7 @@
     "email":"Email address*",
     "phone":"Mobile phone *",
     "subject":"Subject *",
-    "text":"Text *"
+    "text":"Text *",
+    "navigate":"Navigate"
   }
   }

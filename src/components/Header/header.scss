@@ -7,6 +7,7 @@ header {
 
   transition: 0.3s;
   z-index: 99;
+
   &.sticky {
     backdrop-filter: blur(10px);
     background: #00000038;
@@ -29,6 +30,7 @@ header {
   .desktop-nav {
     &.active {
       display: block;
+
       ul {
         flex-direction: column;
         justify-content: flex-start;
@@ -39,11 +41,13 @@ header {
     ul {
       display: flex;
       gap: 40px;
+
       li {
         margin-top: 12px;
         border-bottom: 2px solid transparent;
         padding-bottom: 12px;
         transition: 0.3s;
+
         a {
           color: #e4e4e4;
           font-family: "Roboto";
@@ -54,6 +58,7 @@ header {
           text-align: center;
 
         }
+
         &:hover {
           border-bottom: 2px solid #e7c175;
         }
@@ -61,31 +66,44 @@ header {
     }
   }
 
-  .lang-box {
-    select {
-      width: 65px;
-      height: 38px;
-      border: 1px solid #fff;
-      font-family: "Roboto";
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 21.8px;
-      letter-spacing: 0.02em;
-      padding-left: 12px;
-      color: #fff;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      background: transparent;
-      background-image: url("../../assets/icons/common/arrow-down.svg");
-      background-repeat: no-repeat;
-      background-position-x: 42px;
-      background-position-y: 13px;
-      outline: none;
+  .lang-select {
+    cursor: pointer;
+    width: 65px;
+    height: 38px;
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.8px;
+    letter-spacing: 0.02em;
 
-      option {
-        color: #000;
-        font-size: 18px;
-        font-weight: 700;
+    &:hover {
+      .lang-box {
+        display: block;
+      }
+    }
+
+    .selected-lang {
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .lang-box {
+      display: none;
+      text-align: center;
+      background: #fff;
+      color: #333;
+
+      li {
+        padding: 2px 5px;
+        transition: 0.3s;
+
+        &:hover {
+          background: #eee;
+        }
       }
     }
   }
@@ -96,7 +114,7 @@ header {
 
   .mobile-menu {
     display: none;
-    
+
     position: absolute;
     transition: 0.5s;
     top: 0px;
@@ -116,29 +134,31 @@ header {
       margin-right: 38px;
       margin-left: 38px;
       margin-top: 20px;
-  
 
-      .close{
+
+      .close {
         position: absolute;
-        top:0px;
+        top: 0px;
         right: 0px;
         cursor: pointer;
-        transition:0.3s;
+        transition: 0.3s;
       }
     }
 
     &.active {
-      left:0px;
+      left: 0px;
     }
 
     .mobile-menu-nav {
       margin-top: 52px;
       margin-bottom: 92px;
+
       ul {
         display: flex;
         gap: 44px;
         flex-direction: column;
         align-items: center;
+
         li {
           a {
             text-transform: uppercase;
@@ -153,18 +173,18 @@ header {
       }
     }
 
-    .mobile-menu-social{
+    .mobile-menu-social {
       margin-bottom: 38px;
       justify-content: center;
       display: flex;
-      gap:32px;
+      gap: 32px;
     }
   }
 
 
   @media screen and (max-width: 1300px) {
 
-    .mobile-menu{
+    .mobile-menu {
       display: block;
     }
 

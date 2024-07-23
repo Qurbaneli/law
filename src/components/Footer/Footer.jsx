@@ -1,10 +1,13 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import "./footer.scss";
-import { LuChevronsUp } from "react-icons/lu";
+
 //Import logos
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
+import { LuChevronsUp } from "react-icons/lu";
 
 //import images
 import footerLogo from "../../assets/images/footer-logo.svg";
@@ -15,17 +18,20 @@ import facebookMob from "../../assets/icons/social/facebook-m.svg";
 import twitterMob from "../../assets/icons/social/twitter-m.svg";
 import linkedinMob from "../../assets/icons/social/linkedin-m.svg";
 
-function Footer() {
 
-  const scrollTop=()=>{
-      window.scrollTo({top:0,behavior:"smooth"})
+
+function Footer() {
+  const { t, i18n: { changeLanguage, language } } = useTranslation();
+
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" })
   }
 
   return (
     <footer>
-      <div onClick={scrollTop}className="scroll-top">
+      <div onClick={scrollTop} className="scroll-top">
         <span> <LuChevronsUp /></span>
-       
+
       </div>
       <div className="container">
         <div className="footer-main">
@@ -59,58 +65,41 @@ function Footer() {
           </div>
           <div className="footer-right">
             <div className="footer-menu">
-              <h3>Navigate</h3>
+              <h3>{t('navigate')}</h3>
               <ul>
                 <li>
-                  <a href="#">Home</a>
+                  <Link to="/">{t("home")}</Link>
                 </li>
                 <li>
-                  <a href="#">About</a>
+                  <a href="/#about">{t("about")}</a>
                 </li>
                 <li>
-                  <a href="#">Porduct</a>
+                  <Link to="/services">{t("services")}</Link>
                 </li>
                 <li>
-                  <a href="#">Feature</a>
-                </li>
-                <li>
-                  <a href="#">Pricing</a>
+                  <a href="/#partners">{t("partners")}</a>
                 </li>
               </ul>
             </div>
 
             <div className="footer-menu">
-              <h3>Support Us</h3>
-              <ul>
-                <li>
-                  <a href="#"> FAQ`s</a>
-                </li>
-                <li>
-                  <a href="#">Contact Us</a>
-                </li>
-                <li>
-                  <a href="#">Support Center</a>
-                </li>
-                <li>
-                  <a href="#">Security</a>
-                </li>
-              </ul>
-            </div>
 
-            <div className="footer-menu">
-              <h3>Resources</h3>
+            <h3>&nbsp;</h3>
               <ul>
                 <li>
-                  <a href="#"> Community</a>
+                  <a href="#">{t("news")}</a>
                 </li>
+
                 <li>
-                  <a href="#">Contact</a>
+                  <a href="#">{t("blog")}</a>
                 </li>
+
                 <li>
-                  <a href="#">Tems of</a>
+                  <a href="/#contact">{t("contact")}</a>
                 </li>
+
                 <li>
-                  <a href="#">Service</a>
+                  <a href="#">{t("sign")}</a>
                 </li>
               </ul>
             </div>
@@ -119,7 +108,7 @@ function Footer() {
               <h3>Contact US</h3>
               <ul className="footer-contact">
                 <li>
-                  <a href="mailto:qoterra@business.com" target="_blank">
+                  <a href="https://www.google.com/maps/place/Luxen+Plaza/@40.389882,49.8597685,19.5z/data=!3m1!5s0x40307d147970a4fd:0x876bb81e4ba89ad!4m14!1m7!3m6!1s0x40307d147ebe9949:0xbd1a03c2dc213e11!2sLuxen+Plaza!8m2!3d40.3898867!4d49.8605446!16s%2Fg%2F11c1szdsw5!3m5!1s0x40307d147ebe9949:0xbd1a03c2dc213e11!8m2!3d40.3898867!4d49.8605446!16s%2Fg%2F11c1szdsw5?entry=ttu" target="_blank">
                     {" "}
                     <span className="footer-icon">
                       <FaLocationDot />{" "}

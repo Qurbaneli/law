@@ -5,23 +5,21 @@ import "./header.scss";
 import logo from "../../assets/images/logo.svg";
 import mobileLogo from "../../assets/images/mobile-logo.svg";
 import hamburgerMenuIcon from "../../assets/icons/common/hambuger-menu.svg";
-
+import selectArrow from "../../assets/icons/common/arrow-down.svg"
 
 //Social Icons
-
 import close from "../../assets/icons/common/close.svg";
 import facebook from "../../assets/icons/social/facebook.svg";
 import twitter from "../../assets/icons/social/twitter.svg";
 import linkedin from "../../assets/icons/social/linkedin.svg";
 
 function Header() {
-  const { t, i18n: {changeLanguage, language} } = useTranslation();
+  const { t, i18n: { changeLanguage, language } } = useTranslation();
   const [currentLanguage, setCurrentLanguage] = useState(language)
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
 
   const handleChangeLanguage = (lang) => {
-    console.log(lang)
     setCurrentLanguage(lang);
     changeLanguage(lang);
   };
@@ -56,28 +54,28 @@ function Header() {
 
         <nav className="mobile-menu-nav">
           <ul>
-            <li onClick={()=>setMobileMenu(false)}>
+            <li onClick={() => setMobileMenu(false)}>
               <Link to="/">{t("home")}</Link>
             </li>
 
-            <li onClick={()=>setMobileMenu(false)}>
+            <li onClick={() => setMobileMenu(false)}>
               <a href="/#about">{t("about")}</a>
             </li>
 
-            <li onClick={()=>setMobileMenu(false)}>
+            <li onClick={() => setMobileMenu(false)}>
               <Link to="/services">{t("services")}</Link>
             </li>
 
-            <li onClick={()=>setMobileMenu(false)}>
+            <li onClick={() => setMobileMenu(false)}>
               <a href="/#partners">{t("partners")}</a>
             </li>
 
-            <li onClick={()=>setMobileMenu(false)}>
+            <li onClick={() => setMobileMenu(false)}>
               <a href="#">{t("news")}</a>
             </li>
 
-            <li onClick={()=>setMobileMenu(false)}
-              >
+            <li onClick={() => setMobileMenu(false)}
+            >
               <a href="/#contact">{t("contact")}</a>
             </li>
           </ul>
@@ -143,11 +141,17 @@ function Header() {
           </ul>
         </nav>
 
-        <div className="lang-box">
-          <select onChange={(e)=>handleChangeLanguage(e.target.value)} name="" id="">
-            <option value="az">AZ</option>
-            <option value="en">EN</option>
-          </select>
+        <div className="lang-select">
+          <div className="selected-lang">
+            <span>{language.toLocaleUpperCase()} </span>  <span className="lang-icon"> <img src={selectArrow} alt="lang-arrow" /></span>
+          </div>
+  
+          <div className="lang-box">
+              <ul>
+                <li onClick={()=>handleChangeLanguage("az")}>AZ</li>
+                <li onClick={()=>handleChangeLanguage("en")}>EN</li>
+              </ul>
+          </div>
         </div>
 
         <div

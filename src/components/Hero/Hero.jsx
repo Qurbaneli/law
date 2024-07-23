@@ -20,8 +20,7 @@ function Hero() {
       <div className="hero-detail">
         <h1 data-aos="fade-down">{t("hero")}</h1>
         <p data-aos="fade-down">
-          Bring blockchain to the people. Solana supports experiences for power
-          users, new consumers, and everyone in between.
+          {t('slogan')}
         </p>
 
         <div className="btn btn-main">{t("apply")}</div>
