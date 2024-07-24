@@ -77,10 +77,20 @@ function Header() {
               <a href="#">{t("news")}</a>
             </li>
 
+            <li onClick={() => setMobileMenu(false)}>
+              <a href="#">{t("blog")}</a>
+            </li>
+
             <li onClick={() => setMobileMenu(false)}
             >
               <a href="/#contact">{t("contact")}</a>
             </li>
+
+            <li onClick={() => setMobileMenu(false)}>
+              <a href="#">{t("sign")}</a>
+            </li>
+
+
           </ul>
         </nav>
 
