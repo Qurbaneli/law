@@ -12,20 +12,28 @@ import close from "../../assets/icons/common/close.svg";
 import facebook from "../../assets/icons/social/facebook.svg";
 import twitter from "../../assets/icons/social/twitter.svg";
 import linkedin from "../../assets/icons/social/linkedin.svg";
+import { IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown } from "react-icons/io";
 
 function Header() {
   const { t, ready, i18n: { changeLanguage, language } } = useTranslation();
   const [currentLanguage, setCurrentLanguage] = useState(language)
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
+  const [mobileDropdown, setMobileDropdown] = useState(null)
 
   if (!ready) return "loading translations...";
   const servicesData = t("servicesData", { returnObjects: true });
   const consultationData = t("consultationData", { returnObjects: true })
+
   const handleChangeLanguage = (lang) => {
     setCurrentLanguage(lang);
     changeLanguage(lang);
   };
+
+  const handleMobileDropDown = (id) => {
+    setMobileDropdown(id != mobileDropdown ? id : null)
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -76,8 +84,15 @@ function Header() {
               <a href="/#about">{t("about")}</a>
             </li>
 
-            <li onClick={() => setMobileMenu(false)}>
-              <Link to="/services">{t("services")}</Link>
+            <li onClick={() => handleMobileDropDown(1)}>
+              <Link to="/">{t("services")} {mobileDropdown == 1 ?  <IoIosArrowUp/> :  <IoIosArrowDown/>  } </Link>
+              <ul className={`${mobileDropdown == 1 ? "active" : ""} mobile-dropdown`}>
+
+                {servicesData.map((item) =>
+                  <li><Link to={`/service/${item.id}`}
+                    key={item.id}>{item.title}</Link></li>
+                )}
+              </ul>
             </li>
 
             <li onClick={() => setMobileMenu(false)}>
