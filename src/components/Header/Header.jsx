@@ -14,10 +14,13 @@ import twitter from "../../assets/icons/social/twitter.svg";
 import linkedin from "../../assets/icons/social/linkedin.svg";
 
 function Header() {
-  const { t, i18n: { changeLanguage, language } } = useTranslation();
+  const { t, ready, i18n: { changeLanguage, language } } = useTranslation();
   const [currentLanguage, setCurrentLanguage] = useState(language)
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
+
+  if (!ready) return "loading translations...";
+  const servicesData = t("servicesData", { returnObjects: true });
 
   const handleChangeLanguage = (lang) => {
     setCurrentLanguage(lang);
@@ -115,6 +118,13 @@ function Header() {
 
             <li>
               <Link to="/services">{t("services")}</Link>
+              <ul className="dropdown">
+
+                {servicesData.map((item) =>
+                  <li><Link to={`/service/${item.id}`}
+                    key={item.id}>{item.title}</Link></li>
+                )}
+              </ul>
             </li>
 
             <li>
@@ -145,12 +155,12 @@ function Header() {
           <div className="selected-lang">
             <span>{language.toLocaleUpperCase()} </span>  <span className="lang-icon"> <img src={selectArrow} alt="lang-arrow" /></span>
           </div>
-  
+
           <div className="lang-box">
-              <ul>
-                <li onClick={()=>handleChangeLanguage("az")}>AZ</li>
-                <li onClick={()=>handleChangeLanguage("en")}>EN</li>
-              </ul>
+            <ul>
+              <li onClick={() => handleChangeLanguage("az")}>AZ</li>
+              <li onClick={() => handleChangeLanguage("en")}>EN</li>
+            </ul>
           </div>
         </div>
 

@@ -47,6 +47,49 @@ header {
         border-bottom: 2px solid transparent;
         padding-bottom: 12px;
         transition: 0.3s;
+        position: relative;
+
+        &:hover .dropdown {
+          display: flex;
+        }
+
+
+        .dropdown {
+
+          position: absolute;
+          top: 30px;
+          min-width: 260px;
+          margin: 0 auto;
+          background-color: #fff;
+          display: none;
+          flex-direction: column;
+          gap: 5px;
+          overflow: hidden;
+          padding: 7px;
+
+          li {
+            cursor: pointer;
+            transition: 0.3s;
+            margin: 0px;
+            padding: 4px;
+            border: none;
+
+            &:hover {
+              background: #eee;
+            }
+
+            a {
+              color: #333;
+              font-family: "Roboto";
+              text-transform: none;
+              font-size: 18px;
+              font-weight: 400;
+              line-height: 34px;
+            }
+
+          }
+
+        }
 
         a {
           color: #e4e4e4;

@@ -98,7 +98,7 @@ function TeamDetail() {
                   </div>
 
                   <ul className="team-social">
-                    <li>
+                    {/* <li>
                       <a href="#">
                         <img src={facebook} alt="facebook" />
                       </a>
@@ -117,7 +117,7 @@ function TeamDetail() {
                       <a href="#">
                         <img src={instagram} alt="instagram" />
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>

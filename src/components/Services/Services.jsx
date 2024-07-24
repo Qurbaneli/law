@@ -72,7 +72,7 @@ function Services() {
   const servicesData = t("servicesData", { returnObjects: true });
 
 
-  const maxServices= !moreServices ? 4 : servicesData.length;
+  const maxServices= !moreServices ? 4 : servicesData.length-1;
   return (
     <section id="services">
       <div className="container">
