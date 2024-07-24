@@ -165,6 +165,83 @@
           "Making repeated applications to migration authorities (temporary residence permit, extension of visa periods, etc.)."
         ],
         "servicesDesc":"Legit S.A. offers the following services on migration law:"
+      },
+      {
+        "id":9,
+        "title":"Right support for obtaining licenses and permits",
+        "desc":"As a team of Legit S.A., to business entities,We offer our high-quality legal support based on experience in the field of obtaining licenses and permits for relevant fields of activity in the territory of the Republic of Azerbaijan, as well as \"licenses for payment service providers (payment organizations, electronic money organizations).",
+        "services": [
+          "Court applications",
+          "Appeals",
+          "Applications to state bodies and private organizations",
+          "Letters of inquiry"
+        ]
+      }
+    ],
+    "consultationData":[
+      {
+        "id":1,
+        "title":"Family law"
+      },
+      {
+        "id":2,
+        "title":"Banking law"
+      },
+      {
+        "id":3,
+        "title":"Criminal law"
+      },
+      {
+        "id":4,
+        "title":"Legal consultation"
+      },
+      {
+        "id":5,
+        "title":"Enforcement law"
+      },
+      {
+        "id":6,
+        "title":"Administrative law"
+      },
+      {
+        "id":7,
+        "title":"Right of consumer protection"
+      },
+      {
+        "id":8,
+        "title":"Kommersial law"
+      },
+      {
+        "id":9,
+        "title":"Corporate law"
+      },
+      {
+        "id":10,
+        "title":"Migration law"
+      },
+      {
+        "id":11,
+        "title":"Contract law"
+      },
+      {
+        "id":12,
+        "title":"Construction law"
+      },
+      {
+        "id":13,
+        "title":"Tax law"
+      },
+      {
+        "id":14,
+        "title":"Inheritance law"
+      },
+      {
+        "id":15,
+        "title":"Property (object) law"
+      },
+      {
+        "id":16,
+        "title":"Intellectual propert law"
       }
     ],
     "servicesDesc":"offers the following services in",

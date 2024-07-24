@@ -21,7 +21,7 @@ function Header() {
 
   if (!ready) return "loading translations...";
   const servicesData = t("servicesData", { returnObjects: true });
-
+  const consultationData = t("consultationData", { returnObjects: true })
   const handleChangeLanguage = (lang) => {
     setCurrentLanguage(lang);
     changeLanguage(lang);
@@ -140,13 +140,19 @@ function Header() {
             </li>
 
 
-
             <li>
               <a href="/#contact">{t("contact")}</a>
             </li>
 
             <li>
               <a href="#">{t("sign")}</a>
+              <ul className="dropdown">
+
+                {consultationData.map((item) =>
+                  <li><Link to={`/`}
+                    key={item.id}>{item.title}</Link></li>
+                )}
+              </ul>
             </li>
           </ul>
         </nav>

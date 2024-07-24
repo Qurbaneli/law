@@ -1,20 +1,36 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./all-services.scss";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 
+
 function AllServices() {
+  const { t, ready } = useTranslation();
+
+  if (!ready) return "loading translations...";
+
+  const servicesData = t("servicesData", { returnObjects: true });
+
   return (
     <>
       <Header />
       <div className="page-header">
-        <h2 className="page-title">Hüquq sahələri</h2>
+        <h2 className="page-title">{t('services')}</h2>
       </div>
 
       <section id="all-services">
         <div className="container">
           <div className="all-services-content">
-            <div className="all-services-item">
+            {
+              servicesData.map((item) => (
+                <div key={item.id} className="all-services-item">
+                  <h2>{item.title}</h2>
+                  <p>{item.desc}</p>
+                </div>))
+            }
+
+            {/* <div className="all-services-item">
               <h2>Korporativ Hüquq</h2>
               <p>
                 Korporativ hüquq, kommersiya hüququ institutu olaraq, özündə
@@ -151,7 +167,7 @@ function AllServices() {
                 sahədə qeydiyyat məsələləri hüquqi dəstək tərəfimizdən
                 professional şəkildə həyata keçirilir.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

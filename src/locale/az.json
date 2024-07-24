@@ -175,11 +175,75 @@
             "Apellyasiya şikayətləri",
             "Dövlət orqanlarına və özəl təşkilatlara müraciət ərizələri",
             "Sorğu məktubları"
-
           ]
         }
       ],
-      
+      "consultationData":[
+        {
+          "id":1,
+          "title":"Ailə hüququ"
+        },
+        {
+          "id":2,
+          "title":"Bank hüququ"
+        },
+        {
+          "id":3,
+          "title":"Cinayət hüququ"
+        },
+        {
+          "id":4,
+          "title":"Hüquq konsultasiyası"
+        },
+        {
+          "id":5,
+          "title":"İcra hüququ"
+        },
+        {
+          "id":6,
+          "title":"İnzibati hüquq"
+        },
+        {
+          "id":7,
+          "title":"İstehlakçıların müdafiəsi hüququ"
+        },
+        {
+          "id":8,
+          "title":"Kommersiya hüququ"
+        },
+        {
+          "id":9,
+          "title":"Korporativ hüquq"
+        },
+        {
+          "id":10,
+          "title":"Miqrasiya hüququ"
+        },
+        {
+          "id":11,
+          "title":"Müqavilə hüququ"
+        },
+        {
+          "id":12,
+          "title":"Tikinti hüququ"
+        },
+        {
+          "id":13,
+          "title":"Vergi hüququ"
+        },
+        {
+          "id":14,
+          "title":"Vərəsəlik hüququ"
+        },
+        {
+          "id":15,
+          "title":"Əmlak (əşya) hüququ"
+        },
+        {
+          "id":16,
+          "title":"Əqli mülkiyyət hüququ"
+        }
+      ],
       "about-text":"Haqqında",
       "education":"Ali hüquq təhsili",
       "master":"Magistr",
