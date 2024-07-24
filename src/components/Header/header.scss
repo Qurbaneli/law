@@ -156,8 +156,9 @@ header {
   }
 
   .mobile-menu {
+    overflow-y: scroll;
     display: none;
-
+    
     position: absolute;
     transition: 0.5s;
     top: 0px;
