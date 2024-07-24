@@ -42,10 +42,7 @@ function Footer() {
 
             <div className="footer-desc">
               <p>
-                “Bu, “Legit Solve Adviors” MMC-nin rəsmi saytıdır.
-                Veb-saytımızda siz xidmətlərimiz və komandamızla tanış ola,
-                qanunvericiliklə bağlı ən son xəbər və məlumatlardan xəbərdar ola
-                bilərsiniz”
+                {t('footer-text')}
               </p>
             </div>
 

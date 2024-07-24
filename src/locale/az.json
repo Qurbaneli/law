@@ -254,6 +254,7 @@
       "phone":"Mobil telefon *",
       "subject":"Mövzu *",
       "text":"Mətn *",
-      "navigate":"Naviqasiya"
-    }
+      "navigate":"Naviqasiya",
+      "footer-text":"“Bu, “Legit Solve Adviors” MMC-nin rəsmi saytıdır.Veb-saytımızda siz xidmətlərimiz və komandamızla tanış ola,qanunvericiliklə bağlı ən son xəbər və məlumatlardan xəbərdar olabilərsiniz”"
+  }
   }
