@@ -43,6 +43,17 @@ function Header() {
     };
   }, []);
 
+
+  //fix mobile menu scroll
+  useEffect(() => {
+    if (mobileMenu) {
+      document.body.style.overflow = 'hidden';
+    }
+    else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [mobileMenu])
+
   return (
     <header className={scrolled ? "sticky" : ""}>
 
