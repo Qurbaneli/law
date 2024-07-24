@@ -44,7 +44,7 @@ function Footer() {
               <p>
                 “Bu, “Legit Solve Adviors” MMC-nin rəsmi saytıdır.
                 Veb-saytımızda siz xidmətlərimiz və komandamızla tanış ola,
-                qaunvericiliklə bağlı ən son xəbər və məlumatlardan xəbərdar ola
+                qanunvericiliklə bağlı ən son xəbər və məlumatlardan xəbərdar ola
                 bilərsiniz”
               </p>
             </div>
