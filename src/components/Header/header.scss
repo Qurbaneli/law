@@ -63,28 +63,32 @@ header {
           background-color: #fff;
           display: none;
           flex-direction: column;
-          gap: 5px;
           overflow: hidden;
-          padding: 7px;
+          gap: 0px;
+          padding:5px;
 
           li {
             cursor: pointer;
             transition: 0.3s;
             margin: 0px;
-            padding: 4px;
+            padding: 2px;
             border: none;
 
             &:hover {
-              background: #eee;
+              background: #e7c175;
+            }
+
+            &:hover a{
+              color:#333;
             }
 
             a {
-              color: #333;
+              color: #252b42;
               font-family: "Roboto";
               text-transform: none;
-              font-size: 18px;
+              font-size: 15px;
               font-weight: 400;
-              line-height: 34px;
+              transition: 0.3s;
             }
 
           }
@@ -211,7 +215,7 @@ header {
             // display: flex;
             // align-items: center;
             // gap: 5px;
-            
+
             text-transform: uppercase;
             color: #e4e4e4;
             font-family: "Roboto";
