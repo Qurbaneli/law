@@ -74,22 +74,31 @@ header {
             padding: 2px;
             border: none;
 
+            color: #252b42;
+            text-align: left;
+            font-family: "Roboto";
+            text-transform: none;
+            font-size: 15px;
+            font-weight: 400;
+            transition: 0.3s;
+
             &:hover {
               background: #e7c175;
-            }
-
-            &:hover a{
               color:#333;
             }
 
-            a {
-              color: #252b42;
-              font-family: "Roboto";
-              text-transform: none;
-              font-size: 15px;
-              font-weight: 400;
-              transition: 0.3s;
-            }
+            // &:hover a{
+            //   color:#333;
+            // }
+
+            // a {
+            //   color: #252b42;
+            //   font-family: "Roboto";
+            //   text-transform: none;
+            //   font-size: 15px;
+            //   font-weight: 400;
+            //   transition: 0.3s;
+            // }
 
           }
 

@@ -157,8 +157,8 @@ function Header() {
               <ul className="dropdown">
 
                 {servicesData.map((item) =>
-                  <li><Link to={`/service/${item.id}`}
-                    key={item.id}>{item.title}</Link></li>
+                  <Link to={`/service/${item.id}`}
+                  key={item.id}><li>{item.title}</li></Link>
                 )}
               </ul>
             </li>
@@ -185,8 +185,8 @@ function Header() {
               <ul className="dropdown">
 
                 {consultationData.map((item) =>
-                  <li><Link to={`/`}
-                    key={item.id}>{item.title}</Link></li>
+                 <Link to={`/`}
+                 key={item.id}> <li>{item.title}</li></Link>
                 )}
               </ul>
             </li>

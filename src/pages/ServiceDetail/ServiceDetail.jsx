@@ -32,7 +32,7 @@ function ServiceDetail() {
                 <h3>{service.servicesDesc}</h3>
 
                 <ul>
-                  {service.services.map((item) => (
+                  {service?.services?.map((item) => (
                     <li>
                       <MdKeyboardArrowRight />
                       {item}

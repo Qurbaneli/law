@@ -169,7 +169,11 @@
       {
         "id":9,
         "title":"Right support for obtaining licenses and permits",
-        "desc":"As a team of Legit S.A., to business entities,We offer our high-quality legal support based on experience in the field of obtaining licenses and permits for relevant fields of activity in the territory of the Republic of Azerbaijan, as well as \"licenses for payment service providers (payment organizations, electronic money organizations).",
+        "desc":"As a team of Legit S.A., to business entities,We offer our high-quality legal support based on experience in the field of obtaining licenses and permits for relevant fields of activity in the territory of the Republic of Azerbaijan, as well as \"licenses for payment service providers (payment organizations, electronic money organizations)."
+      },
+      {
+        "id":10,
+        "title":"Electronic legal services",
         "services": [
           "Court applications",
           "Appeals",

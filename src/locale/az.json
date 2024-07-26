@@ -169,7 +169,11 @@
         {
           "id":9,
           "title":"Lisenziya və icazələrin alınmasına hüququ dəstək",
-          "desc":"Legit S.A komandası olaraq sahibkarlıq subyektlərinə,Azərbaycan Respublikası ərazində müvafiq fəaliyyət sahələri üzrə lisenziya və icazələrin, həmçinin “Ödəniş xidməti təchizatçıları (ödəniş təşkilatları, elektron pul təşkilatları) üçün lisenziyaların alınması sahəsində olan, təcrübəyə əsaslanan yüksək keyfiyyətli hüquqi dəstəyimizi təklif edirik.",
+          "desc":"Legit S.A komandası olaraq sahibkarlıq subyektlərinə,Azərbaycan Respublikası ərazində müvafiq fəaliyyət sahələri üzrə lisenziya və icazələrin, həmçinin “Ödəniş xidməti təchizatçıları (ödəniş təşkilatları, elektron pul təşkilatları) üçün lisenziyaların alınması sahəsində olan, təcrübəyə əsaslanan yüksək keyfiyyətli hüquqi dəstəyimizi təklif edirik."
+        },
+        {
+          "id":10,
+          "title":"Elektron-hüquqi xidmətlər",
           "services": [
             "Məhkəmələrə müraciət ərizələri ",
             "Apellyasiya şikayətləri",
