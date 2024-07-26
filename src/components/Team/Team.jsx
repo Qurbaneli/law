@@ -8,7 +8,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 //Import images
 import member1 from "../../assets/images/team/member1.jpeg";
-import member4 from "../../assets/images/team/member2.png";
+import member4 from "../../assets/images/team/member4.jpeg";
 import member2 from "../../assets/images/team/member2.jpeg";
 import member3 from "../../assets/images/team/member3.jpeg";
 
