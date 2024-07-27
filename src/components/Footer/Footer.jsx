@@ -127,7 +127,7 @@ function Footer() {
                     <span className="icon">
                       <FaPhone />{" "}
                     </span>
-                    +99450-000-00-00
+                    0515506679
                   </a>
                 </li>
               </ul>
