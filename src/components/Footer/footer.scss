@@ -1,6 +1,7 @@
 footer {
   background: black;
   padding-top: 119px;
+
   .container {
     max-width: 1800px;
   }
@@ -12,6 +13,7 @@ footer {
     padding-left: 140px;
     padding-right: 140px;
     gap: 30px;
+
     .footer-left {
       .footer-desc {
         margin-top: 22px;
@@ -34,6 +36,7 @@ footer {
     .footer-right {
       display: flex;
       gap: 108px;
+
       .footer-menu {
         h3 {
           color: #fff;
@@ -47,6 +50,12 @@ footer {
 
         .footer-contact {
           max-width: 220px;
+
+          .address{
+            line-height: 30px;
+            margin-top: 30px;
+          }
+
           li {
             a {
               display: flex;
@@ -91,8 +100,9 @@ footer {
   .footer-copyright {
     border-top: 1px solid #a7a7a7;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 45px 140px;
+
     .copyright {
       color: #ffffff;
       font-family: "Roboto";
@@ -100,38 +110,18 @@ footer {
       font-weight: 400;
       line-height: 24px;
       letter-spacing: -0.015em;
-      text-align: left;
+      text-align: center;
     }
 
-    .footer-bottom-menu {
-      ul {
-        display: flex;
-        gap: 10px;
-        li {
-          &:hover {
-            a {
-              color: #e7c175;
-            }
-          }
-
-          a {
-            color: #ffffff;
-            font-family: "Roboto";
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 30px;
-            text-align: left;
-          }
-        }
-      }
-    }
   }
 }
 
 @media screen and (max-width: 1300px) {
+
   //Edit
   footer {
     padding-top: 50px;
+
     .footer-main {
       flex-direction: column;
       justify-content: center !important;
@@ -139,6 +129,7 @@ footer {
       text-align: center;
       padding-left: 24px !important;
       padding-right: 24px !important;
+
       .footer-desc {
         text-align: center !important;
       }
@@ -162,6 +153,7 @@ footer {
     .footer-main {
       // flex-direction: column;
       padding-bottom: 80px !important;
+
       // justify-content: center !important;
       // align-items: center !important;
       // padding-left: 24px !important;
@@ -169,6 +161,7 @@ footer {
       .footer-logo {
         // text-align: center;
       }
+
       .footer-desc {
         width: 100%;
         margin-top: 33px !important;
@@ -205,7 +198,6 @@ footer {
             font-weight: 400 !important;
             line-height: 44.84px !important;
             letter-spacing: -0.015em !important;
-            text-align: center !important;
           }
 
           .footer-address {
@@ -226,6 +218,7 @@ footer {
       border-top: none;
       padding: 29px 38px !important;
       flex-direction: column;
+
       .copyright {
         color: #909090;
       }
@@ -233,6 +226,7 @@ footer {
       .footer-bottom-menu {
         ul {
           gap: 10px !important;
+
           li {
             a {
               color: #909090 !important;

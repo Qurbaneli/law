@@ -105,7 +105,7 @@ function Footer() {
               <h3>Contact US</h3>
               <ul className="footer-contact">
                 <li>
-                  <a href="https://www.google.com/maps/place/Luxen+Plaza/@40.389882,49.8597685,19.5z/data=!3m1!5s0x40307d147970a4fd:0x876bb81e4ba89ad!4m14!1m7!3m6!1s0x40307d147ebe9949:0xbd1a03c2dc213e11!2sLuxen+Plaza!8m2!3d40.3898867!4d49.8605446!16s%2Fg%2F11c1szdsw5!3m5!1s0x40307d147ebe9949:0xbd1a03c2dc213e11!8m2!3d40.3898867!4d49.8605446!16s%2Fg%2F11c1szdsw5?entry=ttu" target="_blank">
+                  <a className="address" href="https://www.google.com/maps/place/Luxen+Plaza/@40.389882,49.8597685,19.5z/data=!3m1!5s0x40307d147970a4fd:0x876bb81e4ba89ad!4m14!1m7!3m6!1s0x40307d147ebe9949:0xbd1a03c2dc213e11!2sLuxen+Plaza!8m2!3d40.3898867!4d49.8605446!16s%2Fg%2F11c1szdsw5!3m5!1s0x40307d147ebe9949:0xbd1a03c2dc213e11!8m2!3d40.3898867!4d49.8605446!16s%2Fg%2F11c1szdsw5?entry=ttu" target="_blank">
                     {" "}
                     <span className="footer-icon">
                       <FaLocationDot />{" "}
@@ -152,23 +152,6 @@ function Footer() {
         <div className="footer-copyright">
           <div className="copyright">
             © 2024 LEGİT S.A, Bütün hüquqlar qorunur
-          </div>
-
-          <div className="footer-bottom-menu">
-            <ul>
-              <li>
-                <a href="">Terms & Conditions,</a>
-              </li>
-              <li>
-                <a href="">Privacy Policy,</a>
-              </li>
-              <li>
-                <a href="">Cookies Policy,</a>
-              </li>
-              <li>
-                <a href="">Sitemap </a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
