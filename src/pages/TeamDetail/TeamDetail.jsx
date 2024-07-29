@@ -45,8 +45,8 @@ function TeamDetail() {
   const teamData = t("teamData", { returnObjects: true });
 
   const { id } = useParams();
-  const blog = teamData.find((item) => item.id == id);
-  const personImage =imageData.find((item)=>item.id==id)
+  const team = teamData.find((item) => item.id == id);
+  const personImage = imageData.find((item) => item.id == id)
   return (
     <>
       <Header />
@@ -56,43 +56,43 @@ function TeamDetail() {
 
       <section id="team-detail">
         <div className="container">
-          {blog ? (
+          {team ? (
             <div className="team-detail-content">
               <div className="team-detail-box">
                 <div className="team-detail-img">
                   <img src={personImage.image} alt="team" />
                 </div>
                 <div className="team-detail-desc-box">
-                  <h3 className="team-detail-title">{blog.name_surname}</h3>
-                  <p className="team-detail-subtitle">{blog.profession}</p>
+                  <h3 className="team-detail-title">{team.name_surname}</h3>
+                  <p className="team-detail-subtitle">{team.profession}</p>
                   <div className="team-detail-desc">
-                    {blog.desc && (
+                    {team.desc && (
                       <>
                         <p>
-                          <span>{t("aboutText")}:</span> {blog.desc}
+                          {team.desc}
                         </p>{" "}
-                        <p>{blog.desc2}</p>
+                        <p>{team.desc2}</p>
                       </>
                     )}
-                    {blog.education && (
+                    {team.education && (
                       <p>
-                        <span>{t("education")}:</span> {blog.education}{" "}
+                        <span>{t("education")}:</span> {team.education}{" "}
                       </p>
                     )}
-                    {blog.master && (
+                    {team.master && (
                       <p>
-                        <span>{t("master")}:</span> {blog.master}
+                        <span>{t("master")}:</span> {team.master}
                       </p>
                     )}
-                    {blog.specialization && (
+                    {team.specialization && (
                       <p>
                         <span>{t("specialization")}:</span>{" "}
-                        {blog.specialization}
+                        {team.specialization}
                       </p>
                     )}
-                    {blog.mail && (
+                    {team.mail && (
                       <p>
-                        <span>E-mail:</span> {blog.mail}
+                        <span>E-mail:</span> {team.mail}
                       </p>
                     )}
                   </div>
