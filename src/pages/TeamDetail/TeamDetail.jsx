@@ -46,10 +46,9 @@ function TeamDetail() {
 
   const { id } = useParams();
   const team = teamData.find((item) => item.id == id);
-  const personImage = imageData.find((item) => item.id == id)
+  const personImage = imageData.find((item) => item.id == id);
   return (
     <>
-      <Header />
       <div className="page-header">
         <h2 className="page-title">Əməkdaşlar</h2>
       </div>
@@ -68,10 +67,7 @@ function TeamDetail() {
                   <div className="team-detail-desc">
                     {team.desc && (
                       <>
-                        <p>
-                          {team.desc}
-                        </p>{" "}
-                        <p>{team.desc2}</p>
+                        <p>{team.desc}</p> <p>{team.desc2}</p>
                       </>
                     )}
                     {team.education && (
@@ -127,8 +123,6 @@ function TeamDetail() {
           )}
         </div>
       </section>
-
-      <Footer />
     </>
   );
 }

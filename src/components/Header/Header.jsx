@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import "./header.scss";
 import logo from "../../assets/images/logo.svg";
 import mobileLogo from "../../assets/images/mobile-logo.svg";
 import hamburgerMenuIcon from "../../assets/icons/common/hambuger-menu.svg";
-import selectArrow from "../../assets/icons/common/arrow-down.svg"
+import selectArrow from "../../assets/icons/common/arrow-down.svg";
 
 //Social Icons
 import close from "../../assets/icons/common/close.svg";
@@ -16,15 +16,20 @@ import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 
 function Header() {
-  const { t, ready, i18n: { changeLanguage, language } } = useTranslation();
-  const [currentLanguage, setCurrentLanguage] = useState(language)
-  const [scrolled, setScrolled] = useState(false);
+  const {
+    t,
+    ready,
+    i18n: { changeLanguage, language },
+  } = useTranslation();
+  const [currentLanguage, setCurrentLanguage] = useState(language);
+  const [scrolled, setIsScrolled] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
-  const [mobileDropdown, setMobileDropdown] = useState(null)
+  const [mobileDropdown, setMobileDropdown] = useState(null);
+  const location = useLocation();
 
   if (!ready) return "loading translations...";
   const servicesData = t("servicesData", { returnObjects: true });
-  const consultationData = t("consultationData", { returnObjects: true })
+  const consultationData = t("consultationData", { returnObjects: true });
 
   const handleChangeLanguage = (lang) => {
     setCurrentLanguage(lang);
@@ -32,40 +37,40 @@ function Header() {
   };
 
   const handleMobileDropDown = (id) => {
-    setMobileDropdown(id != mobileDropdown ? id : null)
-  }
+    setMobileDropdown(id != mobileDropdown ? id : null);
+  };
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
+    if (location.pathname === "/") {
+      const handleScroll = () => {
+        if (window.scrollY > 50) {
+          setIsScrolled(true);
+        } else {
+          setIsScrolled(false);
+        }
+      };
 
-    window.addEventListener("scroll", handleScroll);
+      window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    } else {
+      setIsScrolled(true);
+    }
+  }, [location.pathname]);
 
   //fix mobile menu scroll
   useEffect(() => {
     if (mobileMenu) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
     }
-    else {
-      document.body.style.overflow = 'unset';
-    }
-  }, [mobileMenu])
+  }, [mobileMenu]);
 
   return (
-    <header className={scrolled ? "sticky" : ""}>
-
-
+    <header className={scrolled && "sticky"}>
       <div className={`mobile-menu ${mobileMenu ? "active" : ""}`}>
         <div className="mobile-menu-logo">
           <img src={mobileLogo} alt="logo" />
@@ -85,13 +90,22 @@ function Header() {
             </li>
 
             <li onClick={() => handleMobileDropDown(1)}>
-              <Link to="/">{t("services")} {mobileDropdown == 1 ?  <IoIosArrowUp/> :  <IoIosArrowDown/>  } </Link>
-              <ul className={`${mobileDropdown == 1 ? "active" : ""} mobile-dropdown`}>
-
-                {servicesData.map((item) =>
-                  <li><Link to={`/service/${item.id}`}
-                    key={item.id}>{item.title}</Link></li>
-                )}
+              <Link to="/">
+                {t("services")}{" "}
+                {mobileDropdown == 1 ? <IoIosArrowUp /> : <IoIosArrowDown />}{" "}
+              </Link>
+              <ul
+                className={`${
+                  mobileDropdown == 1 ? "active" : ""
+                } mobile-dropdown`}
+              >
+                {servicesData.map((item) => (
+                  <li>
+                    <Link to={`/service/${item.id}`} key={item.id}>
+                      {item.title}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </li>
 
@@ -107,16 +121,13 @@ function Header() {
               <a href="#">{t("blog")}</a>
             </li>
 
-            <li onClick={() => setMobileMenu(false)}
-            >
+            <li onClick={() => setMobileMenu(false)}>
               <a href="/#contact">{t("contact")}</a>
             </li>
 
             <li onClick={() => setMobileMenu(false)}>
               <a href="#">{t("sign")}</a>
             </li>
-
-
           </ul>
         </nav>
 
@@ -152,14 +163,14 @@ function Header() {
               <a href="/#about">{t("about")}</a>
             </li>
 
-            <li>
+            <li>/ 
               <Link to="/services">{t("services")}</Link>
               <ul className="dropdown">
-
-                {servicesData.map((item) =>
-                  <Link to={`/service/${item.id}`}
-                  key={item.id}><li>{item.title}</li></Link>
-                )}
+                {servicesData.map((item) => (
+                  <Link to={`/service/${item.id}`} key={item.id}>
+                    <li>{item.title}</li>
+                  </Link>
+                ))}
               </ul>
             </li>
 
@@ -168,13 +179,12 @@ function Header() {
             </li>
 
             <li>
-              <a href="#">{t("news")}</a>
+              <NavLink to="/news">{t("news")}</NavLink>
             </li>
 
             <li>
-              <a href="#">{t("blog")}</a>
+              <NavLink to="/blog">{t("blog")}</NavLink>
             </li>
-
 
             <li>
               <a href="/#contact">{t("contact")}</a>
@@ -183,11 +193,12 @@ function Header() {
             <li>
               <a href="#">{t("sign")}</a>
               <ul className="dropdown">
-
-                {consultationData.map((item) =>
-                 <Link to={`/`}
-                 key={item.id}> <li>{item.title}</li></Link>
-                )}
+                {consultationData.map((item) => (
+                  <Link to={`/`} key={item.id}>
+                    {" "}
+                    <li>{item.title}</li>
+                  </Link>
+                ))}
               </ul>
             </li>
           </ul>
@@ -195,7 +206,11 @@ function Header() {
 
         <div className="lang-select">
           <div className="selected-lang">
-            <span>{language.toLocaleUpperCase()} </span>  <span className="lang-icon"> <img src={selectArrow} alt="lang-arrow" /></span>
+            <span>{language.toLocaleUpperCase()} </span>{" "}
+            <span className="lang-icon">
+              {" "}
+              <img src={selectArrow} alt="lang-arrow" />
+            </span>
           </div>
 
           <div className="lang-box">

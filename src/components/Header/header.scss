@@ -11,7 +11,6 @@ header {
   &.sticky {
     backdrop-filter: blur(10px);
     background: #00000038;
-
   }
 
   .container {
@@ -53,9 +52,7 @@ header {
           display: flex;
         }
 
-
         .dropdown {
-
           position: absolute;
           top: 30px;
           min-width: 260px;
@@ -65,7 +62,7 @@ header {
           flex-direction: column;
           overflow: hidden;
           gap: 0px;
-          padding:5px;
+          padding: 5px;
 
           li {
             cursor: pointer;
@@ -84,7 +81,7 @@ header {
 
             &:hover {
               background: #e7c175;
-              color:#333;
+              color: #333;
             }
 
             // &:hover a{
@@ -99,9 +96,7 @@ header {
             //   font-weight: 400;
             //   transition: 0.3s;
             // }
-
           }
-
         }
 
         a {
@@ -112,7 +107,6 @@ header {
           font-weight: 400;
           line-height: 27.3px;
           text-align: center;
-
         }
 
         &:hover {
@@ -192,7 +186,6 @@ header {
       margin-left: 38px;
       margin-top: 20px;
 
-
       .close {
         position: absolute;
         top: 0px;
@@ -267,9 +260,7 @@ header {
     }
   }
 
-
   @media screen and (max-width: 1300px) {
-
     .mobile-menu {
       display: block;
     }

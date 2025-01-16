@@ -1,0 +1,41 @@
+@mixin flexbox($justifyContent: center, $alignItems: center) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+
+@mixin borderLine() {
+  border-bottom: 1px solid $color-primary-gray;
+  padding-bottom: 24px;
+  margin-bottom: 48px;
+}
+
+@mixin screen-phone {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin screen-tablet {
+  @media (min-width: 768px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin screen-desktop {
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin screen-lg {
+  @media (min-width: 1441px) and (max-width: 1875px) {
+    @content;
+  }
+}
+
+@mixin screen-lg125 {
+  @media (min-width: 1441px) and (max-width: 1875px) {
+    @content;
+  }
+}

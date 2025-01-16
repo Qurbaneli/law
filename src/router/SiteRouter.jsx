@@ -6,17 +6,25 @@ import ServiceDetail from "../pages/ServiceDetail/ServiceDetail";
 import AllServices from "../pages/AllServices/AllServices";
 import ScrollToTop from "../helper/ScrollToTop ";
 import TeamDetail from "../pages/TeamDetail/TeamDetail";
+import News from "../pages/News";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import Blog from "@/pages/Blog";
 
 function SiteRouter() {
   return (
     <BrowserRouter>
-    <ScrollToTop/>
+      <ScrollToTop />
+      <Header />
       <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/service/:id" element={<ServiceDetail />} />
-      <Route path="/services" element={<AllServices />} />
-      <Route path="/team/:id" element={<TeamDetail />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/service/:id" element={<ServiceDetail />} />
+        <Route path="/services" element={<AllServices />} />
+        <Route path="/team/:id" element={<TeamDetail />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
