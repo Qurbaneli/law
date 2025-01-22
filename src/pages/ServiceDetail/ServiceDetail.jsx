@@ -49,7 +49,6 @@ function ServiceDetail() {
         </div>
       </section>
 
-      <Footer />
     </>
   );
 }

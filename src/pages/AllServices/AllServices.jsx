@@ -172,7 +172,6 @@ function AllServices() {
         </div>
       </section>
 
-      <Footer />
     </>
   );
 }

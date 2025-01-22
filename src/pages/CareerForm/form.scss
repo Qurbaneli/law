@@ -1,0 +1,129 @@
+@import "../../scss/abstracts/mixins";
+@import "../../scss/abstracts/variables";
+
+.form-area {
+  .form-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-family: $font-inter;
+  }
+}
+
+.e-form {
+  label {
+    font-family: $font-inter !important;
+  }
+  .ant-input,
+  .ant-select {
+    height: 50px;
+    font-family: $font-inter;
+    font-size: 17px;
+  }
+
+  .upload-file {
+    text-align: center;
+    .ant-upload {
+      button {
+        background: #e7c175;
+        padding: 28px 20px;
+        font-size: 18px;
+
+        &:hover {
+          background: #d1b06b;
+        }
+      }
+    }
+  }
+
+  label {
+    &::before {
+      display: inline-block;
+      margin-inline-end: 4px;
+      color: #ff4d4f;
+      font-size: 14px;
+      font-family: SimSun, sans-serif;
+      line-height: 1;
+      content: "*";
+    }
+  }
+
+  .ant-space-compact {
+    width: 100%;
+
+    .ant-select {
+      width: 25%;
+
+      .ant-select-selection-item {
+        text-align: center;
+        font-size: 17px;
+      }
+    }
+  }
+
+  .form-footer {
+    margin-top: 50px;
+    text-align: center;
+
+    .ant-btn {
+      height: auto;
+      padding: 10px 55px;
+      background-color: #aaaeb1 !important;
+      &:hover {
+        background-color: #878a8c !important;
+      }
+
+      span {
+        font-size: 18px;
+        font-family: $font-inter;
+      }
+    }
+  }
+  .cv-btn {
+    margin-top: 20px;
+  }
+}
+
+.show-form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 45px;
+
+  @include screen-phone {
+    flex-direction: column;
+  }
+
+  // .pdf-link {
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   inset: 0;
+  // }
+
+  .ant-btn {
+    height: auto;
+    padding: 15px 64px;
+    min-width: 309px;
+    position: relative;
+
+    @include screen-phone {
+      padding: 12px 23px;
+      min-width: auto;
+    }
+
+    background-color: #aaaeb1 !important;
+    &:hover {
+      background-color: #878a8c !important;
+      color: #e7c175 !important;
+      border-color: #e7c175 !important;
+    }
+
+    span,
+    a {
+      font-size: 18px;
+      font-family: $font-inter;
+    }
+  }
+}

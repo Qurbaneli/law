@@ -10,6 +10,7 @@ import News from "../pages/News";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import Blog from "@/pages/Blog";
+import CareerForm from "@/pages/CareerForm";
 
 function SiteRouter() {
   return (
@@ -23,6 +24,7 @@ function SiteRouter() {
         <Route path="/team/:id" element={<TeamDetail />} />
         <Route path="/news" element={<News />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/career-form" element={<CareerForm />} />
       </Routes>
       <Footer />
     </BrowserRouter>

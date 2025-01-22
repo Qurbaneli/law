@@ -20,7 +20,6 @@ function Home() {
       <Team />
       <Partners />
       <Contact />
-      <Footer />
     </div>
   );
 }
