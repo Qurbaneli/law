@@ -163,7 +163,7 @@ function Header() {
               <a href="/#about">{t("about")}</a>
             </li>
 
-            <li>/ 
+            <li>
               <Link to="/services">{t("services")}</Link>
               <ul className="dropdown">
                 {servicesData.map((item) => (

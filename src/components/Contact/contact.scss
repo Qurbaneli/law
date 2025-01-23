@@ -8,7 +8,7 @@
     color: #fff;
     margin-bottom: 80px;
   }
-  
+
   .contact-form {
     max-width: 1085px;
     margin: 0 auto;
@@ -16,7 +16,8 @@
       display: flex;
       gap: 30px;
       margin-bottom: 57px;
-      .form-item {
+
+      .ant-form-item {
         width: 100%;
         input {
           height: 41px;
@@ -31,7 +32,9 @@
           border-bottom: 1px solid #3a4553;
           padding-bottom: 13px;
           outline: none;
+          border-radius: 0px;
           &:focus {
+            border: none;
             border-bottom: 1px solid #fff;
           }
           color: #fff;
@@ -55,6 +58,10 @@
           resize: none;
           height: 121px;
         }
+      }
+
+      .form-item {
+        width: 100%;
       }
     }
 
@@ -82,25 +89,25 @@
   }
 
   @media screen and (max-width: 576px) {
-    .container{
+    .container {
       padding-left: 24px;
       padding-right: 24px;
     }
 
-    .form-row{
+    .form-row {
       flex-direction: column;
       margin-bottom: 0px !important;
-      gap:0px !important;
-      .form-item{
-        margin-bottom:40px;
+      gap: 0px !important;
+      .form-item {
+        margin-bottom: 40px;
 
-        input, textarea{
-          &::placeholder{
+        input,
+        textarea {
+          &::placeholder {
             font-size: 18px !important;
           }
         }
       }
     }
-
   }
 }

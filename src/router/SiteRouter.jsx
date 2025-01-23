@@ -11,6 +11,8 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import Blog from "@/pages/Blog";
 import CareerForm from "@/pages/CareerForm";
+import NewsDetail from "@/pages/News/components/NewsDetail";
+import BlogDetail from "@/pages/Blog/components/NewsDetail";
 
 function SiteRouter() {
   return (
@@ -23,7 +25,9 @@ function SiteRouter() {
         <Route path="/services" element={<AllServices />} />
         <Route path="/team/:id" element={<TeamDetail />} />
         <Route path="/news" element={<News />} />
+        <Route path="/news/:id" element={<NewsDetail />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<BlogDetail />} />
         <Route path="/career-form" element={<CareerForm />} />
       </Routes>
       <Footer />

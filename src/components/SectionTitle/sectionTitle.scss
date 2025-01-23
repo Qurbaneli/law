@@ -1,0 +1,19 @@
+@import '../../scss/abstracts/variables';
+@import '../../scss/abstracts/mixins';
+
+.title {
+  @include flexbox(flex-start);
+  gap: 10px;
+  &__name {
+    color: $color-primary-black;
+    font-size: 28px;
+    font-weight: $font-600;
+    line-height: 200%;
+    letter-spacing: 2px;
+    font-family: $font-inter;
+  }
+  &__icon {
+    width: 28px;
+    height: 28px;
+  }
+}

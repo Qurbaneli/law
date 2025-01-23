@@ -1,65 +1,64 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./news.scss";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import NewsImg from "../../assets/images/news/2.jpg";
 import { Pagination } from "antd";
+import { useDispatch, useSelector } from "react-redux";
+import { getAllNewsAsync } from "@/redux/newsAll/newsAllSlice";
+import { IMAGES_URL } from "@/api/api";
 
 const News = () => {
-  const itemRender = (_, type, originalElement) => {
-    if (type === "prev") {
-      return <a>Previous</a>;
-    }
-    if (type === "next") {
-      return <a>Next</a>;
-    }
-    return originalElement;
-  };
+  const dispatch = useDispatch();
+  const [currentPage, setCurrentPage] = useState(1);
+  const { t } = useTranslation();
+
   const {
-    t,
-    ready,
-    i18n: { language },
-  } = useTranslation();
+    data: allNewsData,
+    total,
+    per_page,
+  } = useSelector((state) => state.news.allNews);
+
+  useEffect(() => {
+    dispatch(getAllNewsAsync({ page: currentPage }));
+  }, [currentPage]);
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
+
   return (
     <section className="news">
       <div className="container">
         <h1 className="news__title">{t("news")}</h1>
 
         <div className="news-grid">
-          {Array.from({ length: 15 }).map((item) => {
-            return (
-              <div className="card">
-                <div className="img-box">
-                  <img src={NewsImg} alt="img" />
-                </div>
-                <div className="info">
-                  <h3 className="info__title ellipse">
-                    Lorem ipsum dolor sit amet.
-                  </h3>
-
-                  <p className="info__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Autem repudiandae neque consequatur aliquam, architecto
-                    placeat.
-                  </p>
-
-                  <p className="info__date">2022.12.12</p>
-
-                  <div className="info__line"></div>
-                </div>
-                <Link className="news-link" />
+          {allNewsData?.map((item) => (
+            <div className="card" key={item.id}>
+              <div className="img-box">
+                <img src={IMAGES_URL + item.cover_image} alt="img" />
               </div>
-            );
-          })}
+              <div className="info">
+                <h3 className="info__title ellipse">{item.title}</h3>
+                <p className="info__text">{item.description}</p>
+                <p className="info__date">{item.created_at}</p>
+                <div className="info__line"></div>
+              </div>
+              <Link className="news-link" to={`${item.id}`} />
+            </div>
+          ))}
         </div>
 
         <div className="pagination">
-          <Pagination
-            total={500}
-            itemRender={(current, type, originalElement) => originalElement}
-            showSizeChanger={false}
-            showLessItems={5}
-          />
+          {currentPage > 1 && (
+            <Pagination
+              current={currentPage}
+              total={total}
+              pageSize={per_page}
+              onChange={handlePageChange}
+              showSizeChanger={false}
+              showLessItems
+            />
+          )}
         </div>
       </div>
     </section>
