@@ -1,27 +1,28 @@
-import React, { useEffect } from "react";
-import { useTranslation } from "react-i18next";
-import "./about.scss";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React, { useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
+import './about.scss'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function About() {
-  const { t} = useTranslation();
+  const { t } = useTranslation()
   useEffect(() => {
-    AOS.init();
-  }, []);
+    AOS.init()
+  }, [])
 
   return (
-    <section id="about">
+    <section id="about-sc">
       <div className="container">
-      <h2 data-aos="fade-down" className="section-title">
-        {t("about")}
-      </h2>
-      <p dangerouslySetInnerHTML={{ __html: t("aboutText")}} data-aos="fade-down" className="about-desc">
-      </p>
+        <h2 data-aos="fade-down" className="section-title">
+          {t('about')}
+        </h2>
+        <p
+          dangerouslySetInnerHTML={{ __html: t('aboutText') }}
+          data-aos="fade-down"
+          className="about-desc"></p>
       </div>
-
     </section>
-  );
+  )
 }
 
-export default About;
+export default About
