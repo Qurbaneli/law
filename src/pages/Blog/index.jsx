@@ -10,6 +10,8 @@ import { getBlogsAsync } from "@/redux/blogs/blogsSlice";
 const Blog = () => {
   const dispatch = useDispatch();
   const [currentPage, setCurrentPage] = useState(1);
+  const lang = useSelector((store) => store.common.lang);
+
   const { t } = useTranslation();
 
   const {
@@ -20,7 +22,7 @@ const Blog = () => {
 
   useEffect(() => {
     dispatch(getBlogsAsync({ page: currentPage }));
-  }, [currentPage]);
+  }, [currentPage, lang]);
 
   const handlePageChange = (page) => {
     setCurrentPage(page);

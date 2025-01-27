@@ -13,6 +13,7 @@ import Blog from "@/pages/Blog";
 import CareerForm from "@/pages/CareerForm";
 import NewsDetail from "@/pages/News/components/NewsDetail";
 import BlogDetail from "@/pages/Blog/components/NewsDetail";
+import Search from "@/pages/Search/Search";
 
 function SiteRouter() {
   return (
@@ -29,6 +30,7 @@ function SiteRouter() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<BlogDetail />} />
         <Route path="/career-form" element={<CareerForm />} />
+        <Route path="/search" element={<Search />} />
       </Routes>
       <Footer />
     </BrowserRouter>

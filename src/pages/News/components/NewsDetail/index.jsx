@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import "./newsdetail.scss";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import {
   getLastNewsAsync,
@@ -14,20 +14,34 @@ import SectionTitle from "@/components/SectionTitle/SectionTitle";
 
 const NewsDetail = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const singleNews = useSelector((state) => state.news.singleNews?.data);
   const lastNews = useSelector((store) => store.news.lastNews.data);
+  const lang = useSelector((store) => store.common.lang);
+  const { status } = useSelector((state) => state.news.singleNews);
   const { loading } = useSelector((state) => state.news.singleNews);
   const { id } = useParams();
+
+  console.log(status);
 
   useEffect(() => {
     dispatch(getSingleNewsAsync(id));
     dispatch(getLastNewsAsync());
+
     return () => {
       dispatch(setSingleNews({ data: [] }));
     };
-  }, [id]);
+  }, [id, lang]);
 
-  console.log(lastNews);
+  useEffect(() => {
+    if (status === 404) {
+      navigate(`/news`);
+    }
+
+    return () => {
+      dispatch(setSingleNews({ status: null }));
+    };
+  }, [status]);
 
   return (
     singleNews && (
@@ -75,22 +89,7 @@ const NewsDetail = () => {
                   {singleNews?.short_description}
                 </p>
 
-                <div className="detail-text">
-                  {singleNews?.description}
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-                  delectus enim eum impedit deserunt vero, molestiae at unde
-                  error repudiandae repellat vel fugiat facilis hic cum.
-                  Consectetur praesentium ea assumenda ipsa aliquam culpa
-                  nostrum quos mollitia voluptate libero? Eligendi, repellat
-                  quasi, hic sapiente aut perferendis nostrum blanditiis ipsam
-                  sed, explicabo quis. Rem commodi saepe sed magni ex dicta
-                  voluptas. Laudantium officia quae vitae in voluptates possimus
-                  quis facere, consequatur nesciunt odio consectetur at beatae
-                  dicta fugit labore ad voluptatem? Quisquam nihil quam,
-                  veritatis corrupti magni maxime, porro veniam animi quod
-                  repellendus excepturi iusto, distinctio debitis alias rerum
-                  repudiandae voluptatem ad!
-                </div>
+                <div className="detail-text">{singleNews?.description}</div>
               </div>
             </div>
             <div className="right-side">

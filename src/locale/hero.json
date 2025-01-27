@@ -1,0 +1,71 @@
+{
+  "az": {
+    "services": {
+      "title": "Xidmətlər"
+    },
+    "announcements": {
+      "title": "Elanlar"
+    },
+    "projects": {
+      "title": "Layihələr"
+    },
+    "video": {
+      "title": "Video"
+    },
+    "useFull": {
+      "title": "Faydalı keçidlər"
+    },
+    "more": {
+      "title": "Daha çox"
+    },
+    "less": {
+      "title": "Daha az"
+    }
+  },
+  "en": {
+    "services": {
+      "title": "Services"
+    },
+    "announcements": {
+      "title": "Announcements"
+    },
+    "projects": {
+      "title": "Projects"
+    },
+    "video": {
+      "title": "Video"
+    },
+    "useFull": {
+      "title": "Useful Links"
+    },
+    "more": {
+      "title": "More"
+    },
+    "less": {
+      "title": "Less"
+    }
+  },
+  "ru": {
+    "services": {
+      "title": "Услуги"
+    },
+    "announcements": {
+      "title": "Объявления"
+    },
+    "projects": {
+      "title": "Радость"
+    },
+    "video": {
+      "title": "Видео"
+    },
+    "useFull": {
+      "title": "Полезные ссылки"
+    },
+    "more": {
+      "title": "Больше"
+    },
+    "less": {
+      "title": "Меньше"
+    }
+  }
+}

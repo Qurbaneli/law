@@ -9,7 +9,7 @@ const initialState = {
     error: null,
     total: 0,
   },
-  singleBlogs: {
+  singleBlog: {
     loading: false,
     data: [],
     status: null,
@@ -24,7 +24,7 @@ const blogsSlice = createSlice({
       state.blogs = { ...state.blogs, ...payload };
     },
     setSingleBlogs: (state, { payload }) => {
-      state.singleBlogs = { ...state.singleBlogs, ...payload };
+      state.singleBlog = { ...state.singleBlog, ...payload };
     },
   },
 });
@@ -60,6 +60,7 @@ export const getSingleBlogsAsync = (id) => async (dispatch) => {
         setSingleBlogs({
           data: response.data,
           totalCount: response.data.total,
+          status: 200,
         })
       );
     }

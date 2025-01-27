@@ -14,27 +14,34 @@ import twitter from "../../assets/icons/social/twitter.svg";
 import linkedin from "../../assets/icons/social/linkedin.svg";
 import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
+import { MenuItem, Select } from "@mui/material";
+import { useDispatch, useSelector } from "react-redux";
+import { setLang } from "@/redux/common/commonSlice";
 
 function Header() {
-  const {
-    t,
-    ready,
-    i18n: { changeLanguage, language },
-  } = useTranslation();
-  const [currentLanguage, setCurrentLanguage] = useState(language);
+  const { t, ready, i18n } = useTranslation();
+  const dispatch = useDispatch();
+  // const [currentLanguage, setCurrentLanguage] = useState(language);
   const [scrolled, setIsScrolled] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
   const [mobileDropdown, setMobileDropdown] = useState(null);
   const location = useLocation();
+  const lang = useSelector((store) => store.common.lang);
 
   if (!ready) return "loading translations...";
   const servicesData = t("servicesData", { returnObjects: true });
   const consultationData = t("consultationData", { returnObjects: true });
 
-  const handleChangeLanguage = (lang) => {
-    setCurrentLanguage(lang);
-    changeLanguage(lang);
+  const handleChange = (e) => {
+    const newLang = e.target.value;
+    dispatch(setLang(newLang));
+    const scrollPosition = window.scrollY;
+    setTimeout(() => window.scrollTo(0, scrollPosition), 0);
   };
+
+  useEffect(() => {
+    localStorage.setItem("lang", lang);
+  }, [lang]);
 
   const handleMobileDropDown = (id) => {
     setMobileDropdown(id != mobileDropdown ? id : null);
@@ -68,6 +75,12 @@ function Header() {
       document.body.style.overflow = "unset";
     }
   }, [mobileMenu]);
+
+  useEffect(() => {
+    if (lang && lang !== i18n.language) {
+      i18n.changeLanguage(lang);
+    }
+  }, [lang]);
 
   return (
     <header className={scrolled && "sticky"}>
@@ -160,7 +173,7 @@ function Header() {
             </li>
 
             <li>
-              <a href="/#about">{t("about")}</a>
+              <a href="/#about-sc">{t("about")}</a>
             </li>
 
             <li>
@@ -191,7 +204,7 @@ function Header() {
             </li>
 
             <li>
-              <a href="#">{t("sign")}</a>
+              <a href={void 0}>{t("sign")}</a>
               <ul className="dropdown">
                 {consultationData.map((item) => (
                   <Link to={`/`} key={item.id}>
@@ -205,20 +218,31 @@ function Header() {
         </nav>
 
         <div className="lang-select">
-          <div className="selected-lang">
+          {/* <div className="selected-lang">
             <span>{language.toLocaleUpperCase()} </span>{" "}
             <span className="lang-icon">
               {" "}
               <img src={selectArrow} alt="lang-arrow" />
             </span>
-          </div>
+          </div> */}
 
-          <div className="lang-box">
-            <ul>
+          {/* <div className="lang-box"> */}
+          <Select
+            labelId="demo-simple-select-label"
+            id="demo-simple-select"
+            className="language-select"
+            value={lang}
+            // onChange={(e) => dispatch(setLang(e.target.value))}
+            onChange={handleChange}
+          >
+            <MenuItem value={"az"}>AZ</MenuItem>
+            <MenuItem value={"en"}>EN</MenuItem>
+          </Select>
+          {/* <ul>
               <li onClick={() => handleChangeLanguage("az")}>AZ</li>
               <li onClick={() => handleChangeLanguage("en")}>EN</li>
-            </ul>
-          </div>
+            </ul> */}
+          {/* </div> */}
         </div>
 
         <div

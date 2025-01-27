@@ -1,0 +1,172 @@
+{
+  "az": {
+    "search": {
+      "title": "Saytda axtarış"
+    },
+    "notFound": {
+      "title": "Axtarış üzrə heç bir nəticə tapılmadı"
+    },
+    "emailVal": {
+      "title": "E-poçt ünvanı boş göndərilə bilməz",
+      "notemail": "Daxil olunan poçt ünvanı düzgün e-mail formatında deyil"
+    },
+    "searchTerm": {
+      "title": "Axtarılan söz..."
+    },
+    "dateRange": {
+      "title": "Tarix diapazonu"
+    },
+    "selectSc": {
+      "title22": "Bütün bölmələr",
+      "title": "Bölmələrin seçimi"
+    },
+    "searchTitle": {
+      "title": "Axtarış üzrə"
+    },
+    "searchResult": {
+      "title": "nəticə tapıldı"
+    },
+    "allposters": {
+      "title": "Bütün afişalar"
+    },
+    "filter": {
+      "title": "Filter"
+    },
+
+    "filterArea": {
+      "searchByName": {
+        "title": "Ad üzrə axtarış..."
+      },
+      "searchByCountry": {
+        "title": "Ölkə üzrə"
+      },
+      "searchByEvents": {
+        "title": "Bütün hadisələr"
+      },
+      "date": {
+        "title": "Tarix"
+      },
+      "language": {
+        "title": "Dil"
+      },
+      "age": {
+        "title": "Yaş"
+      },
+      "price": {
+        "title": "AZN"
+      }
+    }
+  },
+  "en": {
+    "search": {
+      "title": "Search"
+    },
+    "notFound": {
+      "title": "No search results were found"
+    },
+    "emailVal": {
+      "title": "An email address is required",
+      "notemail": "The email address entered is not in the correct email format"
+    },
+    "searchTerm": {
+      "title": "Enter a search term..."
+    },
+    "dateRange": {
+      "title": "Date range"
+    },
+    "selectSc": {
+      "title": "Select sections"
+    },
+    "searchTitle": {
+      "title": "On search"
+    },
+    "searchResult": {
+      "title": "results found"
+    },
+    "allposters": {
+      "title": "All events"
+    },
+    "filter": {
+      "title": "Filter"
+    },
+    "filterArea": {
+      "searchByName": {
+        "title": "Search by name..."
+      },
+      "searchByCountry": {
+        "title": "By country"
+      },
+      "searchByEvents": {
+        "title": "All events"
+      },
+      "date": {
+        "title": "Date"
+      },
+      "language": {
+        "title": "Language"
+      },
+      "age": {
+        "title": "Age"
+      },
+      "price": {
+        "title": "AZN"
+      }
+    }
+  },
+  "ru": {
+    "search": {
+      "title": "Поиск по сайту"
+    },
+    "searchTerm": {
+      "title": "Введите поисковое слово..."
+    },
+    "dateRange": {
+      "title": "Диапазон дат"
+    },
+    "selectSc": {
+      "title": "Выбор разделов"
+    },
+    "notFound": {
+      "title": "Результаты поиска не найдены"
+    },
+    "emailVal": {
+      "title": "Требуется адрес электронной почты",
+      "notemail": "Введенный адрес электронной почты имеет неправильный формат электронной почты."
+    },
+    "searchTitle": {
+      "title": "В поиске"
+    },
+    "searchResult": {
+      "title": "найдено результатов"
+    },
+    "allposters": {
+      "title": "Все афиши"
+    },
+    "filter": {
+      "title": "Фильтр"
+    },
+    "filterArea": {
+      "searchByName": {
+        "title": "Поиск по Имени..."
+      },
+      "searchByCountry": {
+        "title": "по Стране"
+      },
+      "searchByEvents": {
+        "title": "Все события"
+      },
+      "date": {
+        "title": "Дата"
+      },
+      "language": {
+        "title": "Язык"
+      },
+      "age": {
+        "title": "Возраст"
+      },
+      "price": {
+        "title": "АЗН"
+      }
+    }
+  }
+}

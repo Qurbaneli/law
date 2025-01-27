@@ -3,20 +3,18 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Link, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  getLastNewsAsync,
-  getSingleNewsAsync,
-  setSingleNews,
-} from "@/redux/newsAll/newsAllSlice";
+import { getLastNewsAsync } from "@/redux/newsAll/newsAllSlice";
 import { IMAGES_URL } from "@/api/api";
 import SectionTitle from "@/components/SectionTitle/SectionTitle";
 import { getSingleBlogsAsync, setSingleBlogs } from "@/redux/blogs/blogsSlice";
 
 const BlogDetail = () => {
   const dispatch = useDispatch();
-  const singleNews = useSelector((state) => state.news.singleNews?.data);
+  const singleBlog = useSelector((state) => state.blogs.singleBlog?.data);
   const lastNews = useSelector((store) => store.news.lastNews.data);
-  const { loading } = useSelector((state) => state.news.singleNews);
+  const { loading } = useSelector((state) => state.blogs.singleBlog);
+  const { status } = useSelector((state) => state.blogs.singleBlog);
+  const lang = useSelector((store) => store.common.lang);
   const { id } = useParams();
 
   useEffect(() => {
@@ -25,33 +23,43 @@ const BlogDetail = () => {
     return () => {
       dispatch(setSingleBlogs({ data: [] }));
     };
-  }, [id]);
+  }, [id, lang]);
+
+  useEffect(() => {
+    if (status === 404) {
+      navigate(`/blogs.`);
+    }
+
+    return () => {
+      dispatch(setSingleBlogs({ status: null }));
+    };
+  }, [status]);
 
   console.log(lastNews);
 
   return (
-    singleNews && (
+    singleBlog && (
       <section className="news-detail">
         <div className="container">
           <div className={loading ? "row loading" : "row"}>
             <div className="left-side">
               <div className="detail-cont">
-                <h1 className="cap">{singleNews?.title}</h1>
+                <h1 className="cap">{singleBlog?.title}</h1>
                 <div className="date">
-                  <p className="time">{singleNews?.created_at}</p>
+                  <p className="time">{singleBlog?.created_at}</p>
                 </div>
               </div>
               <div className="images">
                 <div className="main-img">
                   <img
-                    src={IMAGES_URL + singleNews?.cover_image}
+                    src={IMAGES_URL + singleBlog?.cover_image}
                     alt="news-detail"
                   />
                 </div>
 
-                {singleNews?.news_images?.length > 0 && (
+                {singleBlog?.news_images?.length > 0 && (
                   <div className="related-images">
-                    {singleNews?.news_images?.slice(0, 3).map((item, index) => (
+                    {singleBlog?.news_images?.slice(0, 3).map((item, index) => (
                       <div key={item.id} className="box-img">
                         <img
                           src={`${IMAGES_URL}${item.image}`}
@@ -59,8 +67,8 @@ const BlogDetail = () => {
                         />
                         {index === 2 && (
                           <p>
-                            {singleNews?.news_images.length >= 3
-                              ? `${singleNews?.news_images.length}+`
+                            {singleBlog?.news_images.length >= 3
+                              ? `${singleBlog?.news_images.length}+`
                               : ""}
                           </p>
                         )}
@@ -72,25 +80,10 @@ const BlogDetail = () => {
 
               <div className="detail-about">
                 <p style={{}} className="detail-info">
-                  {singleNews?.short_description}
+                  {singleBlog?.short_description}
                 </p>
 
-                <div className="detail-text">
-                  {singleNews?.description}
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-                  delectus enim eum impedit deserunt vero, molestiae at unde
-                  error repudiandae repellat vel fugiat facilis hic cum.
-                  Consectetur praesentium ea assumenda ipsa aliquam culpa
-                  nostrum quos mollitia voluptate libero? Eligendi, repellat
-                  quasi, hic sapiente aut perferendis nostrum blanditiis ipsam
-                  sed, explicabo quis. Rem commodi saepe sed magni ex dicta
-                  voluptas. Laudantium officia quae vitae in voluptates possimus
-                  quis facere, consequatur nesciunt odio consectetur at beatae
-                  dicta fugit labore ad voluptatem? Quisquam nihil quam,
-                  veritatis corrupti magni maxime, porro veniam animi quod
-                  repellendus excepturi iusto, distinctio debitis alias rerum
-                  repudiandae voluptatem ad!
-                </div>
+                <div className="detail-text">{singleBlog?.description}</div>
               </div>
             </div>
             <div className="right-side">

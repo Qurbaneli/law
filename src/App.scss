@@ -19,32 +19,36 @@ body {
   position: relative;
 }
 
-.scroll-top{
+.scroll-top {
   background-color: #e7c175;
-  color:#252b42;
+  color: #252b42;
   width: 50px;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
-  bottom:10px;
+  bottom: 10px;
   right: 10px;
   font-size: 35px;
   cursor: pointer;
   transition: 0.3s;
-  span{
+  span {
     animation: scrollAnimation 0.7s ease-in-out infinite alternate;
   }
-  &:hover{
+  &:hover {
     background-color: #ecce93;
   }
 }
 
 @keyframes scrollAnimation {
-  from{transform: translateY(7px);}
-  to{transform:translateY(-5px)}
-} 
+  from {
+    transform: translateY(7px);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
 
 ::-webkit-scrollbar {
   width: 7px;
@@ -127,6 +131,10 @@ body {
       background: #d1b06b;
     }
   }
+}
+
+.d-flex {
+  display: flex;
 }
 
 .btn-more {

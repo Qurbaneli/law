@@ -71,11 +71,11 @@ export const getSingleNewsAsync = (id) => async (dispatch) => {
         setSingleNews({
           data: response.data,
           totalCount: response.data.total,
+          status: 200,
         })
       );
     }
   } catch (error) {
-    console.log(error);
     dispatch(
       setSingleNews({
         status: error.status,

@@ -10,6 +10,7 @@ import { IMAGES_URL } from "@/api/api";
 const News = () => {
   const dispatch = useDispatch();
   const [currentPage, setCurrentPage] = useState(1);
+  const lang = useSelector((store) => store.common.lang);
   const { t } = useTranslation();
 
   const {
@@ -20,7 +21,7 @@ const News = () => {
 
   useEffect(() => {
     dispatch(getAllNewsAsync({ page: currentPage }));
-  }, [currentPage]);
+  }, [currentPage, lang]);
 
   const handlePageChange = (page) => {
     setCurrentPage(page);

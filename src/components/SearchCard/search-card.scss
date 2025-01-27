@@ -1,0 +1,176 @@
+@import "../../scss/abstracts/mixins";
+@import "../../scss/abstracts/variables";
+
+.event-box {
+  display: flex;
+  gap: 30px;
+
+  @include screen-phone {
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  @include screen-tablet {
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+
+  .img-box {
+    width: 429px;
+    height: 256px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+
+    a {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.03);
+      }
+    }
+
+    @include screen-phone {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      height: 100%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      // object-fit: cover;
+      transition: 0.5s;
+    }
+
+    img {
+      @include screen-phone {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        height: 100%;
+      }
+    }
+  }
+
+  .event-info {
+    max-width: calc(100% - 459px);
+    overflow: hidden;
+    @include screen-tablet {
+      text-align: center;
+      max-width: 100%;
+    }
+
+    @include screen-phone {
+      max-width: 100%;
+    }
+
+    &__title {
+      color: $color-primary-black;
+      font-feature-settings: "clig" off, "liga" off;
+      font-family: $font-inter;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: $font-medium;
+      line-height: normal;
+      letter-spacing: -1px;
+      margin-bottom: 12px;
+
+      a {
+        color: inherit;
+      }
+
+      @include screen-phone {
+        font-size: 20px;
+      }
+    }
+
+    .view-container {
+      gap: 24px;
+      margin-bottom: 14px;
+      @include flexbox(flex-start);
+      @include screen-tablet {
+        justify-content: center;
+      }
+
+      .view {
+        color: $color-view;
+        font-family: $font-inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: $font-medium;
+        line-height: 24px;
+      }
+      .d-ico {
+        width: 18px;
+        height: 18px;
+        margin-bottom: 4px;
+      }
+      .d-flex {
+        align-items: center;
+        gap: 6px;
+      }
+    }
+
+    &__text {
+      color: $color-date;
+      font-feature-settings: "clig" off, "liga" off;
+      font-family: $font-inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -1px;
+      margin-bottom: 14px;
+      height: 76px;
+
+      @include screen-phone {
+        font-size: 16px;
+        margin-bottom: 13px;
+        height: auto;
+      }
+
+      @include screen-tablet {
+        margin-bottom: 13px;
+        height: auto;
+      }
+    }
+
+    .more-area {
+      @include screen-tablet {
+        @include flexbox();
+      }
+    }
+
+    &__btn {
+      @include flexbox(flex-start, center);
+
+      gap: 10px;
+      background: #fff;
+      cursor: pointer;
+
+      .read-event {
+        color: $color-main-sc;
+        font-feature-settings: "clig" off, "liga" off;
+        font-family: $font-inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: $font-bold;
+        line-height: 24px;
+      }
+
+      .more-arrow {
+        transition: 0.5s;
+      }
+      &:hover {
+        .more-arrow {
+          transform: translateX(10px);
+        }
+      }
+    }
+  }
+}

@@ -5,7 +5,7 @@ const getBlogs = (params) => {
 };
 
 const getSingleBlog = (id) => {
-  return axiosInstance.get(`/blogs /detail/${id}`);
+  return axiosInstance.get(`/blogs/detail/${id}`);
 };
 
 export { getBlogs, getSingleBlog };
