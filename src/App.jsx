@@ -3,7 +3,7 @@ import SiteRouter from "./router/SiteRouter";
 import "./App.scss";
 
 function App() {
-  return <SiteRouter/>;
+  return <SiteRouter />;
 }
 
 export default App;

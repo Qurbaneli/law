@@ -6,8 +6,8 @@ import "aos/dist/aos.css";
 import { useSelector } from "react-redux";
 
 function About() {
-  const lang = useSelector((store) => store.common.lang);
   const { t, i18n } = useTranslation();
+  const lang = useSelector((store) => store.common.lang);
 
   useEffect(() => {
     AOS.init();

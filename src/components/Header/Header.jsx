@@ -74,11 +74,11 @@ function Header() {
     localStorage.setItem("lang", lang);
   }, [lang]);
 
-  useEffect(() => {
-    if (lang && lang !== i18n.language) {
-      i18n.changeLanguage(lang);
-    }
-  }, [lang]);
+  // useEffect(() => {
+  //   if (lang && lang !== i18n.language) {
+  //     i18n.changeLanguage(lang);
+  //   }
+  // }, [lang]);
 
   return (
     <header className={scrolled && "sticky"}>
