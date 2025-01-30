@@ -29,7 +29,7 @@ function SiteRouter() {
         <Route path="/news/:id" element={<NewsDetail />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<BlogDetail />} />
-        <Route path="/career-form" element={<CareerForm />} />
+        <Route path="/career" element={<CareerForm />} />
         <Route path="/search" element={<Search />} />
       </Routes>
       <Footer />

@@ -6,8 +6,6 @@ import {
   message,
   Row,
   Col,
-  Space,
-  Select,
   Upload,
   DatePicker,
 } from "antd";
@@ -20,11 +18,15 @@ import { useTranslation } from "react-i18next";
 import dayjs from "dayjs";
 import { axiosInstance } from "@/api/api";
 import Swal from "sweetalert2";
+import { useSelector } from "react-redux";
+import career from "@/locale/career.json";
 
 const CareerForm = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [activeTab, setActiveTab] = useState("registration");
+  const lang = useSelector((store) => store.common.lang);
+
   const [file, setFile] = useState(null);
   const [form] = Form.useForm();
   const {
@@ -40,8 +42,6 @@ const CareerForm = () => {
       setFile(null);
     }
   };
-
-  console.log(file);
 
   const disabledDate = (current) => {
     return current && current >= dayjs().endOf("day");
@@ -73,6 +73,7 @@ const CareerForm = () => {
 
       message.success("Müraciət uğurla göndərildi");
       form.resetFields();
+      setFile(null);
     } catch (error) {
       console.error(error);
       Swal.fire({
@@ -121,31 +122,31 @@ const CareerForm = () => {
   return (
     <section className="career">
       <div className="container">
-        <h1 className="career__title">Komandamıza qoşul</h1>
+        <h1 className="career__title">{career[lang].career_title}</h1>
 
         <div className="show-form-btn">
           <Button
             type={activeTab === "registration" ? "primary" : "default"}
             onClick={() => setActiveTab("registration")}
           >
-            Qeydiyyatdan keçin
+            {career[lang].sign_up}
           </Button>
           <Button
             type={activeTab === "program" ? "primary" : "default"}
             onClick={() => setActiveTab("program")}
           >
-            Elektron CV göndər
+            {career[lang].send_cv}
           </Button>
         </div>
 
         {activeTab === "registration" && (
           <div className="form-area">
-            <h3 className="form-title">Qeydiyyat</h3>
+            <h3 className="form-title">{career[lang].form_title}</h3>
             {formSubmitted ? (
               <div className="form-submit-message">
                 <div className="submit-box">
                   <img src={Submit} alt="" />
-                  <p className="success">Müraciətiniz uğurla göndərildi</p>
+                  <p className="success">{career[lang].success_message}</p>
                 </div>
               </div>
             ) : (
@@ -154,7 +155,6 @@ const CareerForm = () => {
                 layout="vertical"
                 initialValues={{
                   prefix: prefixes[0]?.value,
-                  birth_date: dayjs(),
                 }}
                 onFinish={onSubmit}
                 form={form}
@@ -162,141 +162,151 @@ const CareerForm = () => {
                 <Row gutter={[16, 0]}>
                   <Col xs={24} sm={24} md={12}>
                     <Form.Item
-                      label="Ad və soyadınız"
+                      label={career[lang].full_name}
                       rules={[
-                        { required: true, message: "Ad boş buraxıla bilməz!" },
+                        { required: true, message: career[lang].name_required },
                       ]}
                       validateTrigger="onChange"
                       name="full_name"
                     >
-                      <Input size="large" placeholder="Ad daxil edin" />
+                      <Input
+                        size="large"
+                        placeholder={career[lang].name_placeholder}
+                      />
                     </Form.Item>
                   </Col>
 
                   <Col xs={24} sm={24} md={12}>
                     <Form.Item
-                      label="Telefon"
+                      label={career[lang].phone}
                       name="phone"
                       rules={[
                         {
                           required: true,
-                          message: "Əlaqə nömrəsi boş buraxıla bilməz!",
+                          message: career[lang].phone_required,
                         },
                       ]}
                     >
                       <Input
                         size="large"
-                        placeholder="Telefon nömrəsi daxil edin"
+                        placeholder={career[lang].phone_placeholder}
                       />
                     </Form.Item>
                   </Col>
 
                   <Col xs={24} sm={24} md={12}>
                     <Form.Item
-                      label="Elektron poçt"
+                      label={career[lang].email}
                       name="email"
                       rules={[
                         {
                           required: true,
-                          message: "Elektron poçt boş buraxıla bilməz!",
+                          message: career[lang].email_required,
                         },
                         {
                           type: "email",
-                          message: "Düzgün elektron poçt ünvanı daxil edin!",
+                          message: career[lang].email_invalid,
                         },
                       ]}
                     >
                       <Input
                         size="large"
-                        placeholder="Elektron poçt ünvanı daxil edin"
+                        placeholder={career[lang].email_placeholder}
                       />
                     </Form.Item>
                   </Col>
 
                   <Col xs={24} sm={24} md={12}>
                     <Form.Item
-                      label="Doğum tarixi"
+                      label={career[lang].birth_date}
                       name="birth_date"
                       rules={[
                         {
                           required: true,
-                          message: "Doğum tarixi boş buraxıla bilməz!",
+                          message: career[lang].birth_date_required,
                         },
                       ]}
                     >
                       <DatePicker
                         size="large"
                         format="DD-MM-YYYY"
-                        style={{ width: "100%" }}
+                        style={{ width: "100%", height: "50px" }}
                         disabledDate={disabledDate}
-                        placeholder="Doğum tarixinizi seçin"
+                        placeholder={career[lang].birth_date_placeholder}
                       />
                     </Form.Item>
                   </Col>
 
                   <Col xs={24} sm={24} md={12}>
                     <Form.Item
-                      label="Təhsil"
+                      label={career[lang].education}
                       name="education"
                       rules={[
                         {
                           required: true,
-                          message: "Təhsil boş buraxıla bilməz!",
+                          message: career[lang].education_required,
                         },
                       ]}
                     >
                       <Input
                         size="large"
-                        placeholder="Təhsil məlumatını daxil edin"
+                        placeholder={career[lang].education_placeholder}
                       />
                     </Form.Item>
                   </Col>
 
                   <Col xs={24} sm={24} md={12}>
                     <Form.Item
-                      label="İş təcrübəsi"
+                      label={career[lang].work_experience}
                       name="experience"
                       rules={[
                         {
                           required: true,
-                          message: "İş təcrübəsi boş buraxıla bilməz!",
+                          message: career[lang].experience_required,
                         },
                       ]}
                     >
                       <Input
                         size="large"
-                        placeholder="İş təcrübəsi daxil edin"
+                        placeholder={career[lang].experience_placeholder}
                       />
                     </Form.Item>
                   </Col>
 
                   <Col xs={24} sm={24} md={12}>
                     <Form.Item
-                      label="İddia etdiyiniz vəzifə"
+                      label={career[lang].desired_position}
                       name="duty"
                       rules={[
                         {
                           required: true,
-                          message: "Vəzifə boş buraxıla bilməz!",
+                          message: career[lang].duty_required,
                         },
                       ]}
                     >
-                      <Input size="large" placeholder="Vəzifə daxil edin" />
-                    </Form.Item>
-                  </Col>
-
-                  <Col xs={24} sm={24} md={12}>
-                    <Form.Item label="Haqqınızda" name="about" required={false}>
                       <Input
                         size="large"
-                        placeholder="Özünüz haqqında məlumat daxil edin"
+                        placeholder={career[lang].duty_placeholder}
                       />
                     </Form.Item>
                   </Col>
 
                   <Col xs={24} sm={24} md={12}>
                     <Form.Item
-                      label="Şəkliniz - png, jpg, jpeg"
+                      label={career[lang].about_you}
+                      name="about"
+                      required={false}
+                    >
+                      <Input
+                        size="large"
+                        placeholder={career[lang].about_placeholder}
+                      />
+                    </Form.Item>
+                  </Col>
+
+                  <Col xs={24} sm={24} md={12}>
+                    <Form.Item
+                      label={career[lang].your_photo}
                       valuePropName="file"
                       rules={[{ required: false }]}
                     >
@@ -306,7 +316,7 @@ const CareerForm = () => {
                         onChange={handleFileChange}
                       >
                         <Button type="primary" icon={<UploadOutlined />}>
-                          Şəkil Yüklə
+                          {career[lang].upload_photo}
                         </Button>
                       </Upload>
                     </Form.Item>
@@ -319,7 +329,7 @@ const CareerForm = () => {
                         type="primary"
                         htmlType="submit"
                       >
-                        Göndər
+                        {career[lang].submit}
                       </Button>
                     </div>
                   </Col>
@@ -347,7 +357,7 @@ const CareerForm = () => {
                     rules={[
                       {
                         required: true,
-                        message: "Cv fayl boş buraxıla bilməz!",
+                        message: career[lang].cv_required,
                       },
                     ]}
                     validateTrigger="onChange"
@@ -360,7 +370,7 @@ const CareerForm = () => {
                       listType="picture"
                     >
                       <Button type="primary" icon={<UploadOutlined />}>
-                        Fayl əlavə et
+                        {career[lang].add_file}
                       </Button>
                     </Upload>
                   </Form.Item>
@@ -369,7 +379,7 @@ const CareerForm = () => {
                 <Col md={24}>
                   <div className="form-footer cv-btn">
                     <Button loading={loading} type="primary" htmlType="submit">
-                      Göndər
+                      {career[lang].submit}
                     </Button>
                   </div>
                 </Col>

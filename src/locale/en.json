@@ -1,22 +1,23 @@
 {
   "translation": {
-    "hero":"HIGH QUALITY LAW ADVICE AND SUPPORT",
-    "apply":"Apply",
-    "menu":["Home","Services"],
-    "home":"Home",
-    "about":"About",
-    "services":"Services",
-    "news":"News",
-    "blog":"Blog",
-    "sign":"Sign up for a consultation", 
-    "partners":"Partners",
-    "team":"Team",
-    "contact":"Contact us",
-    "send":"Send",
-    "read-more":"Read more",
-    "read-less":"Read less",
-    "slogan":"Guided by our principles of professionalism, integrity and customer satisfaction, we are ready to be your most trusted partner in your legal needs.",
-    "aboutText":"“Legit S.A” is a professional legal organization established in accordance with the legislation of the Republic of Azerbaijan. Legal services provided by this new organization meeting modern standards are performed by lawyers who have worked in the field of law for a long time and achieved great success. Providing quality and prompt legal assistance in many legal fields is our main mission. Our team provides impeccable advice backed by first-rate local market knowledge.",
+    "hero": "HIGH QUALITY LAW ADVICE AND SUPPORT",
+    "apply": "Apply",
+    "menu": ["Home", "Services"],
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "news": "News",
+    "blog": "Blog",
+    "sign": "Sign up for a consultation",
+    "partners": "Partners",
+    "team": "Team",
+    "career": "Career",
+    "contact": "Contact us",
+    "send": "Send",
+    "read-more": "Read more",
+    "read-less": "Read less",
+    "slogan": "Guided by our principles of professionalism, integrity and customer satisfaction, we are ready to be your most trusted partner in your legal needs.",
+    "aboutText": "“Legit S.A” is a professional legal organization established in accordance with the legislation of the Republic of Azerbaijan. Legal services provided by this new organization meeting modern standards are performed by lawyers who have worked in the field of law for a long time and achieved great success. Providing quality and prompt legal assistance in many legal fields is our main mission. Our team provides impeccable advice backed by first-rate local market knowledge.",
     "teamData": [
       {
         "id": 1,
@@ -56,7 +57,7 @@
         "mail": "punhane.a@legitsa.az"
       }
     ],
-    "servicesData":[
+    "servicesData": [
       {
         "id": 1,
         "title": "Corporate law",
@@ -72,7 +73,7 @@
           "Preparation of the charter, internal rules, regulations, strategy documents of legal entities;",
           "Corporate dispute resolution."
         ],
-         "servicesDesc":"Legit S.A. offers the following services in corporate law:"
+        "servicesDesc": "Legit S.A. offers the following services in corporate law:"
       },
       {
         "id": 2,
@@ -86,7 +87,7 @@
           "Verification of the legality of internal documents drawn up in relation to labor relations;",
           "Providing legal support in pre-trial and court proceedings to protect the interests of employees and employers."
         ],
-        "servicesDesc":"Legit S.A. offers the following services on labor law:"
+        "servicesDesc": "Legit S.A. offers the following services on labor law:"
       },
       {
         "id": 3,
@@ -101,7 +102,7 @@
           "Making additions and changes to contracts, terminating them;",
           "Providing legal support in pre-trial (arbitration) and court proceedings to resolve disputes arising under contracts."
         ],
-        "servicesDesc":"Legit S.A. offers the following services under contract law:"
+        "servicesDesc": "Legit S.A. offers the following services under contract law:"
       },
       {
         "id": 4,
@@ -113,7 +114,7 @@
           "Analysis of disputes arising from insurance contracts and their legal resolution;",
           "Consulting on life, property, civil liability and other insurance disputes."
         ],
-        "servicesDesc":"Legit S.A. offers the following services in insurance law:"
+        "servicesDesc": "Legit S.A. offers the following services in insurance law:"
       },
       {
         "id": 5,
@@ -123,7 +124,7 @@
           "Preparation of legal opinions, references, any type of legal documents to be addressed to administrative bodies for individuals;",
           "Filing complaints against the decisions of administrative bodies."
         ],
-        "servicesDesc":"Legit S.A. offers the following services in administrative law:"
+        "servicesDesc": "Legit S.A. offers the following services in administrative law:"
       },
       {
         "id": 6,
@@ -134,7 +135,7 @@
           "Preparation and submission of objections to the decisions of the relevant authorities on the refusal to grant patents to inventions, utility models and industrial samples and to register trademarks and geographical indications;",
           "Provision of other services related to intellectual property."
         ],
-        "servicesDesc":"Legit S.A. offers the following services on intellectual property rights:",
+        "servicesDesc": "Legit S.A. offers the following services on intellectual property rights:",
         "note": "* Patent and trademark registration is carried out by our partner patent attorneys. "
       },
       {
@@ -150,7 +151,7 @@
           "Relationship with the child;",
           "Legal consultation related to family relations."
         ],
-        "servicesDesc":"Legit S.A. offers the following family law services:"
+        "servicesDesc": "Legit S.A. offers the following family law services:"
       },
       {
         "id": 8,
@@ -164,16 +165,16 @@
           "To ensure delivery of all necessary documents stipulated by law in the process of hiring foreigners;",
           "Making repeated applications to migration authorities (temporary residence permit, extension of visa periods, etc.)."
         ],
-        "servicesDesc":"Legit S.A. offers the following services on migration law:"
+        "servicesDesc": "Legit S.A. offers the following services on migration law:"
       },
       {
-        "id":9,
-        "title":"Right support for obtaining licenses and permits",
-        "desc":"As a team of Legit S.A., to business entities,We offer our high-quality legal support based on experience in the field of obtaining licenses and permits for relevant fields of activity in the territory of the Republic of Azerbaijan, as well as \"licenses for payment service providers (payment organizations, electronic money organizations)."
+        "id": 9,
+        "title": "Right support for obtaining licenses and permits",
+        "desc": "As a team of Legit S.A., to business entities,We offer our high-quality legal support based on experience in the field of obtaining licenses and permits for relevant fields of activity in the territory of the Republic of Azerbaijan, as well as \"licenses for payment service providers (payment organizations, electronic money organizations)."
       },
       {
-        "id":10,
-        "title":"Electronic legal services",
+        "id": 10,
+        "title": "Electronic legal services",
         "services": [
           "Court applications",
           "Appeals",
@@ -182,84 +183,84 @@
         ]
       }
     ],
-    "consultationData":[
+    "consultationData": [
       {
-        "id":1,
-        "title":"Family law"
+        "id": 1,
+        "title": "Family law"
       },
       {
-        "id":2,
-        "title":"Banking law"
+        "id": 2,
+        "title": "Banking law"
       },
       {
-        "id":3,
-        "title":"Criminal law"
+        "id": 3,
+        "title": "Criminal law"
       },
       {
-        "id":4,
-        "title":"Legal consultation"
+        "id": 4,
+        "title": "Legal consultation"
       },
       {
-        "id":5,
-        "title":"Enforcement law"
+        "id": 5,
+        "title": "Enforcement law"
       },
       {
-        "id":6,
-        "title":"Administrative law"
+        "id": 6,
+        "title": "Administrative law"
       },
       {
-        "id":7,
-        "title":"Right of consumer protection"
+        "id": 7,
+        "title": "Right of consumer protection"
       },
       {
-        "id":8,
-        "title":"Commercial law"
+        "id": 8,
+        "title": "Commercial law"
       },
       {
-        "id":9,
-        "title":"Corporate law"
+        "id": 9,
+        "title": "Corporate law"
       },
       {
-        "id":10,
-        "title":"Migration law"
+        "id": 10,
+        "title": "Migration law"
       },
       {
-        "id":11,
-        "title":"Contract law"
+        "id": 11,
+        "title": "Contract law"
       },
       {
-        "id":12,
-        "title":"Construction law"
+        "id": 12,
+        "title": "Construction law"
       },
       {
-        "id":13,
-        "title":"Tax law"
+        "id": 13,
+        "title": "Tax law"
       },
       {
-        "id":14,
-        "title":"Inheritance law"
+        "id": 14,
+        "title": "Inheritance law"
       },
       {
-        "id":15,
-        "title":"Property (object) law"
+        "id": 15,
+        "title": "Property (object) law"
       },
       {
-        "id":16,
-        "title":"Intellectual propert law"
+        "id": 16,
+        "title": "Intellectual propert law"
       }
     ],
-    "servicesDesc":"offers the following services in",
-    "about-text":"About",
-    "education":"Higher legal education",
-    "master":"Master",
-    "specialization":"Area of specialization",
-    "services-text":"As a team of Legit S.A., we can offer clients the following legal services",
-    "name-surname":"Name and surname *",
-    "email":"Email address*",
-    "phone":"Mobile phone *",
-    "subject":"Subject *",
-    "text":"Text *",
-    "navigate":"Navigate",
-    "footer-text":"\"This is the official website of \"Legit Solve Advisors\" LLC.On our website, you can familiarize yourself with our services and our team, you can stay up to date with the latest news and information about legislation\" sentence should be added."
-     }
+    "servicesDesc": "offers the following services in",
+    "about-text": "About",
+    "education": "Higher legal education",
+    "master": "Master",
+    "specialization": "Area of specialization",
+    "services-text": "As a team of Legit S.A., we can offer clients the following legal services",
+    "name-surname": "Name and surname *",
+    "email": "Email address*",
+    "phone": "Mobile phone *",
+    "subject": "Subject *",
+    "text": "Text *",
+    "navigate": "Navigate",
+    "footer-text": "\"This is the official website of \"Legit Solve Advisors\" LLC.On our website, you can familiarize yourself with our services and our team, you can stay up to date with the latest news and information about legislation\" sentence should be added."
+  }
   }

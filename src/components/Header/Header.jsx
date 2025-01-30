@@ -5,8 +5,6 @@ import "./header.scss";
 import logo from "../../assets/images/logo.svg";
 import mobileLogo from "../../assets/images/mobile-logo.svg";
 import hamburgerMenuIcon from "../../assets/icons/common/hambuger-menu.svg";
-import selectArrow from "../../assets/icons/common/arrow-down.svg";
-
 //Social Icons
 import close from "../../assets/icons/common/close.svg";
 import facebook from "../../assets/icons/social/facebook.svg";
@@ -38,10 +36,6 @@ function Header() {
     const scrollPosition = window.scrollY;
     setTimeout(() => window.scrollTo(0, scrollPosition), 0);
   };
-
-  useEffect(() => {
-    localStorage.setItem("lang", lang);
-  }, [lang]);
 
   const handleMobileDropDown = (id) => {
     setMobileDropdown(id != mobileDropdown ? id : null);
@@ -75,6 +69,10 @@ function Header() {
       document.body.style.overflow = "unset";
     }
   }, [mobileMenu]);
+
+  useEffect(() => {
+    localStorage.setItem("lang", lang);
+  }, [lang]);
 
   useEffect(() => {
     if (lang && lang !== i18n.language) {
@@ -213,6 +211,10 @@ function Header() {
                   </Link>
                 ))}
               </ul>
+            </li>
+
+            <li>
+              <NavLink to="/career">{t("career")}</NavLink>
             </li>
           </ul>
         </nav>

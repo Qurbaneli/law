@@ -3,11 +3,9 @@ import SearchIco from "../../assets/icons/search/search.svg";
 import SearchCard from "../../components/SearchCard/SearchCard";
 import TextField from "@mui/material/TextField";
 import common from "@/locale/common.json";
-import { useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getCommonSearchAsync } from "@/redux/search/searchSlice";
 import "./search.scss";
-import Sceleton from "@/components/Skeleton";
 import { ClipLoader } from "react-spinners";
 
 const Search = () => {

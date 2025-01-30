@@ -1,0 +1,18 @@
+{
+  "az": {
+    "name_required": "Ad boş buraxıla bilməz!",
+    "phone_required": "Əlaqə nömrəsi boş buraxıla bilməz!",
+    "email_required": "Elektron poçt boş buraxıla bilməz!",
+    "email_invalid": "Düzgün elektron poçt ünvanı daxil edin!",
+    "topic_required": "Mövzu boş buraxıla bilməz!",
+    "subject_required": "Mətn boş buraxıla bilməz!"
+  },
+  "en": {
+    "name_required": "Name cannot be empty!",
+    "phone_required": "Phone number cannot be empty!",
+    "email_required": "Email cannot be empty!",
+    "email_invalid": "Please enter a valid email address!",
+    "topic_required": "Subject cannot be empty!",
+    "subject_required": "Text cannot be empty!"
+  }
+}

@@ -4,11 +4,14 @@ import { useTranslation } from "react-i18next";
 import "./contact.scss";
 import { axiosInstance } from "@/api/api";
 import Swal from "sweetalert2";
+import contact from "@/locale/contact.json";
+import { useSelector } from "react-redux";
 
 function Contact() {
   const { t } = useTranslation();
   const [form] = Form.useForm();
   const [loading, setLoading] = useState(false);
+  const lang = useSelector((store) => store.common.lang);
 
   const onFinish = async (data) => {
     setLoading(true);
@@ -50,7 +53,7 @@ function Contact() {
               <Form.Item
                 name="full_name"
                 rules={[
-                  { required: true, message: t("Please enter your name.") },
+                  { required: true, message: contact[lang].name_required },
                 ]}
               >
                 <Input placeholder={t("name-surname")} />
@@ -59,8 +62,8 @@ function Contact() {
               <Form.Item
                 name="email"
                 rules={[
-                  { required: true, message: t("Please enter your email.") },
-                  { type: "email", message: t("Please enter a valid email.") },
+                  { required: true, message: contact[lang].email_required },
+                  { type: "email", message: contact[lang].email_invalid },
                 ]}
               >
                 <Input placeholder={t("email")} />
@@ -73,7 +76,7 @@ function Contact() {
                 rules={[
                   {
                     required: true,
-                    message: t("Please enter your phone number."),
+                    message: contact[lang].phone_required,
                   },
                 ]}
               >
@@ -83,7 +86,7 @@ function Contact() {
               <Form.Item
                 name="subject"
                 rules={[
-                  { required: true, message: t("Please enter a subject.") },
+                  { required: true, message: contact[lang].topic_required },
                 ]}
               >
                 <Input placeholder={t("subject")} />
@@ -94,7 +97,7 @@ function Contact() {
               <Form.Item
                 name="text"
                 rules={[
-                  { required: true, message: t("Please enter your message.") },
+                  { required: true, message: contact[lang].subject_required },
                 ]}
               >
                 <Input.TextArea placeholder={t("text")} rows={4} />

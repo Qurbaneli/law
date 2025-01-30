@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import "./news.scss";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { Pagination } from "antd";
+import { Empty, Pagination } from "antd";
 import { useDispatch, useSelector } from "react-redux";
 import { IMAGES_URL } from "@/api/api";
 import { getBlogsAsync } from "@/redux/blogs/blogsSlice";
+import common from "@/locale/common.json";
+
 
 const Blog = () => {
   const dispatch = useDispatch();
@@ -33,22 +35,28 @@ const Blog = () => {
       <div className="container">
         <h1 className="news__title">{t("blog")}</h1>
 
-        <div className="news-grid">
-          {blogs?.map((item) => (
-            <div className="card" key={item.id}>
-              <div className="img-box">
-                <img src={IMAGES_URL + item.cover_image} alt="img" />
+        {blogs.length > 0 ? (
+          <div className="news-grid">
+            {blogs?.map((item) => (
+              <div className="card" key={item.id}>
+                <div className="img-box">
+                  <img src={IMAGES_URL + item.cover_image} alt="img" />
+                </div>
+                <div className="info">
+                  <h3 className="info__title ellipse">{item.title}</h3>
+                  <p className="info__text">{item.description}</p>
+                  <p className="info__date">{item.created_at}</p>
+                  <div className="info__line"></div>
+                </div>
+                <Link className="news-link" to={`${item.id}`} />
               </div>
-              <div className="info">
-                <h3 className="info__title ellipse">{item.title}</h3>
-                <p className="info__text">{item.description}</p>
-                <p className="info__date">{item.created_at}</p>
-                <div className="info__line"></div>
-              </div>
-              <Link className="news-link" to={`${item.id}`} />
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        ) : (
+          <div className="no-data">
+            <Empty description={common[lang].not_found} />
+          </div>
+        )}
 
         <div className="pagination">
           {currentPage > 1 && (

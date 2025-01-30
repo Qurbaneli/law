@@ -13,7 +13,7 @@ import Contact from "../../components/Contact/Contact";
 function Home() {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <Hero />
       <About />
       <Services />
