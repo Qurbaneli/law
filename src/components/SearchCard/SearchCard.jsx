@@ -12,7 +12,7 @@ const SearchCard = ({ item }) => {
   const generateLink = (type) => {
     switch (type) {
       case "blogs":
-        return `/blogs`;
+        return `/blog`;
       case "news":
         return `/news`;
       default:
