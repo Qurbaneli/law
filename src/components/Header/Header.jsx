@@ -10,6 +10,7 @@ import close from "../../assets/icons/common/close.svg";
 import facebook from "../../assets/icons/social/facebook.svg";
 import twitter from "../../assets/icons/social/twitter.svg";
 import linkedin from "../../assets/icons/social/linkedin.svg";
+import searchIco from "../../assets/icons/search/searchIco.svg";
 import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 import { MenuItem, Select } from "@mui/material";
@@ -74,15 +75,15 @@ function Header() {
     localStorage.setItem("lang", lang);
   }, [lang]);
 
-  // useEffect(() => {
-  //   if (lang && lang !== i18n.language) {
-  //     i18n.changeLanguage(lang);
-  //   }
-  // }, [lang]);
+  useEffect(() => {
+    if (lang && lang !== i18n.language) {
+      i18n.changeLanguage(lang);
+    }
+  }, [lang]);
 
   return (
     <header className={scrolled && "sticky"}>
-      <div className={`mobile-menu ${mobileMenu ? "active" : ""}`}>
+      <div className={`mobile-menu ${mobileMenu && "active"}`}>
         <div className="mobile-menu-logo">
           <img src={mobileLogo} alt="logo" />
           <div onClick={() => setMobileMenu(false)} className="close">
@@ -106,9 +107,7 @@ function Header() {
                 {mobileDropdown == 1 ? <IoIosArrowUp /> : <IoIosArrowDown />}{" "}
               </Link>
               <ul
-                className={`${
-                  mobileDropdown == 1 ? "active" : ""
-                } mobile-dropdown`}
+                className={`${mobileDropdown == 1 && "active"} mobile-dropdown`}
               >
                 {servicesData.map((item) => (
                   <li>
@@ -245,6 +244,11 @@ function Header() {
               <li onClick={() => handleChangeLanguage("en")}>EN</li>
             </ul> */}
           {/* </div> */}
+          <div className="search-ico">
+            <Link to="search">
+              <img src={searchIco} alt="" />
+            </Link>
+          </div>
         </div>
 
         <div

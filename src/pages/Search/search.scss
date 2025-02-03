@@ -173,13 +173,7 @@
   }
 
   .search-result {
-    .loader-container {
-      text-align: center;
-      min-height: 500px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  
     &__count {
       margin-bottom: 20px;
       font-family: $font-inter;

@@ -288,7 +288,7 @@ $left-w: 1540px - $right-w - $gap;
             color: $color-secondary-gray;
             text-align: justify;
             font-family: $font-inter;
-            font-size: 14px;
+            font-size: 18px;
             font-style: normal;
             font-weight: 400;
 
@@ -444,6 +444,9 @@ $left-w: 1540px - $right-w - $gap;
           }
         }
       }
+    }
+    .blog-row{
+      justify-content: center;
     }
   }
 }

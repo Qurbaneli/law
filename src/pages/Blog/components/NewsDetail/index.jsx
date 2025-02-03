@@ -41,7 +41,7 @@ const BlogDetail = () => {
     singleBlog && (
       <section className="news-detail">
         <div className="container">
-          <div className={loading ? "row loading" : "row"}>
+          <div className={`${loading && "loading"} row blog-row `}>
             <div className="left-side">
               <div className="detail-cont">
                 <h1 className="cap">{singleBlog?.title}</h1>
@@ -86,27 +86,27 @@ const BlogDetail = () => {
                 <div className="detail-text">{singleBlog?.description}</div>
               </div>
             </div>
-            <div className="right-side">
-              <div className="last-news">
-                <SectionTitle title="Son xəbərlər" />
+            {/* <div className="right-side">
+                <div className="last-news">
+                  <SectionTitle title="Son xəbərlər" />
 
-                <div className="last-news__flex">
-                  {lastNews?.map((item) => {
-                    return (
-                      <div key={item?.id} className="right-news-item">
-                        <img src={`${IMAGES_URL}${item.cover_image}`} alt="" />
-                        <p className="right-news-detail">
-                          {item?.title?.length <= 65
-                            ? item?.title
-                            : `${item?.title.slice(0, 70)}...`}
-                        </p>
-                        <Link to={`/news/${item.id}`} className="news-link" />
-                      </div>
-                    );
-                  })}
+                  <div className="last-news__flex">
+                    {lastNews?.map((item) => {
+                      return (
+                        <div key={item?.id} className="right-news-item">
+                          <img src={`${IMAGES_URL}${item.cover_image}`} alt="" />
+                          <p className="right-news-detail">
+                            {item?.title?.length <= 65
+                              ? item?.title
+                              : `${item?.title.slice(0, 70)}...`}
+                          </p>
+                          <Link to={`/news/${item.id}`} className="news-link" />
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
-            </div>
+              </div> */}
           </div>
         </div>
       </section>

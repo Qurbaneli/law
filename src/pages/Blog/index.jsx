@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { IMAGES_URL } from "@/api/api";
 import { getBlogsAsync } from "@/redux/blogs/blogsSlice";
 import common from "@/locale/common.json";
-
+import { ClipLoader } from "react-spinners";
 
 const Blog = () => {
   const dispatch = useDispatch();
@@ -20,6 +20,7 @@ const Blog = () => {
     data: blogs,
     total,
     per_page,
+    loading,
   } = useSelector((state) => state.blogs.blogs);
 
   useEffect(() => {
@@ -35,9 +36,13 @@ const Blog = () => {
       <div className="container">
         <h1 className="news__title">{t("blog")}</h1>
 
-        {blogs.length > 0 ? (
+        {loading ? (
+          <div className="loader-container">
+            <ClipLoader color="#e7c175" size={80} />
+          </div>
+        ) : blogs?.length > 0 ? (
           <div className="news-grid">
-            {blogs?.map((item) => (
+            {blogs.map((item) => (
               <div className="card" key={item.id}>
                 <div className="img-box">
                   <img src={IMAGES_URL + item.cover_image} alt="img" />

@@ -19,6 +19,14 @@ body {
   position: relative;
 }
 
+.loader-container {
+  text-align: center;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .scroll-top {
   background-color: #e7c175;
   color: #252b42;

@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getAllNewsAsync } from "@/redux/newsAll/newsAllSlice";
 import { IMAGES_URL } from "@/api/api";
 import common from "@/locale/common.json";
+import { ClipLoader } from "react-spinners";
 
 const News = () => {
   const dispatch = useDispatch();
@@ -18,6 +19,7 @@ const News = () => {
     data: allNewsData,
     total,
     per_page,
+    loading,
   } = useSelector((state) => state.news.allNews);
 
   useEffect(() => {
@@ -33,9 +35,13 @@ const News = () => {
       <div className="container">
         <h1 className="news__title">{t("news")}</h1>
 
-        {allNewsData.length > 0 ? (
+        {loading ? (
+          <div className="loader-container">
+            <ClipLoader color="#e7c175" size={80} />
+          </div>
+        ) : allNewsData.length > 0 ? (
           <div className="news-grid">
-            {allNewsData?.map((item) => (
+            {allNewsData.map((item) => (
               <div className="card" key={item.id}>
                 <div className="img-box">
                   <img src={IMAGES_URL + item.cover_image} alt="img" />
