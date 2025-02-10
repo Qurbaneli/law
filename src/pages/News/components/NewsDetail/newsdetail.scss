@@ -173,7 +173,7 @@ $left-w: 1540px - $right-w - $gap;
             img {
               width: 100%;
               height: 100%;
-              object-fit: cover;
+              // object-fit: cover;
             }
           }
           .related-images {
@@ -445,7 +445,7 @@ $left-w: 1540px - $right-w - $gap;
         }
       }
     }
-    .blog-row{
+    .blog-row {
       justify-content: center;
     }
   }

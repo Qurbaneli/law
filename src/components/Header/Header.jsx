@@ -123,12 +123,16 @@ function Header() {
               <a href="/#partners">{t("partners")}</a>
             </li>
 
-            <li onClick={() => setMobileMenu(false)}>
-              <a href="#">{t("news")}</a>
+            <li>
+              <NavLink onClick={() => setMobileMenu(false)} to="/news">
+                {t("news")}
+              </NavLink>
             </li>
 
-            <li onClick={() => setMobileMenu(false)}>
-              <a href="#">{t("blog")}</a>
+            <li>
+              <NavLink onClick={() => setMobileMenu(false)} to="/blog">
+                {t("blog")}
+              </NavLink>
             </li>
 
             <li onClick={() => setMobileMenu(false)}>
@@ -140,6 +144,39 @@ function Header() {
             </li>
           </ul>
         </nav>
+
+        <div className="mobile-select ">
+          {/* <div className="selected-lang">
+            <span>{language.toLocaleUpperCase()} </span>{" "}
+            <span className="lang-icon">
+              {" "}
+              <img src={selectArrow} alt="lang-arrow" />
+            </span>
+          </div> */}
+
+          {/* <div className="lang-box"> */}
+          <Select
+            labelId="demo-simple-select-label"
+            id="demo-simple-select"
+            className="language-select"
+            value={lang}
+            // onChange={(e) => dispatch(setLang(e.target.value))}
+            onChange={handleChange}
+          >
+            <MenuItem value={"az"}>AZ</MenuItem>
+            <MenuItem value={"en"}>EN</MenuItem>
+          </Select>
+          {/* <ul>
+              <li onClick={() => handleChangeLanguage("az")}>AZ</li>
+              <li onClick={() => handleChangeLanguage("en")}>EN</li>
+            </ul> */}
+          {/* </div> */}
+          <div className="search-ico">
+            <Link onClick={() => setMobileMenu(false)} to="search">
+              <img src={searchIco} alt="" />
+            </Link>
+          </div>
+        </div>
 
         <div className="mobile-menu-social">
           <div className="mobile-menu-social-item">
