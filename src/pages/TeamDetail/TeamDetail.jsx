@@ -18,6 +18,7 @@ import member1 from "../../assets/images/team/member1.jpeg";
 import member2 from "../../assets/images/team/member2.jpeg";
 import member4 from "../../assets/images/team/member4.jpeg";
 import member3 from "../../assets/images/team/member3.jpeg";
+import member5 from "../../assets/images/team/lawyer1.jpg";
 
 function TeamDetail() {
   const { t, ready } = useTranslation();
@@ -37,6 +38,10 @@ function TeamDetail() {
     {
       id: 4,
       image: member1,
+    },
+    {
+      id: 5,
+      image: member5,
     },
   ];
 

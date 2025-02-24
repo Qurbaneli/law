@@ -55,6 +55,16 @@
         "master": "Baku State University, Human rights",
         "specialization": "Civil law, Commercial law, Human rights, International law.",
         "mail": "punhane.a@legitsa.az"
+      },
+      {
+        "id": 5,
+        "image": "member5",
+        "name_surname": "Ceyran Mammadova",
+        "profession": "Junior Lawyer",
+        "master": null,
+        "education": "Baku State University, Human rights",
+        "specialization": "Civil law, Commercial law, labor law, Contract law, International law",
+        "mail": "ceyran.m@legitsa.az"
       }
     ],
     "servicesData": [
@@ -263,4 +273,4 @@
     "navigate": "Navigate",
     "footer-text": "\"This is the official website of \"Legit Solve Advisors\" LLC.On our website, you can familiarize yourself with our services and our team, you can stay up to date with the latest news and information about legislation\" sentence should be added."
   }
-  }
+}
