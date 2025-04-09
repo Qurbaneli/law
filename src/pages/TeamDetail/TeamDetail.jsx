@@ -35,12 +35,9 @@ function TeamDetail() {
       id: 3,
       image: member3,
     },
+
     {
       id: 4,
-      image: member1,
-    },
-    {
-      id: 5,
       image: member5,
     },
   ];

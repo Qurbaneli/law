@@ -35,10 +35,6 @@ function Team() {
     },
     {
       id: 4,
-      image: member1,
-    },
-    {
-      id: 5,
       image: member5,
     },
   ];

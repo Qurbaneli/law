@@ -46,9 +46,18 @@
         "specialization": "Kommersiya hüququ, Əmək hüququ, Müqavilə hüququ, Mülki hüquq",
         "mail": "shahriyar.p@legitsa.az"
       },
-
       {
         "id": 4,
+        "image": "member1",
+        "name_surname": "Pünhanə Abdullayeva",
+        "profession": "Kiçik Hüquqşünas",
+        "education": "Naxçıvan Dövlət Universiteti, Hüquqşünaslıq",
+        "master": "Bakı Dövlət Universiteti, İnsan hüquqları",
+        "specialization": "Mülki hüquq, Kommersiya hüququ, İnsan hüquqları, Beynəlxalq hüquq.",
+        "mail": "punhane.a@legitsa.az"
+      },
+      {
+        "id": 5,
         "image": "member5",
         "name_surname": "Ceyran Məmmədova",
         "profession": "Kiçik Hüquqşünas",

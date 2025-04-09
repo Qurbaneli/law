@@ -46,9 +46,18 @@
         "specialization": "Commercial law, Labor law, Contract law, Civil law",
         "mail": "shahriyar.p@legitsa.az"
       },
-
       {
         "id": 4,
+        "image": "member1",
+        "name_surname": "Punhana Abdullayeva",
+        "profession": "Junior Lawyer",
+        "education": "Nakhchivan State University, Jurisprudence",
+        "master": "Baku State University, Human rights",
+        "specialization": "Civil law, Commercial law, Human rights, International law.",
+        "mail": "punhane.a@legitsa.az"
+      },
+      {
+        "id": 5,
         "image": "member5",
         "name_surname": "Ceyran Mammadova",
         "profession": "Junior Lawyer",
