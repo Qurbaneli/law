@@ -101,3 +101,29 @@
     }
   }
 }
+
+/* team-detail.scss */
+.image-skeleton {
+  min-width: 366px;
+  bottom: 86px;
+  position: relative;
+  height: 461px;
+  background-color: #e0e0e0;
+  animation: pulse 1.5s infinite;
+
+  @media screen and (max-width: 762px) {
+    min-width: 100%;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #e0e0e0;
+  }
+  50% {
+    background-color: #f0f0f0;
+  }
+  100% {
+    background-color: #e0e0e0;
+  }
+}

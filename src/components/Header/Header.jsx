@@ -82,8 +82,8 @@ function Header() {
   }, [lang]);
 
   return (
-    <header className={scrolled && "sticky"}>
-      <div className={`mobile-menu ${mobileMenu && "active"}`}>
+    <header className={scrolled ? "sticky" : ""}>
+      <div className={`mobile-menu ${mobileMenu ? "active" : ""}`}>
         <div className="mobile-menu-logo">
           <img src={mobileLogo} alt="logo" />
           <div onClick={() => setMobileMenu(false)} className="close">
@@ -107,10 +107,12 @@ function Header() {
                 {mobileDropdown == 1 ? <IoIosArrowUp /> : <IoIosArrowDown />}{" "}
               </Link>
               <ul
-                className={`${mobileDropdown == 1 && "active"} mobile-dropdown`}
+                className={`${
+                  mobileDropdown == 1 ? "active" : ""
+                } mobile-dropdown`}
               >
                 {servicesData.map((item) => (
-                  <li>
+                  <li key={item.id}>
                     <Link to={`/service/${item.id}`} key={item.id}>
                       {item.title}
                     </Link>

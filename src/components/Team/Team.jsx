@@ -12,9 +12,23 @@ import member4 from "../../assets/images/team/member4.jpeg";
 import member2 from "../../assets/images/team/member2.jpeg";
 import member3 from "../../assets/images/team/member3.jpeg";
 import member5 from "../../assets/images/team/lawyer1.jpg";
+import { useDispatch, useSelector } from "react-redux";
+import { getTeamAsync } from "@/redux/team/teamSlice";
+import { IMAGES_URL } from "@/api/api";
 
 function Team() {
   const { t, ready } = useTranslation();
+
+  const dispatch = useDispatch();
+  const lang = useSelector((store) => store.common.lang);
+
+  const teamMembers = useSelector((state) => state.team.teamMembers.data);
+
+  console.log(teamMembers);
+
+  useEffect(() => {
+    dispatch(getTeamAsync());
+  }, [lang]);
 
   useEffect(() => {
     AOS.init();
@@ -50,7 +64,7 @@ function Team() {
           {t("team")}
         </h2>
         <div className="team-box">
-          {teamData.map((item, index) => (
+          {teamMembers.map((item, index) => (
             <Link
               key={item.id}
               data-aos="fade-up"
@@ -59,11 +73,11 @@ function Team() {
             >
               <div className="team-item">
                 <div className="team-item-img">
-                  <img src={teamDataImage[index].image} alt="team-img" />
+                  <img src={IMAGES_URL + item.image} alt="team-img" />
                 </div>
                 <div className="team-item-desc">
-                  <h4>{item.name_surname}</h4>
-                  <p>{item.profession}</p>
+                  <h4>{item.full_name}</h4>
+                  <p>{item.duties.duty}</p>
                 </div>
               </div>
             </Link>
