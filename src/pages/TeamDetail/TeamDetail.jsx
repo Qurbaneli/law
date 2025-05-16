@@ -86,6 +86,11 @@ function TeamDetail() {
                 <p className="team-detail-subtitle">
                   {teamSingle?.duties?.duty}
                 </p>
+
+                <div
+                  className="team-detail-desc"
+                  dangerouslySetInnerHTML={{ __html: teamSingle?.description }}
+                />
                 {/* <div className="team-detail-desc">
                   {teamSingle?.desc && (
                     <>
