@@ -24,8 +24,6 @@ function Team() {
 
   const teamMembers = useSelector((state) => state.team.teamMembers.data);
 
-  console.log(teamMembers);
-
   useEffect(() => {
     dispatch(getTeamAsync());
   }, [lang]);
