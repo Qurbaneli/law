@@ -18,20 +18,23 @@ import facebookMob from "../../assets/icons/social/facebook-m.svg";
 import twitterMob from "../../assets/icons/social/twitter-m.svg";
 import linkedinMob from "../../assets/icons/social/linkedin-m.svg";
 
-
-
 function Footer() {
-  const { t, i18n: { changeLanguage, language } } = useTranslation();
+  const {
+    t,
+    i18n: { changeLanguage, language },
+  } = useTranslation();
 
   const scrollTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" })
-  }
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <footer>
       <div onClick={scrollTop} className="scroll-top">
-        <span> <LuChevronsUp /></span>
-
+        <span>
+          {" "}
+          <LuChevronsUp />
+        </span>
       </div>
       <div className="container">
         <div className="footer-main">
@@ -41,9 +44,7 @@ function Footer() {
             </div>
 
             <div className="footer-desc">
-              <p>
-                {t('footer-text')}
-              </p>
+              <p>{t("footer-text")}</p>
             </div>
 
             <div className="footer-social">
@@ -62,7 +63,7 @@ function Footer() {
           </div>
           <div className="footer-right">
             <div className="footer-menu">
-              <h3>{t('navigate')}</h3>
+              <h3>{t("navigate")}</h3>
               <ul>
                 <li>
                   <Link to="/">{t("home")}</Link>
@@ -80,8 +81,7 @@ function Footer() {
             </div>
 
             <div className="footer-menu">
-
-            <h3>&nbsp;</h3>
+              <h3>&nbsp;</h3>
               <ul>
                 <li>
                   <a href="#">{t("news")}</a>
@@ -123,11 +123,11 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a className="footer-address" href="tel:123-456-7890">
+                  <a className="footer-address" href="tel:0102565392">
                     <span className="icon">
                       <FaPhone />{" "}
                     </span>
-                    0515506679
+                    010 256 53 92
                   </a>
                 </li>
               </ul>
@@ -150,9 +150,7 @@ function Footer() {
         </div>
 
         <div className="footer-copyright">
-          <div className="copyright">
-            © 2024 LEGİT S.A, Bütün hüquqlar qorunur
-          </div>
+          <div className="copyright">© 2024 LEGİT S.A, Bütün hüquqlar qorunur</div>
         </div>
       </div>
     </footer>
