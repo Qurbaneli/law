@@ -17,7 +17,7 @@ function Home() {
       <Hero />
       <About />
       <Services />
-      <Team />
+      {/* <Team /> */}
       <Partners />
       <Contact />
     </div>
